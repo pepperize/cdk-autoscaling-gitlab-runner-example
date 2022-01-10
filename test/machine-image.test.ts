@@ -15,7 +15,7 @@ describe("MachineImage", () => {
     });
     const template = SynthUtils.toCloudFormation(stack);
 
-    expect(JSON.stringify(template)).toContain(`ami=ami-id`);
+    expect(JSON.stringify(template)).toContain("ami=ami-id");
 
     expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();

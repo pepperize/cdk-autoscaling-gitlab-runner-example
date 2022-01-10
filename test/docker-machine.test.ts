@@ -15,14 +15,14 @@ describe("DockerMachineConfiguration", () => {
     });
     const template = SynthUtils.toCloudFormation(stack);
 
-    expect(JSON.stringify(template)).toContain(`cap_add = [ \\\"CAP_NET_ADMIN\\\" ]`);
-    expect(JSON.stringify(template)).toContain(`cap_drop = [ \\\"CAP_CHOWN\\\" ]`);
-    expect(JSON.stringify(template)).toContain(`privileged = false`);
-    expect(JSON.stringify(template)).toContain(`pull_policy = \\"never\\"`);
-    expect(JSON.stringify(template)).toContain(`wait_for_services_timeout = 600`);
-    expect(JSON.stringify(template)).toContain(`IdleCount = 2`);
-    expect(JSON.stringify(template)).toContain(`IdleTime = 3_000`);
-    expect(JSON.stringify(template)).toContain(`MaxBuilds = 1`);
+    expect(JSON.stringify(template)).toContain('cap_add = [ \\"CAP_NET_ADMIN\\" ]');
+    expect(JSON.stringify(template)).toContain('cap_drop = [ \\"CAP_CHOWN\\" ]');
+    expect(JSON.stringify(template)).toContain("privileged = false");
+    expect(JSON.stringify(template)).toContain('pull_policy = \\"never\\"');
+    expect(JSON.stringify(template)).toContain("wait_for_services_timeout = 600");
+    expect(JSON.stringify(template)).toContain("IdleCount = 2");
+    expect(JSON.stringify(template)).toContain("IdleTime = 3_000");
+    expect(JSON.stringify(template)).toContain("MaxBuilds = 1");
 
     expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();

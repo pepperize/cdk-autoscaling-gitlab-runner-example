@@ -5,6 +5,9 @@
       "description": "Full release build",
       "steps": [
         {
+          "spawn": "default"
+        },
+        {
           "spawn": "pre-compile"
         },
         {

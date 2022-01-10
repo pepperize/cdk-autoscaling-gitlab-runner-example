@@ -1,5 +1,5 @@
-import { Stack, Construct } from "@aws-cdk/core";
 import { Bucket } from "@aws-cdk/aws-s3";
+import { Stack, Construct } from "@aws-cdk/core";
 import { GitlabRunnerAutoscaling } from "@pepperize-testing/cdk-autoscaling-gitlab-runner";
 import { RunnerStackProps } from "./runner-stack-props";
 
