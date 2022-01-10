@@ -19,12 +19,12 @@ describe("WithCustomCacheBucketStack", () => {
 
     // Then
     const capture = new Capture();
-
     template.hasResourceProperties("AWS::S3::Bucket", capture);
     expect(capture.asObject()).toEqual({
       BucketName: "your-custom-bucket",
     });
   });
+
   it("Should match snapshot", () => {
     // Given
     const app = new App();
