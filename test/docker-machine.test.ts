@@ -12,7 +12,8 @@ describe("DockerMachineConfiguration", () => {
         region: "us-east-1",
       },
     });
-    const template = SynthUtils.toCloudFormation(stack);
+    const template = Template.fromStack(stack);
+    const capture = new Capture();
 
     expect(JSON.stringify(template)).toContain('cap_add = [ \\"CAP_NET_ADMIN\\" ]');
     expect(JSON.stringify(template)).toContain('cap_drop = [ \\"CAP_CHOWN\\" ]');
@@ -23,7 +24,8 @@ describe("DockerMachineConfiguration", () => {
     expect(JSON.stringify(template)).toContain("IdleTime = 3_000");
     expect(JSON.stringify(template)).toContain("MaxBuilds = 1");
 
-    expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
+    template.hasResourceProperties("AWS::AutoScaling::AutoScalingGroup", capture);
+    template.templateMatches(capture);
     expect(template).toMatchSnapshot();
   });
 });
