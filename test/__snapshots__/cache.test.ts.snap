@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WithCustomCacheBucketStack 1`] = `
+exports[`WithCustomCacheBucketStack Should match snapshot 1`] = `
 Object {
   "Parameters": Object {
     "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664ebsC96584B6F00A464EAD1953AFF4B05118Parameter": Object {
