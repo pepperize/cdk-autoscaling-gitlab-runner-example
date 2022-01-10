@@ -1,5 +1,5 @@
 import "@aws-cdk/assert/jest";
-import { SynthUtils } from "@aws-cdk/assert";
+import { Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
 import { DockerMachineStack } from "../src/docker-machine";
 
