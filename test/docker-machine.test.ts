@@ -1,5 +1,4 @@
-import "@aws-cdk/assert/jest";
-import { Template } from "@aws-cdk/assertions";
+import { Capture, Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
 import { DockerMachineStack } from "../src/docker-machine";
 

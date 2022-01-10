@@ -1,5 +1,4 @@
-import "@aws-cdk/assert/jest";
-import { SynthUtils } from "@aws-cdk/assert";
+import { Capture, Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
 import { OnDemandInstancesStack } from "../src/on-demand-instances";
 
