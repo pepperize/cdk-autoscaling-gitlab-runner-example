@@ -1,5 +1,5 @@
-import { Stack, Construct } from "@aws-cdk/core";
 import { Bucket } from "@aws-cdk/aws-s3";
+import { Stack, Construct } from "@aws-cdk/core";
 import { GitlabRunnerAutoscaling } from "@pepperize-testing/cdk-autoscaling-gitlab-runner";
 import { RunnerStackProps } from "./runner-stack-props";
 
@@ -13,6 +13,7 @@ export class CacheBucketStack extends Stack {
 
     const cache = new Bucket(this, "Cache", {
       // Your custom bucket
+      bucketName: "your-custom-bucket",
     });
 
     new GitlabRunnerAutoscaling(this, "Runner", {

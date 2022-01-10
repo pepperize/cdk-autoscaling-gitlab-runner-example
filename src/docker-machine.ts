@@ -4,7 +4,7 @@ import { RunnerStackProps } from "./runner-stack-props";
 
 export interface WithCustomDockerMachineConfigurationProps extends RunnerStackProps {}
 
-export class DockerMachineConfigurationStack extends Stack {
+export class DockerMachineStack extends Stack {
   constructor(scope: Construct, id: string, props: WithCustomDockerMachineConfigurationProps) {
     super(scope, id, props);
 

@@ -15,7 +15,7 @@ describe("InstanceType", () => {
     });
     const template = SynthUtils.toCloudFormation(stack);
 
-    expect(JSON.stringify(template)).toContain(`instance-type=t3.large`);
+    expect(JSON.stringify(template)).toContain("instance-type=t3.large");
 
     expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();

@@ -3,6 +3,9 @@
 !/.projen/tasks.json
 !/.projen/deps.json
 !/.projen/files.json
+!/.github/workflows/pull-request-lint.yml
+!/.github/workflows/auto-approve.yml
+!/.github/workflows/stale.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -29,11 +32,14 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
-README.md
+.idea
 !/.projenrc.js
 /test-reports/
 junit.xml
 /coverage/
+!/.github/workflows/build.yml
+!/.mergify.yml
+!/.github/pull_request_template.md
 !/.prettierignore
 !/.prettierrc.json
 !/test/
@@ -48,3 +54,4 @@ junit.xml
 /cdk.out/
 .cdk.staging/
 .parcel-cache/
+!/.github/workflows/upgrade.yml
