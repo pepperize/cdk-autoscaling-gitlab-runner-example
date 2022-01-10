@@ -1,6 +1,5 @@
 [![GitHub](https://img.shields.io/github/license/pepperize/cdk-autoscaling-gitlab-runner-example?style=flat-square)](https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example/blob/main/LICENSE)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/pepperize/cdk-autoscaling-gitlab-runner-example/release/main?label=release&style=flat-square)](https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example/actions/workflows/release.yml)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/pepperize/cdk-autoscaling-gitlab-runner-example?sort=semver&style=flat-square)](https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example/releases)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/pepperize/cdk-autoscaling-gitlab-runner-example/build/main?label=build&style=flat-square)](https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example/actions/workflows/build.yml)
 
 # AWS CDK GitLab Runner autoscaling on EC2 example
 
