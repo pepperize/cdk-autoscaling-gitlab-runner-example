@@ -11,7 +11,7 @@ import { ZeroConfigStack } from "./zero-config";
 
 // for development, use account/region from cdk cli
 const devEnv = {
-  account: process.env.CDK_DEFAULT_ACCOUNT || "123456798012",
+  account: process.env.CDK_DEFAULT_ACCOUNT || "069388652156",
   region: process.env.CDK_DEFAULT_REGION || "us-east-1",
 };
 
