@@ -9,13 +9,13 @@ describe("MachineImage", () => {
     const stack = new MachineImageStack(app, "MachineImageStack", {
       gitlabToken: "your gitlab token",
       env: {
-        account: "0",
-        region: "region",
+        account: "123456789012",
+        region: "us-east-1",
       },
     });
     const template = SynthUtils.toCloudFormation(stack);
 
-    expect(JSON.stringify(template)).toContain("ami=ami-id");
+    expect(JSON.stringify(template)).toContain("ami=ami-06992628e0a8e044c");
 
     expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();

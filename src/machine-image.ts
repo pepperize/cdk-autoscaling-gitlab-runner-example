@@ -16,7 +16,7 @@ export class MachineImageStack extends Stack {
     };
 
     const runnerAmiMap: Record<string, string> = {
-      region: "ami-id",
+      "us-east-1": "ami-06992628e0a8e044c",
     };
 
     new GitlabRunnerAutoscaling(this, "Runner", {

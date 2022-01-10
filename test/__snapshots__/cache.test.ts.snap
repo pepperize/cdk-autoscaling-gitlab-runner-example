@@ -11,6 +11,9 @@ Object {
   "Resources": Object {
     "Cache18F6EE16": Object {
       "DeletionPolicy": "Retain",
+      "Properties": Object {
+        "BucketName": "your-custom-bucket",
+      },
       "Type": "AWS::S3::Bucket",
       "UpdateReplacePolicy": "Retain",
     },

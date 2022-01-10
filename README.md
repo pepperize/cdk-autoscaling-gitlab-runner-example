@@ -14,6 +14,5 @@ This project contains examples how to use [AWS CDK autoscaling Gitlab Runner](ht
 - [Machine Image](./src/machine-image.ts)
 - [On Demand Instances](./src/on-demand-instances.ts)
 - [Runner Role](./src/runner-role.ts)
-- [Runner Stack Properties](./src/runner-stack-props.ts)
 - [Vpc](./src/vpc.ts)
 - [Zero Config](./src/zero-config.ts)

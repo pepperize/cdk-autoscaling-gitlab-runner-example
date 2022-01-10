@@ -13,6 +13,7 @@ export class CacheBucketStack extends Stack {
 
     const cache = new Bucket(this, "Cache", {
       // Your custom bucket
+      bucketName: "your-custom-bucket",
     });
 
     new GitlabRunnerAutoscaling(this, "Runner", {

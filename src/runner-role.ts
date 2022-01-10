@@ -14,7 +14,7 @@ export class RunnersRoleStack extends Stack {
     /**
      * Set role (override default runners role)
      */
-    const role = new Role(this, "RunnersRole", {
+    const role = new Role(this, "CustomRunnersRole", {
       assumedBy: new ServicePrincipal("ec2.amazonaws.com", {}),
       inlinePolicies: {
         CdkDeploy: PolicyDocument.fromJson({
@@ -68,7 +68,7 @@ export class RunnersRoleStack extends Stack {
     /**
      * Add role to runners instance profile
      */
-    const roleForS3FullAccess = new Role(this, "RunnersRole", {
+    const roleForS3FullAccess = new Role(this, "RunnersInstanceRole", {
       assumedBy: new ServicePrincipal("ec2.amazonaws.com", {}),
       managedPolicies: [
         ManagedPolicy.fromManagedPolicyArn(this, "AmazonS3FullAccess", "arn:aws:iam::aws:policy/AmazonS3FullAccess"),
