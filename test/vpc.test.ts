@@ -12,6 +12,12 @@ test("WithCustomVpcStack", () => {
     },
   });
 
-  expect(stack).toHaveResource("AWS::EC2::VPC");
+  const template = Template.fromStack(stack);
+
+  const capture = new Capture();
+  template.hasResourceProperties("AWS::EC2::VPC", capture);
+  expect(capture.asObject()).toEqual({
+    VpcName: "your-custom-vpc",
+  });
   expect(app.synth().getStackArtifact(stack.artifactId).template).toMatchSnapshot();
 });
