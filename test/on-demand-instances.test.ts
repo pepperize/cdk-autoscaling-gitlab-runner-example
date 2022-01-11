@@ -12,9 +12,10 @@ describe("OnDemandInstances", () => {
         region: "us-east-1",
       },
     });
-    const template = SynthUtils.toCloudFormation(stack);
+    const template = Template.fromStack(stack);
     expect(JSON.stringify(template)).toContain("request-spot-instance=false");
-    expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
+    const capture = new Capture();
+    template.hasResourceProperties("AWS::AutoScaling::AutoScalingGroup", capture);
     expect(template).toMatchSnapshot();
   });
 });
