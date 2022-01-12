@@ -1,4 +1,5 @@
-import { Capture, Template } from "@aws-cdk/assertions";
+import "@aws-cdk/assert/jest";
+import { SynthUtils } from "@aws-cdk/assert";
 import { App } from "@aws-cdk/core";
 import { OnDemandInstancesStack } from "../src/on-demand-instances";
 
@@ -12,10 +13,9 @@ describe("OnDemandInstances", () => {
         region: "us-east-1",
       },
     });
-    const template = Template.fromStack(stack);
+    const template = SynthUtils.toCloudFormation(stack);
     expect(JSON.stringify(template)).toContain("request-spot-instance=false");
-    const capture = new Capture();
-    template.hasResourceProperties("AWS::AutoScaling::AutoScalingGroup", capture);
+    expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();
   });
 });

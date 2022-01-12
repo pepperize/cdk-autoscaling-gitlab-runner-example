@@ -1,4 +1,4 @@
-import { Capture, Template } from "@aws-cdk/assertions";
+import "@aws-cdk/assert/jest";
 import { App } from "@aws-cdk/core";
 import { ZeroConfigStack } from "../src/zero-config";
 

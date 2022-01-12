@@ -1,4 +1,5 @@
-import { Capture, Template } from "@aws-cdk/assertions";
+import "@aws-cdk/assert/jest";
+import { SynthUtils } from "@aws-cdk/assert";
 import { App } from "@aws-cdk/core";
 import { MachineImageStack } from "../src/machine-image";
 
@@ -12,27 +13,11 @@ describe("MachineImage", () => {
         region: "us-east-1",
       },
     });
-    const template = Template.fromStack(stack);
-
-    const capture = new Capture();
+    const template = SynthUtils.toCloudFormation(stack);
 
     expect(JSON.stringify(template)).toContain("ami=ami-06992628e0a8e044c");
 
-    template.hasResourceProperties("AWS::AutoScaling::AutoScalingGroup", capture);
-  });
-
-
-  it("Should set custom instance type", () => {
-    const app = new App();
-    const stack = new MachineImageStack(app, "MachineImageStack", {
-      gitlabToken: "your gitlab token",
-      env: {
-        account: "123456789012",
-        region: "us-east-1",
-      },
-    });
-    const template = Template.fromStack(stack);
-
+    expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();
   });
 });

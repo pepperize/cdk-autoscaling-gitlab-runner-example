@@ -1,10 +1,9 @@
-import { Capture, Template } from "@aws-cdk/assertions";
+import { Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
 import { DockerMachineStack } from "../src/docker-machine";
 
 describe("DockerMachineConfiguration", () => {
   it("Should set docker machine properties", () => {
-    // Given
     const app = new App();
     const stack = new DockerMachineStack(app, "DockerMachineConfigurationStack", {
       gitlabToken: "your gitlab token",
@@ -13,11 +12,7 @@ describe("DockerMachineConfiguration", () => {
         region: "us-east-1",
       },
     });
-    // When
     const template = Template.fromStack(stack);
-
-    // Then
-    const capture = new Capture();
 
     expect(JSON.stringify(template)).toContain('cap_add = [ \\"CAP_NET_ADMIN\\" ]');
     expect(JSON.stringify(template)).toContain('cap_drop = [ \\"CAP_CHOWN\\" ]');
@@ -28,26 +23,6 @@ describe("DockerMachineConfiguration", () => {
     expect(JSON.stringify(template)).toContain("IdleTime = 3_000");
     expect(JSON.stringify(template)).toContain("MaxBuilds = 1");
 
-    template.hasResourceProperties("AWS::AutoScaling::AutoScalingGroup", capture);
-
-  });
-
-
-  it("Should match snapshot", () => {
-    // Given
-    const app = new App();
-    const stack = new DockerMachineStack(app, "DockerMachineConfigurationStack", {
-      gitlabToken: "your gitlab token",
-      env: {
-        account: "0",
-        region: "us-east-1",
-      },
-    });
-
-    // When
-    const template = Template.fromStack(stack);
-
-    // Then
     expect(template).toMatchSnapshot();
   });
 });

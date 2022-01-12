@@ -1,4 +1,4 @@
-import { Capture, Template } from "@aws-cdk/assertions";
+import "@aws-cdk/assert/jest";
 import { App } from "@aws-cdk/core";
 import { VpcStack } from "../src/vpc";
 
@@ -12,12 +12,6 @@ test("WithCustomVpcStack", () => {
     },
   });
 
-  const template = Template.fromStack(stack);
-
-  const capture = new Capture();
-  template.hasResourceProperties("AWS::EC2::VPC", capture);
-  expect(capture.asObject()).toEqual({
-    VpcName: "your-custom-vpc",
-  });
+  expect(stack).toHaveResource("AWS::EC2::VPC");
   expect(app.synth().getStackArtifact(stack.artifactId).template).toMatchSnapshot();
 });
