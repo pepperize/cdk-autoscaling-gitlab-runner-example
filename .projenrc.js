@@ -45,15 +45,12 @@ const project = new awscdk.AwsCdkTypeScriptApp({
       printWidth: 120,
     },
   },
-  jestOptions: {
-    jestConfig: {
-      testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)@(spec|test).[tj]s?(x)"],
-    },
-  },
 
   gitignore: [".idea"],
 });
 
 project.setScript("format", "prettier --write src/**/*.ts test/**/*.ts .projenrc.js README.md");
+
+project.jest.addTestMatch("**/?(*.)@(spec|test).[tj]s?(x)");
 
 project.synth();
