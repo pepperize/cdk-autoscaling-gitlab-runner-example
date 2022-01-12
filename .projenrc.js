@@ -45,6 +45,11 @@ const project = new awscdk.AwsCdkTypeScriptApp({
       printWidth: 120,
     },
   },
+  jestOptions: {
+    jestConfig: {
+      testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)@(spec|test).[tj]s?(x)"],
+    },
+  },
 
   gitignore: [".idea"],
 });
