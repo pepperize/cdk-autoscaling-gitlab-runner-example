@@ -442,7 +442,7 @@ token = \\"your gitlab token\\"
         "IamInstanceProfile": Object {
           "Ref": "ManagerAutoscalingGroupInstanceProfile7C061EF0",
         },
-        "ImageId": "ami-06992628e0a8e044c",
+        "ImageId": "ami-0de53d8956e8dcf80",
         "InstanceType": "t3.nano",
         "SecurityGroups": Array [
           Object {

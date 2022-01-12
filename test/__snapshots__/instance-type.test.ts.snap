@@ -449,7 +449,7 @@ token = \\"your gitlab token\\"
         "ImageId": Object {
           "Ref": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664ebsC96584B6F00A464EAD1953AFF4B05118Parameter",
         },
-        "InstanceType": "t3.large",
+        "InstanceType": "t3.small",
         "SecurityGroups": Array [
           Object {
             "Fn::GetAtt": Array [

@@ -23,7 +23,7 @@ describe("InstanceType", () => {
 
     const capture = new Capture();
     template.hasResourceProperties("AWS::AutoScaling::LaunchConfiguration", capture);
-    expect(capture.asObject()).toMatchObject({ InstanceType: "t3.large" });
+    expect(capture.asObject()).toMatchObject({ InstanceType: "t3.small" });
   });
 
   it("Should match snapshot", () => {

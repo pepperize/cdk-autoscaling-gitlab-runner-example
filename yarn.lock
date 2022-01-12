@@ -1102,10 +1102,10 @@
   resolved "https://registry.yarnpkg.com/@oozcitak/util/-/util-8.3.8.tgz#10f65fe1891fd8cde4957360835e78fd1936bfdd"
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
-"@pepperize-testing/cdk-autoscaling-gitlab-runner@^0.0.78":
-  version "0.0.78"
-  resolved "https://registry.yarnpkg.com/@pepperize-testing/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.78.tgz#e731aede314cbb0d8514d6d30048a5cd640e3622"
-  integrity sha512-J1+ttnw8xqOBhEFtzErpFUMrXZN7yoC8lb0630vc5Cf5irtK2xovIJIZW9EFjWAn6rFAZg/0ssZzwktT5sijEA==
+"@pepperize/cdk-autoscaling-gitlab-runner@^0.0.132":
+  version "0.0.132"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.132.tgz#c5157b35fcf49aee952fc4dcd5c5b161b872e93e"
+  integrity sha512-OjbWof6cOeJxt2eao/fXLOHhAvny7xokXSZsfIwLyXpELbhQmyBjt6lYjOTbyHN4qhOOnX2xk2VtGvf2Ss0MrQ==
   dependencies:
     "@aws-cdk/aws-autoscaling" "^1.134.0"
     "@aws-cdk/aws-ec2" "^1.134.0"
