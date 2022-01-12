@@ -118,7 +118,7 @@
       "type": "runtime"
     },
     {
-      "name": "@pepperize-testing/cdk-autoscaling-gitlab-runner",
+      "name": "@pepperize/cdk-autoscaling-gitlab-runner",
       "type": "runtime"
     },
     {
