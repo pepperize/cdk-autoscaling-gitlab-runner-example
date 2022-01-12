@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MachineImage Should set custom instance type 1`] = `
+exports[`MachineImage Should match snapshot 1`] = `
 Object {
   "Parameters": Object {
     "AssetParameters15684a15d07860e99d2a8079150ad33dd2cb743677fcd7016dd07345e1b69538ArtifactHash154EE95B": Object {
@@ -442,7 +442,7 @@ token = \\"your gitlab token\\"
         "IamInstanceProfile": Object {
           "Ref": "ManagerAutoscalingGroupInstanceProfile7C061EF0",
         },
-        "ImageId": "ami-06992628e0a8e044c",
+        "ImageId": "ami-0de53d8956e8dcf80",
         "InstanceType": "t3.nano",
         "SecurityGroups": Array [
           Object {

@@ -1,6 +1,6 @@
 import { ManagedPolicy, PolicyDocument, Role, ServicePrincipal } from "@aws-cdk/aws-iam";
 import { Construct, Stack } from "@aws-cdk/core";
-import { GitlabRunnerAutoscaling } from "@pepperize-testing/cdk-autoscaling-gitlab-runner";
+import { GitlabRunnerAutoscaling } from "@pepperize/cdk-autoscaling-gitlab-runner";
 import { RunnerStackProps } from "./runner-stack-props";
 
 export interface WithCustomRunnersRoleProps extends RunnerStackProps {}

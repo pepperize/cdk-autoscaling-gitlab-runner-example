@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`OnDemandInstances Should set amazonec2-request-spot-instance to false 1`] = `
+exports[`OnDemandInstances Should match snapshot 1`] = `
 Object {
   "Parameters": Object {
     "AssetParameters15684a15d07860e99d2a8079150ad33dd2cb743677fcd7016dd07345e1b69538ArtifactHash154EE95B": Object {
@@ -33,7 +33,7 @@ Object {
             },
           ],
         },
-        "BucketName": "zeroconfigstack-runner-cache-0-us-east-1",
+        "BucketName": "ondemandinstances-runner-cache-0-us-east-1",
         "LifecycleConfiguration": Object {
           "Rules": Array [
             Object {
@@ -281,7 +281,7 @@ token = \\"your gitlab token\\"
                         "Ref": "VpcPrivateSubnet1Subnet536B997A",
                       },
                       "\\",
-  \\"amazonec2-security-group=ZeroConfigStack-RunnersSecurityGroup\\",
+  \\"amazonec2-security-group=OnDemandInstances-RunnersSecurityGroup\\",
   \\"amazonec2-use-private-address=true\\",
   \\"amazonec2-iam-instance-profile=",
                       Object {
@@ -400,7 +400,7 @@ token = \\"your gitlab token\\"
           Object {
             "Key": "Name",
             "PropagateAtLaunch": true,
-            "Value": "ZeroConfigStack/ManagerAutoscalingGroup",
+            "Value": "OnDemandInstances/ManagerAutoscalingGroup",
           },
         ],
         "VPCZoneIdentifier": Array [
@@ -465,7 +465,7 @@ token = \\"your gitlab token\\"
               Array [
                 "#!/bin/bash
 yum update -y aws-cfn-bootstrap
-# fingerprint: 1329445161096282
+# fingerprint: b3fbbadcf0bf1625
 (
   set +e
   /opt/aws/bin/cfn-init -v --region ",
@@ -739,7 +739,7 @@ yum update -y aws-cfn-bootstrap
     "RunnersSecurityGroup2A22C282": Object {
       "Properties": Object {
         "GroupDescription": "Security group for GitLab Runners.",
-        "GroupName": "ZeroConfigStack-RunnersSecurityGroup",
+        "GroupName": "OnDemandInstances-RunnersSecurityGroup",
         "SecurityGroupEgress": Array [
           Object {
             "CidrIp": "0.0.0.0/0",
@@ -753,7 +753,7 @@ yum update -y aws-cfn-bootstrap
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "RunnersSecurityGroupfromZeroConfigStackManagerSecurityGroup1F23ED64226E71F1E6": Object {
+    "RunnersSecurityGroupfromOnDemandInstancesManagerSecurityGroupDDE7C06622F1B8D906": Object {
       "Properties": Object {
         "Description": "SSH traffic from Manager",
         "FromPort": 22,
@@ -774,7 +774,7 @@ yum update -y aws-cfn-bootstrap
       },
       "Type": "AWS::EC2::SecurityGroupIngress",
     },
-    "RunnersSecurityGroupfromZeroConfigStackManagerSecurityGroup1F23ED6423763547D94F": Object {
+    "RunnersSecurityGroupfromOnDemandInstancesManagerSecurityGroupDDE7C066237654C6B526": Object {
       "Properties": Object {
         "Description": "SSH traffic from Docker",
         "FromPort": 2376,
@@ -804,7 +804,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc",
+            "Value": "OnDemandInstances/Vpc",
           },
         ],
       },
@@ -815,7 +815,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc",
+            "Value": "OnDemandInstances/Vpc",
           },
         ],
       },
@@ -849,7 +849,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc/PrivateSubnet1",
+            "Value": "OnDemandInstances/Vpc/PrivateSubnet1",
           },
         ],
         "VpcId": Object {
@@ -874,7 +874,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc/PrivateSubnet1",
+            "Value": "OnDemandInstances/Vpc/PrivateSubnet1",
           },
         ],
         "VpcId": Object {
@@ -904,7 +904,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc/PublicSubnet1",
+            "Value": "OnDemandInstances/Vpc/PublicSubnet1",
           },
         ],
       },
@@ -924,7 +924,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc/PublicSubnet1",
+            "Value": "OnDemandInstances/Vpc/PublicSubnet1",
           },
         ],
       },
@@ -935,7 +935,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc/PublicSubnet1",
+            "Value": "OnDemandInstances/Vpc/PublicSubnet1",
           },
         ],
         "VpcId": Object {
@@ -971,7 +971,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "ZeroConfigStack/Vpc/PublicSubnet1",
+            "Value": "OnDemandInstances/Vpc/PublicSubnet1",
           },
         ],
         "VpcId": Object {

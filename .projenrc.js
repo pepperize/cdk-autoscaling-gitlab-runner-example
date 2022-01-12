@@ -25,7 +25,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   repositoryUrl: "https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example.git",
 
   cdkDependencies: ["@aws-cdk/aws-s3", "@aws-cdk/aws-ec2", "@aws-cdk/aws-iam", "@aws-cdk/assertions"],
-  deps: ["@pepperize-testing/cdk-autoscaling-gitlab-runner"],
+  deps: ["@pepperize/cdk-autoscaling-gitlab-runner"],
 
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ["pflorek"], secret: "GITHUB_TOKEN" },
@@ -50,5 +50,7 @@ const project = new awscdk.AwsCdkTypeScriptApp({
 });
 
 project.setScript("format", "prettier --write src/**/*.ts test/**/*.ts .projenrc.js README.md");
+
+project.jest.addTestMatch("**/?(*.)@(spec|test).[tj]s?(x)");
 
 project.synth();

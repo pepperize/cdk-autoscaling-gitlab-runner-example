@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InstanceType Should set custom instance type 1`] = `
+exports[`InstanceType Should match snapshot 1`] = `
 Object {
   "Parameters": Object {
     "AssetParameters15684a15d07860e99d2a8079150ad33dd2cb743677fcd7016dd07345e1b69538ArtifactHash154EE95B": Object {
@@ -449,7 +449,7 @@ token = \\"your gitlab token\\"
         "ImageId": Object {
           "Ref": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664ebsC96584B6F00A464EAD1953AFF4B05118Parameter",
         },
-        "InstanceType": "t3.large",
+        "InstanceType": "t3.small",
         "SecurityGroups": Array [
           Object {
             "Fn::GetAtt": Array [

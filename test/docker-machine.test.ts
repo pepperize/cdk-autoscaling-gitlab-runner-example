@@ -1,11 +1,13 @@
-import "@aws-cdk/assert/jest";
-import { SynthUtils } from "@aws-cdk/assert";
+import { Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
 import { DockerMachineStack } from "../src/docker-machine";
 
 describe("DockerMachineConfiguration", () => {
   it("Should set docker machine properties", () => {
+    // Given
     const app = new App();
+
+    // When
     const stack = new DockerMachineStack(app, "DockerMachineConfigurationStack", {
       gitlabToken: "your gitlab token",
       env: {
@@ -13,8 +15,9 @@ describe("DockerMachineConfiguration", () => {
         region: "us-east-1",
       },
     });
-    const template = SynthUtils.toCloudFormation(stack);
 
+    // Then
+    const template = Template.fromStack(stack);
     expect(JSON.stringify(template)).toContain('cap_add = [ \\"CAP_NET_ADMIN\\" ]');
     expect(JSON.stringify(template)).toContain('cap_drop = [ \\"CAP_CHOWN\\" ]');
     expect(JSON.stringify(template)).toContain("privileged = false");
@@ -23,8 +26,23 @@ describe("DockerMachineConfiguration", () => {
     expect(JSON.stringify(template)).toContain("IdleCount = 2");
     expect(JSON.stringify(template)).toContain("IdleTime = 3_000");
     expect(JSON.stringify(template)).toContain("MaxBuilds = 1");
+  });
 
-    expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
+  it("Should match snapshot", () => {
+    // Given
+    const app = new App();
+
+    // When
+    const stack = new DockerMachineStack(app, "DockerMachineConfigurationStack", {
+      gitlabToken: "your gitlab token",
+      env: {
+        account: "0",
+        region: "us-east-1",
+      },
+    });
+
+    // Then
+    const template = Template.fromStack(stack);
     expect(template).toMatchSnapshot();
   });
 });

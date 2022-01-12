@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WithCustomVpcStack 1`] = `
+exports[`VpcStack Should match snapshot 1`] = `
 Object {
   "Parameters": Object {
     "AssetParameters15684a15d07860e99d2a8079150ad33dd2cb743677fcd7016dd07345e1b69538ArtifactHash154EE95B": Object {
@@ -33,7 +33,7 @@ Object {
             },
           ],
         },
-        "BucketName": "withcustomvpcstack-runner-cache-0-us-east-1",
+        "BucketName": "vpcstack-runner-cache-0-us-east-1",
         "LifecycleConfiguration": Object {
           "Rules": Array [
             Object {
@@ -281,7 +281,7 @@ token = \\"your gitlab token\\"
                         "Ref": "VpcPrivateSubnet1Subnet536B997A",
                       },
                       "\\",
-  \\"amazonec2-security-group=WithCustomVpcStack-RunnersSecurityGroup\\",
+  \\"amazonec2-security-group=VpcStack-RunnersSecurityGroup\\",
   \\"amazonec2-use-private-address=true\\",
   \\"amazonec2-iam-instance-profile=",
                       Object {
@@ -400,7 +400,7 @@ token = \\"your gitlab token\\"
           Object {
             "Key": "Name",
             "PropagateAtLaunch": true,
-            "Value": "WithCustomVpcStack/ManagerAutoscalingGroup",
+            "Value": "VpcStack/ManagerAutoscalingGroup",
           },
         ],
         "VPCZoneIdentifier": Array [
@@ -465,7 +465,7 @@ token = \\"your gitlab token\\"
               Array [
                 "#!/bin/bash
 yum update -y aws-cfn-bootstrap
-# fingerprint: bd5a1736505bfc14
+# fingerprint: f365346664b11d91
 (
   set +e
   /opt/aws/bin/cfn-init -v --region ",
@@ -739,7 +739,7 @@ yum update -y aws-cfn-bootstrap
     "RunnersSecurityGroup2A22C282": Object {
       "Properties": Object {
         "GroupDescription": "Security group for GitLab Runners.",
-        "GroupName": "WithCustomVpcStack-RunnersSecurityGroup",
+        "GroupName": "VpcStack-RunnersSecurityGroup",
         "SecurityGroupEgress": Array [
           Object {
             "CidrIp": "0.0.0.0/0",
@@ -753,7 +753,7 @@ yum update -y aws-cfn-bootstrap
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "RunnersSecurityGroupfromWithCustomVpcStackManagerSecurityGroup4CA3CD1022D595C67F": Object {
+    "RunnersSecurityGroupfromVpcStackManagerSecurityGroup8627581F22A9818772": Object {
       "Properties": Object {
         "Description": "SSH traffic from Manager",
         "FromPort": 22,
@@ -774,7 +774,7 @@ yum update -y aws-cfn-bootstrap
       },
       "Type": "AWS::EC2::SecurityGroupIngress",
     },
-    "RunnersSecurityGroupfromWithCustomVpcStackManagerSecurityGroup4CA3CD10237651AA7858": Object {
+    "RunnersSecurityGroupfromVpcStackManagerSecurityGroup8627581F2376FB7A60CD": Object {
       "Properties": Object {
         "Description": "SSH traffic from Docker",
         "FromPort": 2376,
@@ -804,7 +804,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc",
+            "Value": "VpcStack/Vpc",
           },
         ],
       },
@@ -815,7 +815,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc",
+            "Value": "VpcStack/Vpc",
           },
         ],
       },
@@ -849,7 +849,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PrivateSubnet1",
+            "Value": "VpcStack/Vpc/PrivateSubnet1",
           },
         ],
         "VpcId": Object {
@@ -874,7 +874,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PrivateSubnet1",
+            "Value": "VpcStack/Vpc/PrivateSubnet1",
           },
         ],
         "VpcId": Object {
@@ -900,7 +900,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PrivateSubnet2",
+            "Value": "VpcStack/Vpc/PrivateSubnet2",
           },
         ],
         "VpcId": Object {
@@ -936,7 +936,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PrivateSubnet2",
+            "Value": "VpcStack/Vpc/PrivateSubnet2",
           },
         ],
         "VpcId": Object {
@@ -973,7 +973,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PrivateSubnet3",
+            "Value": "VpcStack/Vpc/PrivateSubnet3",
           },
         ],
         "VpcId": Object {
@@ -998,7 +998,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PrivateSubnet3",
+            "Value": "VpcStack/Vpc/PrivateSubnet3",
           },
         ],
         "VpcId": Object {
@@ -1028,7 +1028,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet1",
+            "Value": "VpcStack/Vpc/PublicSubnet1",
           },
         ],
       },
@@ -1048,7 +1048,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet1",
+            "Value": "VpcStack/Vpc/PublicSubnet1",
           },
         ],
       },
@@ -1059,7 +1059,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet1",
+            "Value": "VpcStack/Vpc/PublicSubnet1",
           },
         ],
         "VpcId": Object {
@@ -1095,7 +1095,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet1",
+            "Value": "VpcStack/Vpc/PublicSubnet1",
           },
         ],
         "VpcId": Object {
@@ -1125,7 +1125,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet2",
+            "Value": "VpcStack/Vpc/PublicSubnet2",
           },
         ],
       },
@@ -1145,7 +1145,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet2",
+            "Value": "VpcStack/Vpc/PublicSubnet2",
           },
         ],
       },
@@ -1156,7 +1156,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet2",
+            "Value": "VpcStack/Vpc/PublicSubnet2",
           },
         ],
         "VpcId": Object {
@@ -1192,7 +1192,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet2",
+            "Value": "VpcStack/Vpc/PublicSubnet2",
           },
         ],
         "VpcId": Object {
@@ -1222,7 +1222,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet3",
+            "Value": "VpcStack/Vpc/PublicSubnet3",
           },
         ],
       },
@@ -1242,7 +1242,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet3",
+            "Value": "VpcStack/Vpc/PublicSubnet3",
           },
         ],
       },
@@ -1253,7 +1253,7 @@ yum update -y aws-cfn-bootstrap
         "Tags": Array [
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet3",
+            "Value": "VpcStack/Vpc/PublicSubnet3",
           },
         ],
         "VpcId": Object {
@@ -1289,7 +1289,7 @@ yum update -y aws-cfn-bootstrap
           },
           Object {
             "Key": "Name",
-            "Value": "WithCustomVpcStack/Vpc/PublicSubnet3",
+            "Value": "VpcStack/Vpc/PublicSubnet3",
           },
         ],
         "VpcId": Object {

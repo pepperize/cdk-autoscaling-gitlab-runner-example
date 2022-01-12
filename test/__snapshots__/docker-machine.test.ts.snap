@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DockerMachineConfiguration Should set docker machine properties 1`] = `
+exports[`DockerMachineConfiguration Should match snapshot 1`] = `
 Object {
   "Parameters": Object {
     "AssetParameters15684a15d07860e99d2a8079150ad33dd2cb743677fcd7016dd07345e1b69538ArtifactHash154EE95B": Object {

@@ -1,11 +1,13 @@
-import "@aws-cdk/assert/jest";
-import { SynthUtils } from "@aws-cdk/assert";
+import { Capture, Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
 import { InstanceTypeStack } from "../src/instance-type";
 
 describe("InstanceType", () => {
   it("Should set custom instance type", () => {
+    // Given
     const app = new App();
+
+    // When
     const stack = new InstanceTypeStack(app, "InstanceTypeStack", {
       gitlabToken: "your gitlab token",
       env: {
@@ -13,11 +15,31 @@ describe("InstanceType", () => {
         region: "us-east-1",
       },
     });
-    const template = SynthUtils.toCloudFormation(stack);
+
+    // Then
+    const template = Template.fromStack(stack);
 
     expect(JSON.stringify(template)).toContain("instance-type=t3.large");
 
-    expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
+    const capture = new Capture();
+    template.hasResourceProperties("AWS::AutoScaling::LaunchConfiguration", capture);
+    expect(capture.asObject()).toMatchObject({ InstanceType: "t3.small" });
+  });
+
+  it("Should match snapshot", () => {
+    // Given
+    const app = new App();
+
+    // When
+    const stack = new InstanceTypeStack(app, "InstanceTypeStack", {
+      gitlabToken: "your gitlab token",
+      env: {
+        account: "0",
+        region: "us-east-1",
+      },
+    });
+    // Then
+    const template = Template.fromStack(stack);
     expect(template).toMatchSnapshot();
   });
 });
