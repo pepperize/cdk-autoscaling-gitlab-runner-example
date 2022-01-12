@@ -21,12 +21,10 @@ describe("InstanceType", () => {
     expect(stack).toHaveResource("AWS::AutoScaling::AutoScalingGroup");
     expect(template).toMatchSnapshot();
 
-
     const capture = new Capture();
     template.hasResourceProperties("AWS::AutoScaling::AutoScalingGroup", capture);
     expect(capture.asObject()).toEqual({
       BucketName: "your-custom-bucket",
     });
-
   });
 });
