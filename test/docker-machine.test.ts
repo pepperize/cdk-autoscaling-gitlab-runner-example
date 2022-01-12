@@ -26,8 +26,6 @@ describe("DockerMachineConfiguration", () => {
     expect(JSON.stringify(template)).toContain("IdleCount = 2");
     expect(JSON.stringify(template)).toContain("IdleTime = 3_000");
     expect(JSON.stringify(template)).toContain("MaxBuilds = 1");
-
-    expect(template).toMatchSnapshot();
   });
 
   it("Should match snapshot", () => {
