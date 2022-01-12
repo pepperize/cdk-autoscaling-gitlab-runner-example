@@ -1,6 +1,6 @@
-import { ZeroConfigStack } from "../src/zero-config";
 import { Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
+import { ZeroConfigStack } from "../src/zero-config";
 
 describe("ZeroConfigStack", () => {
   it("Should have custom cache bucket", () => {

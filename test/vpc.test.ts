@@ -1,6 +1,6 @@
-import { VpcStack } from "../src/vpc";
 import { Template } from "@aws-cdk/assertions";
 import { App } from "@aws-cdk/core";
+import { VpcStack } from "../src/vpc";
 
 describe("VpcStack", () => {
   it("Should have custom vpc", () => {
