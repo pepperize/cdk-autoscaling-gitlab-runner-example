@@ -1102,10 +1102,10 @@
   resolved "https://registry.yarnpkg.com/@oozcitak/util/-/util-8.3.8.tgz#10f65fe1891fd8cde4957360835e78fd1936bfdd"
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
-"@pepperize/cdk-autoscaling-gitlab-runner@^0.0.132":
-  version "0.0.132"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.132.tgz#c5157b35fcf49aee952fc4dcd5c5b161b872e93e"
-  integrity sha512-OjbWof6cOeJxt2eao/fXLOHhAvny7xokXSZsfIwLyXpELbhQmyBjt6lYjOTbyHN4qhOOnX2xk2VtGvf2Ss0MrQ==
+"@pepperize/cdk-autoscaling-gitlab-runner@^0.0.133":
+  version "0.0.133"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.133.tgz#677ae394702ee304e5d5c2359e329396427dad72"
+  integrity sha512-wh9kwA0PuirKQjduU0kvg7sNlPYmTRWk12BQRKO0xhcvILBGifxdZyKzuU0EMVoglrPVG26iwistQ+46m1rpXg==
   dependencies:
     "@aws-cdk/aws-autoscaling" "^1.134.0"
     "@aws-cdk/aws-ec2" "^1.134.0"
@@ -1619,9 +1619,9 @@ aws-cdk@^1.114.0:
     yargs "^16.2.0"
 
 aws-sdk@^2.848.0, aws-sdk@^2.979.0:
-  version "2.1055.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1055.0.tgz#07beb86650d5a313f7c899807c51b12b5e2f4117"
-  integrity sha512-99drH3mvXakw9we8Rs2cDQmi2pS7PVAC9pvTlB7lHPUwLYftMlko5cFMceZxvTHeyLkdvg98iNIHI3hbnzitoQ==
+  version "2.1056.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1056.0.tgz#a1eb5039e3c780ce484f34ef2e0760cb8cccbf3e"
+  integrity sha512-ocpc4Sy9Lclt+v5bIRuvFq0WwJoLIU26ikdCQn+ke9lIDPC9+hGZbkFK7TiqTu3noEekgIubGHFGEkd/5V0HhQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -2102,9 +2102,9 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.3.186"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.186.tgz#8a2deca58191d4a47ce564d82800c78221a0d064"
-  integrity sha512-QgX306tEq7aUo2CnJlhlYyHgBbuwHdmSxFFg42qR2AvOr8f9tHZA4326OlfsiPrTu0I5JmcER7fGsT2K9vIhVw==
+  version "3.3.187"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.187.tgz#0e164418e6307fb9f34f8233b467535056b2e4a8"
+  integrity sha512-0Y2R9cTV7+ASjPpFkOYCb3cA7BJRM1OVVwJfZCEUa+Nxpq7EK9K9hoz/8FuvQBVQV3hCu+VisEC5iDcM/Dg2qw==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2380,9 +2380,9 @@ duplexer3@^0.1.4:
   integrity sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
 
 electron-to-chromium@^1.4.17:
-  version "1.4.43"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.43.tgz#665c0cd8d5e7cce0ba78d90a514c8c813ca3bdbe"
-  integrity sha512-PO3kEfcxPrti/4STbXvCkNIF4fgWvCKl2508e6UI7KomCDffpIfeBZLXsh5DK/XGsjUw3kwq6WEsi0MJTlGAdg==
+  version "1.4.44"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.44.tgz#8a41923afdd6ef5ddabe001626036ba5d1d64ae6"
+  integrity sha512-tHGWiUUmY7GABK8+DNcr474cnZDTzD8x1736SlDosVH8+/vRJeqfaIBAEHFtMjddz/0T4rKKYsxEc8BwQRdBpw==
 
 emittery@^0.8.1:
   version "0.8.1"
