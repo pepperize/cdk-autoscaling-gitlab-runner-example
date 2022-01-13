@@ -60,7 +60,7 @@
     "@aws-cdk/aws-iam": "^1.114.0",
     "@aws-cdk/aws-s3": "^1.114.0",
     "@aws-cdk/core": "^1.114.0",
-    "@pepperize/cdk-autoscaling-gitlab-runner": "^0.0.132",
+    "@pepperize/cdk-autoscaling-gitlab-runner": "^0.0.133",
     "constructs": "^3.2.27"
   },
   "keywords": [
