@@ -1102,10 +1102,10 @@
   resolved "https://registry.yarnpkg.com/@oozcitak/util/-/util-8.3.8.tgz#10f65fe1891fd8cde4957360835e78fd1936bfdd"
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
-"@pepperize/cdk-autoscaling-gitlab-runner@^0.0.135":
-  version "0.0.135"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.135.tgz#fb3ddd7bf8645faaea891983c7165a078ec29f22"
-  integrity sha512-YnGcb7dPPsImV/zMw92la3ovjLfxKAkrqDoDN7DXZs8SLKtpFxuRH3WDKN4FNG07QUYu5g5FUlS3XBgVuyZkkg==
+"@pepperize/cdk-autoscaling-gitlab-runner@^0.0.136":
+  version "0.0.136"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.136.tgz#dd040d75b6558da17858e56bc5d94efc5fe8b83f"
+  integrity sha512-AaLsJHUQnpOPCC7iwREXEJnlyPk6x57kh4CNd4MmrhWTkUHJ60QHFVv8VTR5n4cQP8f64g7cppVij78hwLlR4g==
   dependencies:
     "@aws-cdk/aws-autoscaling" "^1.134.0"
     "@aws-cdk/aws-ec2" "^1.134.0"
@@ -1416,9 +1416,9 @@ ajv@^6.10.0, ajv@^6.12.4:
     uri-js "^4.2.2"
 
 ajv@^8.0.1:
-  version "8.8.2"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
-  integrity sha512-x9VuX+R/jcFj1DHo/fCp99esgGDWiHENrKxaCENuCxpoMCmAt/COCGVDwA7kleEpEzJjDnvh3yGoOuLu0Dtllw==
+  version "8.9.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.9.0.tgz#738019146638824dea25edcf299dcba1b0e7eb18"
+  integrity sha512-qOKJyNj/h+OWx7s5DePL6Zu1KeM9jPZhwBqs+7DzP6bGOvqzVCSf0xueYmVuaC/oQ/VtS2zLMLHdQFbkka+XDQ==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -2102,9 +2102,9 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^3.2.27, constructs@^3.3.69:
-  version "3.3.188"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.188.tgz#69da61c5ba2c570ab8b85026a74ff96717b34d9d"
-  integrity sha512-pwp9ernak8Ejxsms6q8QrqFVbXp3n/Fw6oFvW/htGjN+y/oXSTbAqwGk5+oEouLrSzXDax8IMdNDZf1GJ7oZfg==
+  version "3.3.190"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.3.190.tgz#ed9a2038e3511436b09ea1134c4681be905c74bf"
+  integrity sha512-eyQ/UqDypdn4c+15I8bgboMT2cgxL+NNZlrt8Op7TlnDZxWpJDIynSXSht9ku/OQ+HjIk+/1fw6tawl7YOypcQ==
 
 conventional-changelog-config-spec@^2.1.0:
   version "2.1.0"
@@ -2746,9 +2746,9 @@ eslint-visitor-keys@^2.0.0:
   integrity sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==
 
 eslint-visitor-keys@^3.0.0, eslint-visitor-keys@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.1.0.tgz#eee4acea891814cda67a7d8812d9647dd0179af2"
-  integrity sha512-yWJFpu4DtjsWKkt5GeNBBuZMlNcYVs6vRCLoCVEJrTjaSB6LC98gFipNK/erM2Heg/E8mIK+hXG/pJMLK+eRZA==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.2.0.tgz#6fbb166a6798ee5991358bc2daa1ba76cc1254a1"
+  integrity sha512-IOzT0X126zn7ALX0dwFiUQEdsfzrm4+ISsQS8nukaJXwEyYKRSnEIIDULYg1mCtGp7UUXgfGl7BIolXREQK+XQ==
 
 eslint@^8:
   version "8.6.0"
