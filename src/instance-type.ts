@@ -1,6 +1,7 @@
-import { InstanceClass, InstanceSize, InstanceType } from "@aws-cdk/aws-ec2";
-import { Construct, Stack } from "@aws-cdk/core";
 import { GitlabRunnerAutoscaling } from "@pepperize/cdk-autoscaling-gitlab-runner";
+import { Stack } from "aws-cdk-lib";
+import { InstanceClass, InstanceSize, InstanceType } from "aws-cdk-lib/aws-ec2";
+import { Construct } from "constructs";
 import { RunnerStackProps } from "./runner-stack-props";
 
 export interface WithCustomInstanceTypeProps extends RunnerStackProps {}

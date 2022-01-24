@@ -1,4 +1,4 @@
-import { App } from "@aws-cdk/core";
+import { App } from "aws-cdk-lib";
 import { CacheBucketStack } from "./cache";
 import { DockerMachineStack } from "./docker-machine";
 import { InstanceTypeStack } from "./instance-type";
@@ -11,8 +11,8 @@ import { ZeroConfigStack } from "./zero-config";
 
 // for development, use account/region from cdk cli
 const devEnv = {
-  account: process.env.CDK_DEFAULT_ACCOUNT || "069388652156",
-  region: process.env.CDK_DEFAULT_REGION || "us-east-1",
+  account: "069388652156", // process.env.CDK_DEFAULT_ACCOUNT || "069388652156"
+  region: "us-east-1", // process.env.CDK_DEFAULT_REGION || "us-east-1"
 };
 
 const gitlabToken = process.env.GITLAB_TOKEN!;

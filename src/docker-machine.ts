@@ -1,5 +1,6 @@
-import { Construct, Stack } from "@aws-cdk/core";
 import { GitlabRunnerAutoscaling } from "@pepperize/cdk-autoscaling-gitlab-runner";
+import { Stack } from "aws-cdk-lib";
+import { Construct } from "constructs";
 import { RunnerStackProps } from "./runner-stack-props";
 
 export interface WithCustomDockerMachineConfigurationProps extends RunnerStackProps {}
