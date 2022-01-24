@@ -1,11 +1,8 @@
-const { awscdk, javascript } = require("projen");
-const project = new awscdk.AwsCdkTypeScriptApp({
+const { AwsCdkTypeScriptApp } = require("@pepperize/projen-awscdk-app-ts");
+const project = new AwsCdkTypeScriptApp({
   authorName: "Ivan Ovdiienko",
   authorAddress: "ivan.ovdiienko@pepperize.com",
-  authorOrganization: true,
-  copyrightOwner: "Pepperize UG (haftungsbeschränkt)",
-  license: "MIT",
-  cdkVersion: "1.114.0",
+  cdkVersion: "2.8.0",
   defaultReleaseBranch: "main",
   name: "@pepperize/cdk-autoscaling-gitlab-runner-example",
   keywords: [
@@ -24,33 +21,8 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   ],
   repositoryUrl: "https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example.git",
 
-  cdkDependencies: ["@aws-cdk/aws-s3", "@aws-cdk/aws-ec2", "@aws-cdk/aws-iam", "@aws-cdk/assertions"],
-  deps: ["@pepperize/cdk-autoscaling-gitlab-runner"],
-
-  autoApproveUpgrades: true,
-  autoApproveOptions: { allowedUsernames: ["pflorek"], secret: "GITHUB_TOKEN" },
-  depsUpgradeOptions: {
-    workflowOptions: {
-      secret: "PROJEN_GITHUB_TOKEN",
-    },
-  },
-
-  npmAccess: javascript.NpmAccess.PUBLIC,
-  packageManager: javascript.NodePackageManager.YARN,
-
-  eslint: true,
-  prettier: true,
-  prettierOptions: {
-    settings: {
-      printWidth: 120,
-    },
-  },
-
-  gitignore: [".idea"],
+  deps: ["@pepperize/cdk-autoscaling-gitlab-runner@^0.0.144"],
+  devDeps: ["@pepperize/projen-awscdk-app-ts"],
 });
-
-project.setScript("format", "prettier --write src/**/*.ts test/**/*.ts .projenrc.js README.md");
-
-project.jest.addTestMatch("**/?(*.)@(spec|test).[tj]s?(x)");
 
 project.synth();

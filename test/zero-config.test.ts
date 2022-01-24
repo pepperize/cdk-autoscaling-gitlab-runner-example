@@ -1,12 +1,12 @@
-import { Template } from "@aws-cdk/assertions";
-import { App } from "@aws-cdk/core";
+import { App } from "aws-cdk-lib";
+import { Template } from "aws-cdk-lib/assertions";
 import { ZeroConfigStack } from "../src/zero-config";
 
 describe("ZeroConfigStack", () => {
   it("Should have custom cache bucket", () => {
     // Given
-    const app = new App();
 
+    const app = new App();
     // When
     const stack = new ZeroConfigStack(app, "ZeroConfigStack", {
       gitlabToken: "your gitlab token",

@@ -1,5 +1,5 @@
-import { Capture, Template } from "@aws-cdk/assertions";
-import { App } from "@aws-cdk/core";
+import { App } from "aws-cdk-lib";
+import { Capture, Template } from "aws-cdk-lib/assertions";
 import { InstanceTypeStack } from "../src/instance-type";
 
 describe("InstanceType", () => {

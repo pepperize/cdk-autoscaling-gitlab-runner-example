@@ -1,5 +1,5 @@
-import { Template } from "@aws-cdk/assertions";
-import { App } from "@aws-cdk/core";
+import { App } from "aws-cdk-lib";
+import { Template } from "aws-cdk-lib/assertions";
 import { DockerMachineStack } from "../src/docker-machine";
 
 describe("DockerMachineConfiguration", () => {
