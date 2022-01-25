@@ -691,9 +691,9 @@
     snake-case "^3.0.4"
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.8.tgz#0c4f5e410d2c28d5d11ac1bb5c3a9376ebfa760c"
-  integrity sha512-jbIkHdHH5CIyKE8KARv/xqngk1S6Yu9eLaILquoSGdP5Uj+4DIPgoaehMtIt30i2jIH1zPcR43voxyL3Jx/PcA==
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.9.tgz#239684ea35de1e09e3827f42366f828a75a0047f"
+  integrity sha512-542XasTgTiqy8Km3A5pzs6fOLmvQFWntXaecT+3Z92nks85HseSaTzoWKKD/5i5xbMy5MS0VQ0YdlXKO7o4sfA==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -1745,9 +1745,9 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10.0.5:
-  version "10.0.43"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.43.tgz#62f46670ae245bb5c3a302e1e179ddb6199ab925"
-  integrity sha512-2DuvLI/v5Uerk5N46kqT52sH+9G/US1iO2C2WHfLnHOh4VXb+lAVSzfYR+my/UUwczW0KSRC5QAUt1bcPIbLzQ==
+  version "10.0.44"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.44.tgz#eabcdd19f47a995295fc42e1b6a99142ac95db5c"
+  integrity sha512-DNcxbAEtJHCUTwDijBlRDfMBAQUdfM+9Yprx3lJcYpOL9+DfuORB9fK9nKCQ3igmN/kv+I1hVg2Lqe+aVl/W5A==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
