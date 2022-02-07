@@ -691,9 +691,9 @@
     snake-case "^3.0.4"
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.23.tgz#d1a26c64e471fe987591bc519f53ee2fe0d78b84"
-  integrity sha512-mM1ACXvM8mijRSDj/dHOmCkkLH7KDnDRsd42IGvkoheBC5m0pM6pFJPzO5gSDE6Gg29tgMQV8Uf0epJP9eTxlw==
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.24.tgz#4ae1eb6a9a126939d9dfb9e883a4fd7d5bba300a"
+  integrity sha512-/cmU93gLBiA1GqPhdCbiXxZEWwA/lzStt0S8jjxq3tVXu6V0Ew0eqkEmCYIT+10i0DNNUnefEPMu9cqBHjuSmw==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
