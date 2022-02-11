@@ -17,7 +17,13 @@ export class VpcStack extends Stack {
     });
 
     new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
+      runners: [
+        {
+          configuration: {
+            token: gitlabToken,
+          },
+        },
+      ],
       network: { vpc: vpc },
     });
   }

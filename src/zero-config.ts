@@ -12,7 +12,13 @@ export class ZeroConfigStack extends Stack {
     const { gitlabToken } = props;
 
     new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
+      runners: [
+        {
+          configuration: {
+            token: gitlabToken,
+          },
+        },
+      ],
     });
   }
 }

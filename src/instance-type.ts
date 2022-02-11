@@ -17,9 +17,14 @@ export class InstanceTypeStack extends Stack {
       manager: {
         instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.SMALL),
       },
-      runners: {
-        instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.LARGE),
-      },
+      runners: [
+        {
+          instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.LARGE),
+          configuration: {
+            token: "<auth token>",
+          },
+        },
+      ],
     });
   }
 }

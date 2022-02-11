@@ -18,7 +18,13 @@ export class CacheBucketStack extends Stack {
     });
 
     new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
+      runners: [
+        {
+          configuration: {
+            token: gitlabToken,
+          },
+        },
+      ],
       cache: { bucket: cache },
     });
   }

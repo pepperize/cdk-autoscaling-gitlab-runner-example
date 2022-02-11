@@ -12,21 +12,23 @@ export class DockerMachineStack extends Stack {
     const { gitlabToken } = props;
 
     new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
-      runners: {
-        docker: {
-          capAdd: ["CAP_NET_ADMIN"],
-          capDrop: ["CAP_CHOWN"],
-          privileged: false,
-          pullPolicy: "never",
-          waitForServicesTimeout: 600,
+      runners: [
+        {
+          configuration: {
+            token: gitlabToken,
+            environment: [], // Reset the OverlayFS driver for every project
+            docker: {
+              capAdd: [], // Remove the CAP_SYS_ADMIN
+              privileged: false, // Run unprivileged
+            },
+            machine: {
+              idleCount: 2, // Number of idle machine
+              idleTime: 3000, // Waiting time in idle state
+              maxBuilds: 1, // Max builds before instance is removed
+            },
+          },
         },
-        machine: {
-          idleCount: 2,
-          idleTime: 3000,
-          maxBuilds: 1,
-        },
-      },
+      ],
     });
   }
 }

@@ -60,10 +60,14 @@ export class RunnersRoleStack extends Stack {
     });
 
     const runner = new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
-      runners: {
-        role: role,
-      },
+      runners: [
+        {
+          role: role,
+          configuration: {
+            token: gitlabToken,
+          },
+        },
+      ],
     });
 
     /**
@@ -76,6 +80,6 @@ export class RunnersRoleStack extends Stack {
       ],
     });
 
-    runner.runners.instanceProfile.roles.push(roleForS3FullAccess.roleName);
+    runner.runners[0].instanceProfile.roles.push(roleForS3FullAccess.roleName);
   }
 }

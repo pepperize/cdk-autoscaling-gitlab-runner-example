@@ -86,7 +86,7 @@
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.ts?(x)",
       "<rootDir>/(test|src)/**/?(*.)+(spec|test).ts?(x)",
-      "<rootDir>/**/?(*.)@(spec|test).[tj]s?(x)"
+      "**/?(*.)@(spec|test).[tj]s?(x)"
     ],
     "clearMocks": true,
     "collectCoverage": true,

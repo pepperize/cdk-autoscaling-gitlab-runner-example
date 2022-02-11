@@ -23,15 +23,17 @@ export class MachineImageStack extends Stack {
     };
 
     new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
       manager: {
-        // Amazon Linux, CentOS, ...
         machineImage: MachineImage.genericLinux(managerAmiMap),
       },
-      runners: {
-        // Any provisioner https://gitlab.com/gitlab-org/ci-cd/docker-machine/-/tree/main/libmachine/provision
-        machineImage: MachineImage.genericLinux(runnerAmiMap),
-      },
+      runners: [
+        {
+          machineImage: MachineImage.genericLinux(runnerAmiMap),
+          configuration: {
+            token: gitlabToken,
+          },
+        },
+      ],
     });
   }
 }

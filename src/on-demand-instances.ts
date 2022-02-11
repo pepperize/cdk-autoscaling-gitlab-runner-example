@@ -12,14 +12,19 @@ export class OnDemandInstancesStack extends Stack {
     const { gitlabToken } = props;
 
     new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
-      runners: {
-        machine: {
-          machineOptions: {
-            requestSpotInstance: false,
+      runners: [
+        {
+          configuration: {
+            token: gitlabToken,
+            machine: {
+              machineOptions: {
+                requestSpotInstance: false,
+                spotPrice: 0.5,
+              },
+            },
           },
         },
-      },
+      ],
     });
   }
 }
