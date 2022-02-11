@@ -65,6 +65,7 @@ export class RunnersRoleStack extends Stack {
           role: role,
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-with-custom-role",
           },
         },
       ],

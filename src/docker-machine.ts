@@ -16,6 +16,7 @@ export class DockerMachineStack extends Stack {
         {
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-with-custom-docker-config",
             environment: [], // Reset the OverlayFS driver for every project
             docker: {
               capAdd: [], // Remove the CAP_SYS_ADMIN

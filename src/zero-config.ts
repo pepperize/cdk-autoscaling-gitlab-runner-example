@@ -16,6 +16,7 @@ export class ZeroConfigStack extends Stack {
         {
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-zero-config",
           },
         },
       ],

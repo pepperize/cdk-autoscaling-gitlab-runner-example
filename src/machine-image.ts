@@ -31,6 +31,7 @@ export class MachineImageStack extends Stack {
           machineImage: MachineImage.genericLinux(runnerAmiMap),
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-with-custom-machine-image",
           },
         },
       ],

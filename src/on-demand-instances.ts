@@ -16,6 +16,7 @@ export class OnDemandInstancesStack extends Stack {
         {
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-with-on-demand-instances",
             machine: {
               machineOptions: {
                 requestSpotInstance: false,

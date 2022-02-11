@@ -21,6 +21,7 @@ export class VpcStack extends Stack {
         {
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-with-custom-vpc",
           },
         },
       ],

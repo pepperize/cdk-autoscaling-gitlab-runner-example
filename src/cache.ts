@@ -22,6 +22,7 @@ export class CacheBucketStack extends Stack {
         {
           configuration: {
             token: gitlabToken,
+            name: "gitlab-runner-with-custom-cache-settings",
           },
         },
       ],

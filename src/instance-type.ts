@@ -21,7 +21,8 @@ export class InstanceTypeStack extends Stack {
         {
           instanceType: InstanceType.of(InstanceClass.T3, InstanceSize.LARGE),
           configuration: {
-            token: "<auth token>",
+            token: gitlabToken,
+            name: "gitlab-runner-with-custom-instance-type",
           },
         },
       ],
