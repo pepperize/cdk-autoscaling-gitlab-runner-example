@@ -3,6 +3,12 @@ import { Stack, StackProps } from "aws-cdk-lib";
 import { PolicyDocument, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
 
+/**
+ * Each runner defines one `[[runners]]` section in the configuration file.
+ * @see https://docs.gitlab.com/runner/configuration/
+ * Use Specific runners when you want to use runners for specific projects.
+ * @see https://docs.gitlab.com/ee/ci/runners/runners_scope.html#specific-runners
+ */
 export class MultipleRunnersStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps) {
     super(scope, id, props);
