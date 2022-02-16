@@ -3,9 +3,9 @@ import {
   GitlabRunnerAutoscalingJobRunnerProps,
 } from "@pepperize/cdk-autoscaling-gitlab-runner";
 import { Stack, StackProps } from "aws-cdk-lib";
+import { InstanceClass, InstanceSize, InstanceType } from "aws-cdk-lib/aws-ec2";
 import { PolicyDocument, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
-import { InstanceClass, InstanceSize, InstanceType } from "aws-cdk-lib/aws-ec2";
 
 /**
  * Each runner defines one `[[runners]]` section in the configuration file.
@@ -59,7 +59,7 @@ export class MultipleRunnersStack extends Stack {
      * Unprotected runner t3.medium unprivileged work hours 10-18:00, 30 min idle time, teardown after 20 jobs, 1 hot standby
      */
     const runner1: GitlabRunnerAutoscalingJobRunnerProps = {
-      // unprotected runner ?
+      // should be set to **unprotected** at gitlab web interface
       configuration: {
         token: "gitlab-token1",
         name: "gitlab-runner1",
@@ -85,7 +85,7 @@ export class MultipleRunnersStack extends Stack {
      * Protected runner t3.small unprivileged, work hours 13-17:00, 15 min idle time, teardown after 5 jobs
      */
     const runner2: GitlabRunnerAutoscalingJobRunnerProps = {
-      // protected runner ?
+      // should be set to **protected** at gitlab web interface
       configuration: {
         token: "gitlab-token2",
         name: "gitlab-runner2",
@@ -111,7 +111,7 @@ export class MultipleRunnersStack extends Stack {
      * Protected runner t3.xlarge, privileged, no hot standby, teardown after 1 job
      */
     const runner3: GitlabRunnerAutoscalingJobRunnerProps = {
-      // protected runner ?
+      // should be set to **protected** at gitlab web interface
       configuration: {
         token: "gitlab-token3",
         name: "gitlab-runner3",
