@@ -9,7 +9,7 @@ describe("InstanceType", () => {
 
     // When
     const stack = new InstanceTypeStack(app, "InstanceTypeStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",
@@ -32,7 +32,7 @@ describe("InstanceType", () => {
 
     // When
     const stack = new InstanceTypeStack(app, "InstanceTypeStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",

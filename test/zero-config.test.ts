@@ -5,11 +5,11 @@ import { ZeroConfigStack } from "../src/zero-config";
 describe("ZeroConfigStack", () => {
   it("Should have custom cache bucket", () => {
     // Given
-
     const app = new App();
+
     // When
     const stack = new ZeroConfigStack(app, "ZeroConfigStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",
@@ -29,7 +29,7 @@ describe("ZeroConfigStack", () => {
 
     // When
     const stack = new ZeroConfigStack(app, "ZeroConfigStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",

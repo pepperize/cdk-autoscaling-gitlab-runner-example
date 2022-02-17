@@ -9,7 +9,7 @@ describe("DockerMachineConfiguration", () => {
 
     // When
     const stack = new DockerMachineStack(app, "DockerMachineConfigurationStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",
@@ -34,7 +34,7 @@ describe("DockerMachineConfiguration", () => {
 
     // When
     const stack = new DockerMachineStack(app, "DockerMachineConfigurationStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",

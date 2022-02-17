@@ -103,7 +103,15 @@
     },
     {
       "name": "@pepperize/cdk-autoscaling-gitlab-runner",
-      "version": "^0.0.144",
+      "version": "^0.1.1",
+      "type": "runtime"
+    },
+    {
+      "name": "@pepperize/cdk-private-bucket",
+      "type": "runtime"
+    },
+    {
+      "name": "@pepperize/cdk-security-group",
       "type": "runtime"
     },
     {

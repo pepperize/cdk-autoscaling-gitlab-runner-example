@@ -10,6 +10,58 @@ Object {
     },
   },
   "Resources": Object {
+    "AWS679f53fac002430cb0da5b7982bd22872D164C4C": Object {
+      "DependsOn": Array [
+        "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+      ],
+      "Properties": Object {
+        "Code": Object {
+          "S3Bucket": "cdk-hnb659fds-assets-123456789012-us-east-1",
+          "S3Key": "4a575666d1c2c6412590d2a56f328e040a81ad1ef59aecee31ae9b393d05f659.zip",
+        },
+        "Handler": "index.handler",
+        "Role": Object {
+          "Fn::GetAtt": Array [
+            "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+            "Arn",
+          ],
+        },
+        "Runtime": "nodejs12.x",
+        "Timeout": 120,
+      },
+      "Type": "AWS::Lambda::Function",
+    },
+    "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2": Object {
+      "Properties": Object {
+        "AssumeRolePolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": Object {
+                "Service": "lambda.amazonaws.com",
+              },
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "ManagedPolicyArns": Array [
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+              ],
+            ],
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Role",
+    },
     "CacheBucket41D9D0B0": Object {
       "DeletionPolicy": "Delete",
       "Properties": Object {
@@ -17,7 +69,7 @@ Object {
           "ServerSideEncryptionConfiguration": Array [
             Object {
               "ServerSideEncryptionByDefault": Object {
-                "SSEAlgorithm": "aws:kms",
+                "SSEAlgorithm": "AES256",
               },
             },
           ],
@@ -73,6 +125,40 @@ Object {
         },
         "PolicyDocument": Object {
           "Statement": Array [
+            Object {
+              "Action": "s3:*",
+              "Condition": Object {
+                "Bool": Object {
+                  "aws:SecureTransport": "false",
+                },
+              },
+              "Effect": "Deny",
+              "Principal": Object {
+                "AWS": "*",
+              },
+              "Resource": Array [
+                Object {
+                  "Fn::GetAtt": Array [
+                    "CacheBucket41D9D0B0",
+                    "Arn",
+                  ],
+                },
+                Object {
+                  "Fn::Join": Array [
+                    "",
+                    Array [
+                      Object {
+                        "Fn::GetAtt": Array [
+                          "CacheBucket41D9D0B0",
+                          "Arn",
+                        ],
+                      },
+                      "/*",
+                    ],
+                  ],
+                },
+              ],
+            },
             Object {
               "Action": Array [
                 "s3:GetBucket*",
@@ -195,23 +281,20 @@ log_format = \\"runner\\"
 log_level = \\"info\\"
 
 [[runners]]
-name = \\"gitlab-runner\\"
 url = \\"https://gitlab.com\\"
 limit = 10
 output_limit = 52_428_800
 executor = \\"docker+machine\\"
 environment = [ \\"DOCKER_DRIVER=overlay2\\", \\"DOCKER_TLS_CERTDIR=/certs\\" ]
-token = \\"your gitlab token\\"
-
-  [runners.docker]
-  tls_verify = false
-  image = \\"docker:19.03.5\\"
-  privileged = true
-  cap_add = [ \\"CAP_SYS_ADMIN\\" ]
-  wait_for_services_timeout = 300
-  disable_cache = false
-  volumes = [ \\"/certs/client\\", \\"/cache\\" ]
-  shm_size = 0
+name = \\"gitlab-runner-with-custom-machine-image\\"
+token = \\"",
+                      Object {
+                        "Fn::GetAtt": Array [
+                          "TokenCB33349F",
+                          "Value",
+                        ],
+                      },
+                      "\\"
 
   [runners.machine]
   IdleCount = 0
@@ -236,11 +319,18 @@ token = \\"your gitlab token\\"
                         "Ref": "VpcPrivateSubnet1Subnet536B997A",
                       },
                       "\\",
-  \\"amazonec2-security-group=MachineImageStack-RunnersSecurityGroup\\",
+  \\"amazonec2-security-group=",
+                      Object {
+                        "Fn::GetAtt": Array [
+                          "RunnersSecurityGroupDescribeSGCustomResource95F930E3",
+                          "SecurityGroups.0.GroupName",
+                        ],
+                      },
+                      "\\",
   \\"amazonec2-use-private-address=true\\",
   \\"amazonec2-iam-instance-profile=",
                       Object {
-                        "Ref": "RunnersInstanceProfile",
+                        "Ref": "RunnersInstanceProfileForGitlabRunnerWithCustomMachineImage",
                       },
                       "\\"
 ]
@@ -255,18 +345,28 @@ token = \\"your gitlab token\\"
   Type = \\"s3\\"
   Shared = true
 
-    [runners.cache.s3]
-    ServerAddress = \\"s3.",
+    [runners.cache.S3]
+    serverAddress = \\"s3.",
                       Object {
                         "Ref": "AWS::URLSuffix",
                       },
                       "\\"
-    BucketName = \\"",
+    bucketName = \\"",
                       Object {
                         "Ref": "CacheBucket41D9D0B0",
                       },
                       "\\"
-    BucketLocation = \\"us-east-1\\"
+    bucketLocation = \\"us-east-1\\"
+
+  [runners.docker]
+  tls_verify = false
+  image = \\"docker:19.03.5\\"
+  privileged = true
+  cap_add = [ \\"CAP_SYS_ADMIN\\" ]
+  wait_for_services_timeout = 300
+  disable_cache = false
+  volumes = [ \\"/certs/client\\", \\"/cache\\" ]
+  shm_size = 0
 ",
                     ],
                   ],
@@ -418,7 +518,7 @@ token = \\"your gitlab token\\"
               Array [
                 "#!/bin/bash
 yum update -y aws-cfn-bootstrap
-# fingerprint: 269a8024e38d696d
+# fingerprint: 5873223630e5bdd3
 (
   set +e
   /opt/aws/bin/cfn-init -v --region ",
@@ -463,7 +563,18 @@ yum update -y aws-cfn-bootstrap
           "Version": "2012-10-17",
         },
         "ManagedPolicyArns": Array [
-          "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM",
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonSSMManagedInstanceCore",
+              ],
+            ],
+          },
         ],
         "Policies": Array [
           Object {
@@ -549,11 +660,7 @@ yum update -y aws-cfn-bootstrap
                         "Fn::Join": Array [
                           "",
                           Array [
-                            "arn:",
-                            Object {
-                              "Ref": "AWS::Partition",
-                            },
-                            ":ec2:us-east-1:123456789012:vpc/",
+                            "arn:aws:ec2:us-east-1:123456789012:vpc/",
                             Object {
                               "Ref": "Vpc8378EB38",
                             },
@@ -571,10 +678,10 @@ yum update -y aws-cfn-bootstrap
                 Object {
                   "Action": "ec2:RunInstances",
                   "Condition": Object {
-                    "StringEquals": Object {
-                      "ec2:InstanceProfile": Object {
-                        "Ref": "RunnersInstanceProfile",
-                      },
+                    "ForAllValues:StringEquals": Object {
+                      "aws:TagKeys": Array [
+                        "InstanceProfile",
+                      ],
                       "ec2:InstanceType": Array [
                         "t3.micro",
                       ],
@@ -600,13 +707,15 @@ yum update -y aws-cfn-bootstrap
                 },
                 Object {
                   "Action": "iam:PassRole",
-                  "Effect": "Allow",
-                  "Resource": Object {
-                    "Fn::GetAtt": Array [
-                      "RunnersRole1AC39F4E",
-                      "Arn",
-                    ],
+                  "Condition": Object {
+                    "ForAllValues:StringEquals": Object {
+                      "aws:TagKeys": Array [
+                        "RunnersRole",
+                      ],
+                    },
                   },
+                  "Effect": "Allow",
+                  "Resource": "*",
                 },
               ],
               "Version": "2012-10-17",
@@ -659,17 +768,77 @@ yum update -y aws-cfn-bootstrap
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "RunnersInstanceProfile": Object {
+    "ManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy230AD78C": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "ec2:DescribeSecurityGroups",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "ManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy230AD78C",
+        "Roles": Array [
+          Object {
+            "Ref": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
+    },
+    "ManagerSecurityGroupDescribeSGCustomResourceD39684D4": Object {
+      "DeletionPolicy": "Delete",
+      "DependsOn": Array [
+        "ManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy230AD78C",
+      ],
+      "Properties": Object {
+        "Create": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "{\\"service\\":\\"EC2\\",\\"action\\":\\"describeSecurityGroups\\",\\"parameters\\":{\\"GroupIds\\":[\\"",
+              Object {
+                "Fn::GetAtt": Array [
+                  "ManagerSecurityGroup288FD437",
+                  "GroupId",
+                ],
+              },
+              "\\"]},\\"physicalResourceId\\":{\\"id\\":\\"",
+              Object {
+                "Fn::GetAtt": Array [
+                  "ManagerSecurityGroup288FD437",
+                  "GroupId",
+                ],
+              },
+              "\\"}}",
+            ],
+          ],
+        },
+        "InstallLatestAwsSdk": true,
+        "ServiceToken": Object {
+          "Fn::GetAtt": Array [
+            "AWS679f53fac002430cb0da5b7982bd22872D164C4C",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "Custom::AWS",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "RunnersInstanceProfileForGitlabRunnerWithCustomMachineImage": Object {
       "Properties": Object {
         "Roles": Array [
           Object {
-            "Ref": "RunnersRole1AC39F4E",
+            "Ref": "RunnersRoleForGitlabRunnerWithCustomMachineImage6B6B6356",
           },
         ],
       },
       "Type": "AWS::IAM::InstanceProfile",
     },
-    "RunnersRole1AC39F4E": Object {
+    "RunnersRoleForGitlabRunnerWithCustomMachineImage6B6B6356": Object {
       "Properties": Object {
         "AssumeRolePolicyDocument": Object {
           "Statement": Array [
@@ -684,7 +853,24 @@ yum update -y aws-cfn-bootstrap
           "Version": "2012-10-17",
         },
         "ManagedPolicyArns": Array [
-          "arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforSSM",
+          Object {
+            "Fn::Join": Array [
+              "",
+              Array [
+                "arn:",
+                Object {
+                  "Ref": "AWS::Partition",
+                },
+                ":iam::aws:policy/AmazonEC2RoleforSSM",
+              ],
+            ],
+          },
+        ],
+        "Tags": Array [
+          Object {
+            "Key": "RunnersRole",
+            "Value": "RunnersRole",
+          },
         ],
       },
       "Type": "AWS::IAM::Role",
@@ -705,6 +891,66 @@ yum update -y aws-cfn-bootstrap
         },
       },
       "Type": "AWS::EC2::SecurityGroup",
+    },
+    "RunnersSecurityGroupDescribeSGCustomResource95F930E3": Object {
+      "DeletionPolicy": "Delete",
+      "DependsOn": Array [
+        "RunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyE86A4807",
+      ],
+      "Properties": Object {
+        "Create": Object {
+          "Fn::Join": Array [
+            "",
+            Array [
+              "{\\"service\\":\\"EC2\\",\\"action\\":\\"describeSecurityGroups\\",\\"parameters\\":{\\"GroupIds\\":[\\"",
+              Object {
+                "Fn::GetAtt": Array [
+                  "RunnersSecurityGroup2A22C282",
+                  "GroupId",
+                ],
+              },
+              "\\"]},\\"physicalResourceId\\":{\\"id\\":\\"",
+              Object {
+                "Fn::GetAtt": Array [
+                  "RunnersSecurityGroup2A22C282",
+                  "GroupId",
+                ],
+              },
+              "\\"}}",
+            ],
+          ],
+        },
+        "InstallLatestAwsSdk": true,
+        "ServiceToken": Object {
+          "Fn::GetAtt": Array [
+            "AWS679f53fac002430cb0da5b7982bd22872D164C4C",
+            "Arn",
+          ],
+        },
+      },
+      "Type": "Custom::AWS",
+      "UpdateReplacePolicy": "Delete",
+    },
+    "RunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyE86A4807": Object {
+      "Properties": Object {
+        "PolicyDocument": Object {
+          "Statement": Array [
+            Object {
+              "Action": "ec2:DescribeSecurityGroups",
+              "Effect": "Allow",
+              "Resource": "*",
+            },
+          ],
+          "Version": "2012-10-17",
+        },
+        "PolicyName": "RunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyE86A4807",
+        "Roles": Array [
+          Object {
+            "Ref": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
+          },
+        ],
+      },
+      "Type": "AWS::IAM::Policy",
     },
     "RunnersSecurityGroupfromMachineImageStackManagerSecurityGroup16384EAB2219A249C7": Object {
       "Properties": Object {
@@ -747,6 +993,15 @@ yum update -y aws-cfn-bootstrap
         "ToPort": 2376,
       },
       "Type": "AWS::EC2::SecurityGroupIngress",
+    },
+    "TokenCB33349F": Object {
+      "Properties": Object {
+        "Name": "/gitlab-runner/token",
+        "Tier": "Standard",
+        "Type": "SecureString",
+        "Value": "token",
+      },
+      "Type": "AWS::SSM::Parameter",
     },
     "Vpc8378EB38": Object {
       "Properties": Object {

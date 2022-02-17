@@ -7,7 +7,7 @@ describe("WithCustomCacheBucketStack", () => {
     // Given
     const app = new App();
     const stack = new CacheBucketStack(app, "WithCustomCacheBucketStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",
@@ -29,7 +29,7 @@ describe("WithCustomCacheBucketStack", () => {
     // Given
     const app = new App();
     const stack = new CacheBucketStack(app, "WithCustomCacheBucketStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",

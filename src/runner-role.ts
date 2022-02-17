@@ -1,6 +1,7 @@
 import { GitlabRunnerAutoscaling } from "@pepperize/cdk-autoscaling-gitlab-runner";
 import { Stack } from "aws-cdk-lib";
 import { ManagedPolicy, PolicyDocument, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
+import { ParameterTier, ParameterType, StringParameter } from "aws-cdk-lib/aws-ssm";
 import { Construct } from "constructs";
 import { RunnerStackProps } from "./runner-stack-props";
 
@@ -11,6 +12,13 @@ export class RunnersRoleStack extends Stack {
     super(scope, id, props);
 
     const { gitlabToken } = props;
+
+    const token = new StringParameter(this, "Token", {
+      parameterName: "/gitlab-runner/token",
+      stringValue: gitlabToken,
+      type: ParameterType.SECURE_STRING,
+      tier: ParameterTier.STANDARD,
+    });
 
     /**
      * Set role (override default runners role)
@@ -60,10 +68,15 @@ export class RunnersRoleStack extends Stack {
     });
 
     const runner = new GitlabRunnerAutoscaling(this, "Runner", {
-      gitlabToken: gitlabToken,
-      runners: {
-        role: role,
-      },
+      runners: [
+        {
+          role: role,
+          token: token,
+          configuration: {
+            name: "gitlab-runner-with-custom-role",
+          },
+        },
+      ],
     });
 
     /**
@@ -76,6 +89,6 @@ export class RunnersRoleStack extends Stack {
       ],
     });
 
-    runner.runners.instanceProfile.roles.push(roleForS3FullAccess.roleName);
+    runner.runners[0].instanceProfile.roles.push(roleForS3FullAccess.roleName);
   }
 }

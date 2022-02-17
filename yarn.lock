@@ -691,15 +691,25 @@
   resolved "https://registry.yarnpkg.com/@oozcitak/util/-/util-8.3.8.tgz#10f65fe1891fd8cde4957360835e78fd1936bfdd"
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
-"@pepperize/cdk-autoscaling-gitlab-runner@^0.0.144":
-  version "0.0.144"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.0.144.tgz#6c995fd7f1fdf9c7f648cfb8c3ec6a287f287940"
-  integrity sha512-nj56ooqieTprOaf2yOVSBMCAseWthxzSsreAF1v47SO3TjBzjsKpplQ0RsFKZhwfpy4jwJF4EdTSTgFkRHkdtg==
+"@pepperize/cdk-autoscaling-gitlab-runner@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.1.1.tgz#3f0ea06c7b7570d83f64ab5ce17559e9cdcbf105"
+  integrity sha512-ikviqOdMmFsw87BWBKpaRA9pHqq9ysYlKnxooRUcEXx8L1ZIQzDqf8vtprI2AV4H0LqGnCRJ6sSBQ7l4kegxwA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
     pascal-case "^3.1.2"
     snake-case "^3.0.4"
+
+"@pepperize/cdk-private-bucket@^0.0.33":
+  version "0.0.33"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-private-bucket/-/cdk-private-bucket-0.0.33.tgz#48c744c0c7604a2dcb33aebb7ca127acca57e72a"
+  integrity sha512-XGecapeZVSf14URL6I1k65AF3RwzRHAXZhMOrvEYLo7uUNMMY0wu6WgqIQzPT3W+mzjKCdPvch3FJrZdl0DoZA==
+
+"@pepperize/cdk-security-group@^0.0.25":
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-security-group/-/cdk-security-group-0.0.25.tgz#fc01b347d80a5c34a894d9ad2174f73a89c54e4e"
+  integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
   version "0.0.38"
