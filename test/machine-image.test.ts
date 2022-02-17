@@ -9,7 +9,7 @@ describe("MachineImage", () => {
 
     // When
     const stack = new MachineImageStack(app, "MachineImageStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "123456789012",
         region: "us-east-1",
@@ -28,7 +28,7 @@ describe("MachineImage", () => {
 
     // When
     const stack = new MachineImageStack(app, "MachineImageStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "123456789012",
         region: "us-east-1",

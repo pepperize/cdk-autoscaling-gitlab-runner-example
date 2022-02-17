@@ -9,7 +9,7 @@ describe("OnDemandInstances", () => {
 
     // When
     const stack = new OnDemandInstancesStack(app, "OnDemandInstances", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",
@@ -28,7 +28,7 @@ describe("OnDemandInstances", () => {
 
     // When
     const stack = new OnDemandInstancesStack(app, "OnDemandInstances", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",

@@ -9,7 +9,7 @@ describe("VpcStack", () => {
 
     // When
     const stack = new VpcStack(app, "VpcStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",
@@ -29,7 +29,7 @@ describe("VpcStack", () => {
 
     // When
     const stack = new VpcStack(app, "VpcStack", {
-      gitlabToken: "your gitlab token",
+      gitlabToken: "token",
       env: {
         account: "0",
         region: "us-east-1",

@@ -59,7 +59,9 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@pepperize/cdk-autoscaling-gitlab-runner": "^0.0.144",
+    "@pepperize/cdk-autoscaling-gitlab-runner": "^0.1.1",
+    "@pepperize/cdk-private-bucket": "^0.0.33",
+    "@pepperize/cdk-security-group": "^0.0.25",
     "aws-cdk-lib": "^2.8.0",
     "constructs": "^10.0.5"
   },
@@ -86,7 +88,7 @@
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.ts?(x)",
       "<rootDir>/(test|src)/**/?(*.)+(spec|test).ts?(x)",
-      "**/?(*.)@(spec|test).[tj]s?(x)"
+      "<rootDir>/**/?(*.)@(spec|test).[tj]s?(x)"
     ],
     "clearMocks": true,
     "collectCoverage": true,

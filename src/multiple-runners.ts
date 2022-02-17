@@ -5,6 +5,7 @@ import {
 import { Stack, StackProps } from "aws-cdk-lib";
 import { InstanceClass, InstanceSize, InstanceType } from "aws-cdk-lib/aws-ec2";
 import { PolicyDocument, Role, ServicePrincipal } from "aws-cdk-lib/aws-iam";
+import { ParameterTier, ParameterType, StringParameter } from "aws-cdk-lib/aws-ssm";
 import { Construct } from "constructs";
 
 /**
@@ -55,13 +56,44 @@ export class MultipleRunnersStack extends Stack {
       },
     });
 
+    const token1 = new StringParameter(this, "auth-token-1", {
+      parameterName: "/gitlab-runner/token1",
+      stringValue: "auth-token",
+      type: ParameterType.SECURE_STRING,
+      tier: ParameterTier.STANDARD,
+    });
+    const token2 = new StringParameter(this, "auth-token-2", {
+      parameterName: "/gitlab-runner/token2",
+      stringValue: "auth-token",
+      type: ParameterType.SECURE_STRING,
+      tier: ParameterTier.STANDARD,
+    });
+    const token3 = new StringParameter(this, "auth-token-3", {
+      parameterName: "/gitlab-runner/token3",
+      stringValue: "auth-token",
+      type: ParameterType.SECURE_STRING,
+      tier: ParameterTier.STANDARD,
+    });
+    const token4 = new StringParameter(this, "auth-token-4", {
+      parameterName: "/gitlab-runner/token4",
+      stringValue: "auth-token",
+      type: ParameterType.SECURE_STRING,
+      tier: ParameterTier.STANDARD,
+    });
+    const token5 = new StringParameter(this, "auth-token-5", {
+      parameterName: "/gitlab-runner/token5",
+      stringValue: "auth-token",
+      type: ParameterType.SECURE_STRING,
+      tier: ParameterTier.STANDARD,
+    });
+
     /**
      * Unprotected runner t3.medium unprivileged work hours 10-18:00, 30 min idle time, teardown after 20 jobs, 1 hot standby
      */
     const runner1: GitlabRunnerAutoscalingJobRunnerProps = {
       // should be set to **unprotected** at gitlab web interface
+      token: token1,
       configuration: {
-        token: "gitlab-token1",
         name: "gitlab-runner1",
         machine: {
           maxBuilds: 20, // teardown after 20 jobs
@@ -86,8 +118,8 @@ export class MultipleRunnersStack extends Stack {
      */
     const runner2: GitlabRunnerAutoscalingJobRunnerProps = {
       // should be set to **protected** at gitlab web interface
+      token: token2,
       configuration: {
-        token: "gitlab-token2",
         name: "gitlab-runner2",
         machine: {
           maxBuilds: 5, // teardown after 5 jobs
@@ -112,8 +144,8 @@ export class MultipleRunnersStack extends Stack {
      */
     const runner3: GitlabRunnerAutoscalingJobRunnerProps = {
       // should be set to **protected** at gitlab web interface
+      token: token3,
       configuration: {
-        token: "gitlab-token3",
         name: "gitlab-runner3",
         machine: {
           maxBuilds: 1, // teardown after 1 job
@@ -136,6 +168,7 @@ export class MultipleRunnersStack extends Stack {
         runner2,
         runner3,
         {
+          token: token4,
           configuration: {
             token: "token4",
             name: "privileged-runner",
@@ -143,8 +176,8 @@ export class MultipleRunnersStack extends Stack {
           role: privilegedRole,
         },
         {
+          token: token5,
           configuration: {
-            token: "token5",
             name: "restricted-runner",
             docker: {
               privileged: false, // Run unprivileged
