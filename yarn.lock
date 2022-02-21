@@ -693,11 +693,12 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.1.1":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.1.3.tgz#3d4bbb257db8048691ad59585a9f9859efdaf352"
-  integrity sha512-cHPGyHzZcP5kLMLcmkUm4Wyz/Tn2y8MzC3EefCY9ew6cJvbW2Stgwsz99g7ZmAYeU/2cq/vuxj3V41N7gYVWZA==
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.1.8.tgz#15b2ac4230c47aae4db13ed51e6d241765ead22e"
+  integrity sha512-zxjPur+y1s/v+XGFb3wSqoi5GFGgY+F/o7dosHlC5cO/Tdc5Eqjjw6OFzOqHPuPy34RtAMUoVeUh5p1wG2+1tw==
   dependencies:
     "@iarna/toml" "^2.2.5"
+    "@pepperize/cdk-private-bucket" "^0.0.34"
     param-case "^3.0.4"
     pascal-case "^3.1.2"
     snake-case "^3.0.4"
@@ -707,15 +708,20 @@
   resolved "https://registry.yarnpkg.com/@pepperize/cdk-private-bucket/-/cdk-private-bucket-0.0.33.tgz#48c744c0c7604a2dcb33aebb7ca127acca57e72a"
   integrity sha512-XGecapeZVSf14URL6I1k65AF3RwzRHAXZhMOrvEYLo7uUNMMY0wu6WgqIQzPT3W+mzjKCdPvch3FJrZdl0DoZA==
 
+"@pepperize/cdk-private-bucket@^0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-private-bucket/-/cdk-private-bucket-0.0.34.tgz#93ee2bd07980515f9bfea344be8ca3901a66ce3e"
+  integrity sha512-DsBesFJLGPigFPTpz17oEvjRxHkKrCC+ZwP+NjMkSS2Rw/XqvBgP53RZS/l8hV63jldCUWOLSNFeOg7ztj+15w==
+
 "@pepperize/cdk-security-group@^0.0.25":
   version "0.0.25"
   resolved "https://registry.yarnpkg.com/@pepperize/cdk-security-group/-/cdk-security-group-0.0.25.tgz#fc01b347d80a5c34a894d9ad2174f73a89c54e4e"
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.39.tgz#7ecd0f9698d0c8c00c1b80afa10f0a7362c8a743"
-  integrity sha512-ZJ5Q2G7hmKFB0jQlZbLy1jk04C+UxT0M4GSTXrHrR56nnhkGfO7kpHegWeKfWyuLaFZ3A4qauk2+e00IeLLDuQ==
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.43.tgz#c0acc2959885452a190746427f7f4bab264f7d80"
+  integrity sha512-1jCTsDGfPKvXiskUqheIwpUNFKw93rpKo6Kmh3NdEVY1yr4WpUyJlb1hJ5xdWVOEEatH1q2gQ9cFBEOWBaOZOw==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -2556,9 +2562,9 @@ escodegen@^2.0.0:
     source-map "~0.6.1"
 
 eslint-config-prettier@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.3.0.tgz#f7471b20b6fe8a9a9254cc684454202886a2dd7a"
-  integrity sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.4.0.tgz#8e6d17c7436649e98c4c2189868562921ef563de"
+  integrity sha512-CFotdUcMY18nGRo5KGsnNxpznzhkopOcOo0InID+sgQssPrzjvsyKZPvOgymTFeHrFuC3Tzdf2YndhXtULK9Iw==
 
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
@@ -4926,9 +4932,9 @@ npm-bundled@^1.1.1:
     npm-normalize-package-bin "^1.0.1"
 
 npm-check-updates@^12:
-  version "12.3.1"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.3.1.tgz#48339da0331e9c857b94be04b33dfe7f5ec34fbd"
-  integrity sha512-rvXyiUnc9zw3WXakqv0LsdFDc1V4T8DHG8AdWEjJiqfOZdBI4q8ekTt/BFqLQAtcXo5Pu6WGqjA9oDnFi4UV3g==
+  version "12.4.0"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-12.4.0.tgz#67e8e1b88551167368ec246dfd4302ce3007d83d"
+  integrity sha512-X14H74M8SVFkStmP1NDOMh0OjLB3mU2dwUeM71zyITJHkm08MASwwTcydW6YuGcNW1RUlVq1cQY2yWijv4zKUQ==
   dependencies:
     chalk "^4.1.2"
     cint "^8.2.1"
