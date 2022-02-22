@@ -693,9 +693,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.1.1":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.1.8.tgz#15b2ac4230c47aae4db13ed51e6d241765ead22e"
-  integrity sha512-zxjPur+y1s/v+XGFb3wSqoi5GFGgY+F/o7dosHlC5cO/Tdc5Eqjjw6OFzOqHPuPy34RtAMUoVeUh5p1wG2+1tw==
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.1.11.tgz#0faeec000997dbff5a74ae8a58dfa07c2b273deb"
+  integrity sha512-n2xBcBccLakxIZUOQQcUZqPRTu3cLcWFqBAajmpYcVBUdArxKyXkxw8khnUScfZXfMc4z/JRLPZZLkBYT5f0/g==
   dependencies:
     "@iarna/toml" "^2.2.5"
     "@pepperize/cdk-private-bucket" "^0.0.34"
@@ -719,9 +719,9 @@
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.43"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.43.tgz#c0acc2959885452a190746427f7f4bab264f7d80"
-  integrity sha512-1jCTsDGfPKvXiskUqheIwpUNFKw93rpKo6Kmh3NdEVY1yr4WpUyJlb1hJ5xdWVOEEatH1q2gQ9cFBEOWBaOZOw==
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.46.tgz#df3d3f8d4b69d2e53c4ac1bec781847f5a5a303f"
+  integrity sha512-alO/Jis0xp6Zgk5D0Ookj+kAQ7wSZJA8oVvI6Nq4i/PwsFAHm5jI7jBTS+4qF6JJahDiz9I1lnbIgTkNT5wpqg==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -1790,9 +1790,9 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10.0.5:
-  version "10.0.68"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.68.tgz#d238be0c611e9497eefbff40c7c8061b9d7f4a2e"
-  integrity sha512-UoHYvlQDEXpSKHDJ5n5e2kcJwojswF0ASvuSyQDesziZN0QjSZBViylRknK1AJuWCelC9sad/ghk4E4a+D8axw==
+  version "10.0.69"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.69.tgz#06c6c7ea6ef5c42ee4abac16dc3ade1c92325b36"
+  integrity sha512-zQKy5G1EsQDD0dR97aNcC5QzpXW9X9ttf72mWYJeGdBBveKuKbAmtjg8eqnKU/feiljXzSXpO/2StQJ8mqc+9A==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
