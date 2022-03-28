@@ -1532,9 +1532,9 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10.0.5:
-  version "10.0.96"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.96.tgz#b11861dab821bfac7775cca4ec4a12a924d7a29b"
-  integrity sha512-zUOU9CHjKZ4Qb9Wdfi7/OHXnPU37PqAUDZpHJ98d/PRx2I6Yv9Aud6/hPTgAdAw2i3VUoFp8q2ugULPlr76M7A==
+  version "10.0.98"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.98.tgz#8c68327b4235944a75bd34ace55ea24ac2a22c39"
+  integrity sha512-xhPAuudPnQg3RbAIsK/x1XFDM+x//lgCV7UJbt0rUqhkzo1gytS852dG3LQd2tYPy8TQT0hStQjskikXShBgSg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
