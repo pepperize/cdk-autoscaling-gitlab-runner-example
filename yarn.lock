@@ -671,9 +671,9 @@
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.78"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.78.tgz#ea92d6d56c8eaed2d75af97d2e47666d595d73aa"
-  integrity sha512-1ur9bal1r6NfREyxHXsHckSCnastgxQw9r8+nVQ9BzVfmKqC/xK+ucHqzhw/nAoFpojaEwuYSVFskKK8yF1Ipw==
+  version "0.0.81"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.81.tgz#80b2ee3fa54dade7f83a84909eae3f7fa482082c"
+  integrity sha512-/Lw9TrH9GHY9ubccJ1yDCNVY35PZo1yCMAB6O78y5ozQpLQDqL1b1kyjXvi4cIgGec7SzQC73zxWJbGfiUmoCg==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -1567,9 +1567,9 @@ console-control-strings@^1.0.0, console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10.0.5:
-  version "10.0.102"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.102.tgz#9ce3986ecc4e175bf0dc16b1fc6fc2c371c5cfed"
-  integrity sha512-2qvF0e1g/IT3CRyc2MOYDWNLw/ARNByRDJWT+6uunXNq3emWIHzhehnBXtDsyqpZjP5FXmvHzKyVwcAviv0gVQ==
+  version "10.0.105"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.105.tgz#029469b56766aa22b7af3f0801d488f7e009fee7"
+  integrity sha512-VA1Y+HK34IkEdBsZigz7OKhD2NX72t5MH7dUsApfd1G8yRL7ELo1dZDk1AtwNzj1tSO6kEdYuqbhi2bzT1GJsg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -4805,9 +4805,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^2.5.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.1.tgz#d472797e0d7461605c1609808e27b80c0f9cfe17"
-  integrity sha512-8UVbTBYGwN37Bs9LERmxCPjdvPxlEowx2urIL6urHzdb3SDq4B/Z6xLFCblrSnE4iKWcS6ziJ3aOYrc1kz/E2A==
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.6.2.tgz#e26d71a18a74c3d0f0597f55f01fb6c06c206032"
+  integrity sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==
 
 pretty-format@^27.0.0, pretty-format@^27.5.1:
   version "27.5.1"
