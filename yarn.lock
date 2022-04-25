@@ -675,9 +675,9 @@
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.98"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.98.tgz#e1ddb0d60a019fb83aca0d83dd727a6d3be98451"
-  integrity sha512-jaJhxg2+Qo4bjWh/wktSROS5p8yk39zQF66TBo5OnpNtzHvVdVoM6m+jgtL4xjN5EYuBubdcTpm1ieYuJpkRWw==
+  version "0.0.100"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.100.tgz#5bc0a4d74c7230b0bde6a7772a62921d380a6474"
+  integrity sha512-ox6TJx1R9UoI0kpx+T79ijNXbhJrXAVLLejKGKAMep+spiJRIev4wVXrXbEz15++3yw2pL1Oww982KrgDvNmjg==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -803,9 +803,9 @@
   integrity sha512-wANk6fBrUwdpY4isjWrKTufkrXdu1D2YHCot2fD/DfWxF5sMrVSA+KN7ydckvaTCh0HiqX9IVl0L5/ZoXg5M7w==
 
 "@types/node@^12":
-  version "12.20.48"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.48.tgz#55f70bd432b6515828c0298689776861b90ca4fa"
-  integrity sha512-4kxzqkrpwYtn6okJUcb2lfUu9ilnb3yhUOH6qX3nug8D2DupZ2drIkff2yJzYcNJVl3begnlcaBJ7tqiTTzjnQ==
+  version "12.20.49"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.49.tgz#97897a33dd145490f514bbcbccefc178534e360f"
+  integrity sha512-5e6QNb9bkeh4Hni4ktLqUZuUqnGTX/kou2aZkXyxtuYaHXgBm+In1SHR9V+7kDzWzjB08KC2uqt2doDi7cuAAA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1543,9 +1543,9 @@ console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10.0.5:
-  version "10.0.122"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.122.tgz#54f47005f89d8544fc2db4e163ac637198fcb128"
-  integrity sha512-dssxs7zgUzyxtp9hbVHvZM9invI4HX9n8crL/fuA+0hI4UA/qHqAMWSU8xBZJJ6pxsoJrB3WLejkq9pK/FlRVg==
+  version "10.0.125"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.125.tgz#b8160bfe5733d6183549c2516d2c2a0595638faf"
+  integrity sha512-OofXt3OiQ05zENndLN9CmucJs0frkmPrgaikiudXj/uJVW6Op1kl3HINpB6oC71mZ/QXQWMnYof0wcWqEPi7Og==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
