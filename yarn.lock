@@ -675,9 +675,9 @@
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.124"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.124.tgz#064de90f81d25b143750b36ac98f679d440ea5d9"
-  integrity sha512-ev0FfM+svOyC6wNjGDOjvxadbbZq0Yf7h2VXir+6IhnggPrdVU/Wuyyu10LEAvlA2SIL0/osBWv4sKHsYet5NQ==
+  version "0.0.125"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.125.tgz#b03ebb73ccf1cc0ceb06f76b166e03f144178133"
+  integrity sha512-lsUkudK77WSYAJOoEay9bx9kxhjSL+qnldJ94AM0TsUJ/4tTwZW8RSqx2YmtW+it6exMhqQomFPGvcPjebZjSA==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -1142,9 +1142,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.24.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.24.1.tgz#88c3ece3c01674fbed4e131f3391aa199b5e3871"
-  integrity sha512-fDcJW7tLbqsCvWB3eZY6glRrjRE45VqLT+JuKz3C2jIe6qXkwV8dBwYXElwY/tTCh/hDlpWtCNMRdhmrdE25GQ==
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.25.0.tgz#e76c8156c411dbfa2da1d95469d60ae3580060f1"
+  integrity sha512-6NZKDPgCQ0O3xlpk22sR54N4yCvGt2tM2bkKHPrV6n4HCI+a349hsF4xSngiSrHAoaNQKMgAwScpj3GTZcI+oA==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1548,9 +1548,9 @@ console-control-strings@^1.1.0:
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
 constructs@^10.0.5:
-  version "10.1.12"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.12.tgz#ec0040e4c0baca32132adf13de82d6d766ac9a65"
-  integrity sha512-u9WKNab4gwzdSxQg1BjVP6g5xDDV1j9mwVL5Z/EYRycCYn3XWDXPK5qLt4hQ45d68TqZ5tGOV075fNPWL5DB1w==
+  version "10.1.15"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.15.tgz#b1e9ae3d2e96992ad4060a4581036f9a2f40811e"
+  integrity sha512-fvGJ3AXx4uf0W4PoDnHa7s6IwSGprGYO9lhTG0jlRMzUyW7QtKLUKaTMT0zK621tTiCuZnBk6m26x4AnVYqkNw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
