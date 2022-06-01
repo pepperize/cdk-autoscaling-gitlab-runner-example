@@ -675,9 +675,9 @@
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.131"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.131.tgz#ce2fea97fcf419286a7cb26fe70d401d15621a4a"
-  integrity sha512-vi5VS6u37dnXM7h4sXGUU6a5FWA9DKC3hJaQbBnQQTewu5YE9HfEBiA5tcV1RbbOUupOCw9hEHx+j+vjQPfQeg==
+  version "0.0.132"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.132.tgz#49379a975dd87b0a5de009fbe9bee2996bfe76aa"
+  integrity sha512-yWKbhNriZHUO0ad+a12zoE/BBQosLZxad3HhI3rs8LJHA5uxf7sGOx8Lt9/9j8HfuLyKLZByks0KJog0GuDxHA==
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -803,9 +803,9 @@
   integrity sha512-wANk6fBrUwdpY4isjWrKTufkrXdu1D2YHCot2fD/DfWxF5sMrVSA+KN7ydckvaTCh0HiqX9IVl0L5/ZoXg5M7w==
 
 "@types/node@^12":
-  version "12.20.52"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.52.tgz#2fd2dc6bfa185601b15457398d4ba1ef27f81251"
-  integrity sha512-cfkwWw72849SNYp3Zx0IcIs25vABmFh73xicxhCkTcvtZQeIez15PpwQN8fY3RD7gv1Wrxlc9MEtfMORZDEsGw==
+  version "12.20.54"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.54.tgz#38a3dff8c2a939553f2cdb85dcddc68be46c3c68"
+  integrity sha512-CFMnEPkSXWALI73t1oIWyb8QOmVrp6RruAqIx349sd+1ImaFwzlKcz55mwrx/yLyOyz1gkq/UKuNOigt27PXqg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
