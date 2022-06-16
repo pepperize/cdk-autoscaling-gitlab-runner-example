@@ -616,9 +616,9 @@
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.143"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.143.tgz#904872dabc913cfdc78e1d0d816837abf8595562"
-  integrity sha512-PjuiMX/yrmBDvaBWiafio7O/Aog18KPK3pUr5opvcPUdjHCAnx2Txn1ViVCjQwfF4H0ENo4a9VQ2wPoTlITjcw==
+  version "0.0.145"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.145.tgz#57b4de99b2068fb94cd6312820f185807f0d6c35"
+  integrity sha512-r5UlPixr+K4wzEt2sQuSuyhGTKlFMgBNrUHo8WH04ACLuNYwaWTNZ2VcP1PCTrx0dXUonxEVRsm3hS41tL17/A==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1319,9 +1319,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.41"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.41.tgz#f2b114df4819592343b78346d33fa8530010b22f"
-  integrity sha512-9fvkjvMHHLYgUpB/zFCpaUysokdTM7hwIvkfBJwXJsxl4Hwwt9z0otHM/hotkqEteR3LdYmmVpJCze+V4MvGhQ==
+  version "10.1.42"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.42.tgz#dc21bfa7d024a1c81c0982b69ed4585e4e9d5712"
+  integrity sha512-5AELa/PFtZG+WTjn9HoXhqsDZYV6l3J7Li9xw6vREYVMasF8cnVbTZvA4crP1gIyKtBAxAlnZCmzmCbicnH6eg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -3894,9 +3894,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^2.5.1:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.0.tgz#a4fdae07e5596c51c9857ea676cd41a0163879d6"
-  integrity sha512-nwoX4GMFgxoPC6diHvSwmK/4yU8FFH3V8XWtLQrbj4IBsK2pkYhG4kf/ljF/haaZ/aii+wNJqISrCDPgxGWDVQ==
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
+  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
 
 pretty-format@^27.0.0, pretty-format@^27.5.1:
   version "27.5.1"
