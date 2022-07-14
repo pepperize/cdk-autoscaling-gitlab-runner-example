@@ -747,9 +747,9 @@
   integrity sha512-UXdBxNGqTMtm7hCwh9HtncFVLrXoqA3oJW30j6XWp5BH/wu3mVeaxo7cq5benFdBw34HB3XDT2TRPI7rXZ+mDg==
 
 "@types/node@^14":
-  version "14.18.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.21.tgz#0155ee46f6be28b2ff0342ca1a9b9fd4468bef41"
-  integrity sha512-x5W9s+8P4XteaxT/jKF0PSb7XEvo5VmqEWgsMlyeY4ZlLK8I6aH6g5TPPyDlLAep+GYf4kefb7HFyc7PAO3m+Q==
+  version "14.18.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.22.tgz#fd2a15dca290fc9ad565b672fde746191cd0c6e6"
+  integrity sha512-qzaYbXVzin6EPjghf/hTdIbnVW1ErMx8rPzwRNJhlbyJhu2SyqlvjGOY/tbUt6VFyzg56lROcOeSQRInpt63Yw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1314,9 +1314,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.44"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.44.tgz#d7a49befa3d2db7156a5ed73e9e73421de684f6c"
-  integrity sha512-0Y+Wc77/nBYw9vJsPmvjU0KVwRZvTn3DjZgDvlq9eTSIEeXNvbmLKYyZpZ2hXDy2QLoiMwosrBjb4vd9Aku+rg==
+  version "10.1.45"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.45.tgz#89b19e3d7523824a6e8bed547122aa90e5442169"
+  integrity sha512-AmMJHYqvDKUYXEPcqRHAtsI0szgJFiznTB465QB4Tqa35bGj1YvfY+wcYF1MMCQL7pSB/q0W8k1wjnNr8EqOhA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -4521,9 +4521,9 @@ ts-jest@^27:
     yargs-parser "20.x"
 
 ts-node@^10:
-  version "10.8.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.8.2.tgz#3185b75228cef116bf82ffe8762594f54b2a23f2"
-  integrity sha512-LYdGnoGddf1D6v8REPtIH+5iq/gTDuZqv2/UJUU7tKjuEU8xVZorBM+buCGNjj+pGEud+sOoM4CX3/YzINpENA==
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.1.tgz#e73de9102958af9e1f0b168a6ff320e25adcff4b"
+  integrity sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==
   dependencies:
     "@cspotcode/source-map-support" "^0.8.0"
     "@tsconfig/node10" "^1.0.7"
