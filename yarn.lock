@@ -599,13 +599,12 @@
   resolved "https://registry.yarnpkg.com/@oozcitak/util/-/util-8.3.8.tgz#10f65fe1891fd8cde4957360835e78fd1936bfdd"
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
-"@pepperize/cdk-autoscaling-gitlab-runner@^0.1.1":
-  version "0.1.45"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.1.45.tgz#dffcd3ff7f6cf62c6f7f8d510779c45ba9337aca"
-  integrity sha512-YhEEy0vnjVd1/IUczgoX07BLy7YKCiU/5GZf0lmndipgop5O7D+gmAFtyc51wDzhCjpFcgIMJhBejm2GXSahRw==
+"@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
+  version "0.2.143"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.143.tgz#945c17d10d3ccfdd00d625eb0e374b943743bd7b"
+  integrity sha512-WIoYRcTX3eNQDLDCV7LggnLqhSvJZdayjWJerfeg1u8eTqRBQPV6S5BXKs6eZMMhNJm6GfjqRMWe6ruZlPmRvA==
   dependencies:
     "@iarna/toml" "^2.2.5"
-    "@pepperize/cdk-private-bucket" "^0.0.34"
     param-case "^3.0.4"
     pascal-case "^3.1.2"
     snake-case "^3.0.4"
@@ -615,15 +614,15 @@
   resolved "https://registry.yarnpkg.com/@pepperize/cdk-private-bucket/-/cdk-private-bucket-0.0.33.tgz#48c744c0c7604a2dcb33aebb7ca127acca57e72a"
   integrity sha512-XGecapeZVSf14URL6I1k65AF3RwzRHAXZhMOrvEYLo7uUNMMY0wu6WgqIQzPT3W+mzjKCdPvch3FJrZdl0DoZA==
 
-"@pepperize/cdk-private-bucket@^0.0.34":
-  version "0.0.34"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-private-bucket/-/cdk-private-bucket-0.0.34.tgz#93ee2bd07980515f9bfea344be8ca3901a66ce3e"
-  integrity sha512-DsBesFJLGPigFPTpz17oEvjRxHkKrCC+ZwP+NjMkSS2Rw/XqvBgP53RZS/l8hV63jldCUWOLSNFeOg7ztj+15w==
-
 "@pepperize/cdk-security-group@^0.0.25":
   version "0.0.25"
   resolved "https://registry.yarnpkg.com/@pepperize/cdk-security-group/-/cdk-security-group-0.0.25.tgz#fc01b347d80a5c34a894d9ad2174f73a89c54e4e"
   integrity sha512-lkRkJ3sRs9wmw2MWy3pnx8RVw/PB1G0+2eDHDZBQqPpJvn+4TgmbEUgSNnR0Z3b6TVnDwYTOjCYVNkGhjKcm7Q==
+
+"@pepperize/cdk-vpc@^0.0.281":
+  version "0.0.281"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-vpc/-/cdk-vpc-0.0.281.tgz#6b6d9ac5ca3f1c2a7cbdc4283e0f8e9a87cc6fe5"
+  integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
   version "0.0.176"
@@ -3932,10 +3931,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-projen@^0.57.5:
-  version "0.57.5"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.57.5.tgz#652f2012a14ff10bf32c399ca563cf34cc2df298"
-  integrity sha512-WpEyROY+IJq/KKlFUrWIQlgk5qwfMyFsBrPePXIPwU+Qfi3mUH88xsP7zA5VkffI7lSbehktzl1JmF7oDhb3YQ==
+projen@^0.60.16:
+  version "0.60.16"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.60.16.tgz#ec8dfac75d773866933e947c8510997bce88ac4b"
+  integrity sha512-599w++eQpuRFMu6x9roXrIII5tNuteXC4WrmXg2ovYUfyux1bX+Pk9X9H9OFW9eRx3ekh9Di4CUJzAG2CXr0qg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"

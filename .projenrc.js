@@ -22,9 +22,10 @@ const project = new AwsCdkTypeScriptApp({
   repositoryUrl: "https://github.com/pepperize/cdk-autoscaling-gitlab-runner-example.git",
 
   deps: [
-    "@pepperize/cdk-autoscaling-gitlab-runner@^0.1.1",
+    "@pepperize/cdk-autoscaling-gitlab-runner",
     "@pepperize/cdk-private-bucket",
     "@pepperize/cdk-security-group",
+    "@pepperize/cdk-vpc",
   ],
   devDeps: ["@pepperize/projen-awscdk-app-ts"],
 });

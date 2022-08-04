@@ -7,5 +7,6 @@
     "us-east-1e",
     "us-east-1f"
   ],
-  "ami:account=069388652156:filters.architecture.0=x86_64:filters.image-type.0=machine:filters.name.0=ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*:filters.root-device-type.0=ebs:filters.state.0=available:filters.virtualization-type.0=hvm:owners.0=099720109477:region=us-east-1": "ami-06992628e0a8e044c"
+  "ami:account=069388652156:filters.architecture.0=x86_64:filters.image-type.0=machine:filters.name.0=ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*:filters.root-device-type.0=ebs:filters.state.0=available:filters.virtualization-type.0=hvm:owners.0=099720109477:region=us-east-1": "ami-06992628e0a8e044c",
+  "ami:account=069388652156:filters.image-type.0=machine:filters.name.0=amzn-ami-vpc-nat-*:filters.state.0=available:owners.0=amazon:region=us-east-1": "ami-0ee623c33d16bfaa7"
 }
