@@ -1043,9 +1043,9 @@ at-least-node@^1.0.0:
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 aws-cdk-lib@^2.8.0:
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.35.0.tgz#abbf8af3d85ad2af438f6ce344c26204451f8ec5"
-  integrity sha512-kt3uuuwxblgLCn3VRtC+lcU1VgCVVL8osQ8UXfi3eA2TAKU+8TS/+wMTXGgMKXUTNP+zzo+tfiE4PyPJseWavw==
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.36.0.tgz#ea8ea93b85d8adae38bb674c7caef3ed7fdbf6d0"
+  integrity sha512-wxhYPSZi0w8OTTGrnzQr1I++T7ainaviNVmI4e/AoCgycKpLVsrm/7XHPRS13GzeJKcNtKgeoyIbjspGGVIi9A==
   dependencies:
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
@@ -1058,9 +1058,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.35.0.tgz#d968d7bc78a702096e6700a8ae3815675ac96a64"
-  integrity sha512-H8S/tEfnqeHq5aqKHXhZjSm3ck472Nwnw6CJYkzHg5tsV6KB5EludP18SYb1h9pu8ZGWmBQ8vJ82yK9XXxFQvw==
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.36.0.tgz#9a6a37715a7fa3bddf075987b30a99027209cc65"
+  integrity sha512-jqdPDW5PFDDisKVJhYnXRQICicT1yEPhLe5tMHNyjEhee8qIU24gRtXcEzBsRrgZDK9inefPvQHkuLee0SLDng==
   optionalDependencies:
     fsevents "2.3.2"
 
