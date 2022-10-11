@@ -625,9 +625,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.215"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.215.tgz#a5c77dcaeeb9b337d241d0f5b6324306d9cfd540"
-  integrity sha512-sSzOA53KKhYOgSedVYhaNrLZVzWAbI7H5MGuR/rIiyARAGUUo+dqYqn9uagtZrlcVpm7/xtlls2xxRwt2+4orw==
+  version "0.0.217"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.217.tgz#4dca8aff777339003574dc320b6bc8329de842e8"
+  integrity sha512-Pbu7H3KwI5dKid8/pX72rK5eRN6k2DIBLyLDv4AVGr8ccKGz6p1+bhwklyncbI0g4Jg3cML4CVJp3lwDzB9ySQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
