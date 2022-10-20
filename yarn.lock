@@ -600,9 +600,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.236"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.236.tgz#4f51f92300520795ed666ecd99b93935035af62a"
-  integrity sha512-wlub8GZoSHc/UueNS6xygcpHConlUyaODieoBI8y0wmDXIPwejTHT4sn+6X17zSQtrQt6/KiQhx+CetQwgl9EQ==
+  version "0.2.238"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.238.tgz#fb5913b110b056aca58053361eb934c5ddfe800e"
+  integrity sha512-RXJEo8gA8QQdnxhDKFVqHZiDwKdgZud1jaVX/aqpx4b80HlV58OEMApoZ6wN/BQq8jOb90sDXSIR8K+bhC3ryg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -1335,9 +1335,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.133"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.133.tgz#5fb04fa6283bec999fdc27673df442f2a03c5d78"
-  integrity sha512-KZmT2ebsPXZnZnMhqfCd70ufdG7I2JSG2knsar4HdOZYzFnbUQ9oGueM3UL/jAkzQadVR0bArOET5KyixmFbIg==
+  version "10.1.134"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.134.tgz#4cd24425444684a11c4f3f698da2ae4858b3e450"
+  integrity sha512-2DXeZEgHZa+d0+ekRN+vvKSDLSZ0Y7DskaZZ09L99ny3A7YDJ5JUlgRE2Ee24qM9PJcuReGyBvQH+++v6nLgvQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
