@@ -600,9 +600,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.251"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.251.tgz#03ff214ade14ad22a99c381e2e1b4956f9d8a781"
-  integrity sha512-Szmri9d1Jivy4UMbWa6y99ZCJC32KWLHe72ntcr1PlWiFFNVzyqXY46/bWnCOLcfz9rEOGnaCOPw+rHsig85rA==
+  version "0.2.252"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.252.tgz#c6f5c7a619c89b62fe4b3a5e2a6a222c64ce4203"
+  integrity sha512-esHNViemR3108fVKVG/LIzzIpxjHclFh4y6lOzZTyO69El/stmLJHkLNMrAzqqt/+3vAJOrLX20zC43jxCxNrg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -625,9 +625,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.242"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.242.tgz#86e65409e3c7c8665eab52fdab657bbf4a61deed"
-  integrity sha512-nqyvY2aHItfFlsLaG0eDghsbTGidjzuKITHy7DyRXNH6yZ2h+9X8u7Ioug5TuPF1MjhF1HGJfS+tCTxiUawMxw==
+  version "0.0.243"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.243.tgz#b0532e2001de85e1397cb10578d6f750ce51f8eb"
+  integrity sha512-YCnpA/fu5PWRAaxrNFRW9qWaBJInBbe3oH8RJYgMcmS2oJ5R1G2eg8wyz5MnbX4a0gKtBcGOfzw7i79ydh3yXA==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
