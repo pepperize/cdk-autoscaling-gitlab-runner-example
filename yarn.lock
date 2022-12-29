@@ -1066,9 +1066,9 @@ at-least-node@^1.0.0:
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 aws-cdk-lib@^2.8.0:
-  version "2.57.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.57.0.tgz#442dfe44a3c4e634000ac82a051776821d52c38d"
-  integrity sha512-q58xo+cjx5J5HYi+/Ny/Wx9K+BBcTnjIFy9bWOSZAhyoB8TtjnflGDGt11jFd0khxi5Bib59Cb50Pm/9wV5zYw==
+  version "2.58.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.58.0.tgz#83ab3b145db3c13d833b79c23dd98c71c0b7f23d"
+  integrity sha512-L5l5KvTO15ENhjB1aYi+Bl0CnWsOBN3ARb9E5qjXnaWQNMta0vWpSz/CjpkfHtJGXpyRXEg99vXOY5ocVMKrmw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.30"
     "@aws-cdk/asset-kubectl-v20" "^2.1.1"
@@ -1084,9 +1084,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.57.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.57.0.tgz#2de54ce40074c05b7760d0505588307e1d7a2ae7"
-  integrity sha512-9tS2ht8su7kLmYLcOumfjTulGlHS2zBToi6f4z/LoIBYTwx4WbBguZhhGRvdtfEx8HLoMUgwC14P/IwSysuxmQ==
+  version "2.58.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.58.0.tgz#9fcb92f7efbcb325a64945225e682c1c4fb81968"
+  integrity sha512-KsxneIFvgxSbpdZboIPffXBkxSay2sSrGjfloVAf+n0Rdouv6JA02vdVF9whE5ZYClSo19MfdPdbsfuzhVqAaw==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1354,9 +1354,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.202"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.202.tgz#050da1884e889c2cb9b6acba8954794e10fff361"
-  integrity sha512-5X0AwrA4q2ePtHpXKBpLPmL0wUMDSnk+MYwokr2Q3wzUrZ5kpGRs+e7NLFSwEKaXJJFBW/A6/dKNg7SfM85caA==
+  version "10.1.203"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.203.tgz#cac6f66f73026b26cb66d28562c231e30508fccd"
+  integrity sha512-N0B5m6kXry4EJmdlHtrVgYsTgyv4ZWHJpxIbiiJJnG43LDHzrV7ZLErqvLgKOwgqfSiMtncXxk2+yEjL6nPw/g==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
