@@ -1354,9 +1354,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.207"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.207.tgz#cd52248cc3833f5e4ac92fa55397e707917c1493"
-  integrity sha512-Yu5O+4T7NRTUUR+EM9lh/XO68/+xJnuXJBk2hIgAotQ4wsG1oAc6XeuvARQMxN9qtxrXDKye198jHP5gZMIl+A==
+  version "10.1.208"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.208.tgz#7da1ace4132060aba582b507edbf63ff850fcdd6"
+  integrity sha512-6X7SCS9yClo3XxZKvcy4rRyPYgiSLy43jKuh17WkBwlFP6dq5hd/wDGUZ/OIy72q3t5tandeA1wNE7oQOLnaCA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1945,9 +1945,9 @@ escodegen@^2.0.0:
     source-map "~0.6.1"
 
 eslint-config-prettier@^8.3.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz#5a81680ec934beca02c7b1a61cf8ca34b66feab1"
-  integrity sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.6.0.tgz#dec1d29ab728f4fa63061774e1672ac4e363d207"
+  integrity sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==
 
 eslint-import-resolver-node@^0.3.6:
   version "0.3.6"
