@@ -615,9 +615,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.320"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.320.tgz#c9070371f62b25869a0a11d39e6e13d9f32e8263"
-  integrity sha512-Fg/lM/XhzlB1i/dLPP0agVuNrDMvMIdpWjsYRFRO8AFv+cpX/Fe1VQ8vUBphkWXrjVl0q61rxcPDdZkuAKPkRQ==
+  version "0.2.322"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.322.tgz#6f9745ab4652446a64778e3e0e80a0be9a8cd396"
+  integrity sha512-biut4irEbHuI5pKuzPgjkHSYVwO2x7745BBL/z1AQFpYgmhD8ME87V4YRX+TMkWn3bkvaUHBISMs83rpE0pvpQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -1066,9 +1066,9 @@ at-least-node@^1.0.0:
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
 aws-cdk-lib@^2.8.0:
-  version "2.58.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.58.1.tgz#f70349b09ea03e28902423c2c76785b96248853c"
-  integrity sha512-Cb7gUYeOVGPana7AOo+1LU6b1sHhHf+Ssyj/aQKWCwAhJkSciF/WWquR6e9FqSbT85LoQWjjJaqcWMqyprW/Rw==
+  version "2.59.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.59.0.tgz#488967569bfe937dd64102a4131831f1b24e34df"
+  integrity sha512-FT6QRsou8TibQcz/TqI3rEkB9EBVF5Om5lv9MXz/5qiKehWRbKZVX0I0l/SSAvGSmdTU5Pfr+WRBTk51oNMAdw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.30"
     "@aws-cdk/asset-kubectl-v20" "^2.1.1"
