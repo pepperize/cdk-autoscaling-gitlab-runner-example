@@ -615,9 +615,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.332"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.332.tgz#260a2e8cc865678cad576387ff4b33278bd0fc5a"
-  integrity sha512-c6T6leLse6Oye055aYJesE7ybNmAkGmPcHVjykhq9Mq1Vre2WDYHGVNgpW4cf7QYO7R+txP8W1MN3aAEArOMcQ==
+  version "0.2.335"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.335.tgz#de043fc4725d9b62c07d85acdc37b3be0e576062"
+  integrity sha512-GeMVIX50urEqM9clmPYeWuVTLqE9w+oCiGeuO3zlNMGboXq6DMQAoMG2pSvJvjpFw+/RhaMn3z20GPy6dsNocA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -640,9 +640,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.330"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.330.tgz#a39d0d85f9001b34b3bb1f65cdd9541f571f4578"
-  integrity sha512-dsPGHWLJECrPJbAvQJwCBPaNoMfe408SN2KWm0YxaMWum5qsdp46hPIqNr1hv2+FS/+PBqY7qyzZ8aHGF4zOaQ==
+  version "0.0.333"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.333.tgz#20bcece466e1ffd7f9ab6083b39ada463e347a45"
+  integrity sha512-Y4lOkZ42ZVg/qnXtdMSUnZuW8gfdM+N0la0OAtnb95EgCWz5b9myYMZxzx8iEgIgDsWiNPw7r/tEeFSnwIoyJA==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -4056,9 +4056,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^2.5.1:
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.2.tgz#c4ea1b5b454d7c4b59966db2e06ed7eec5dfd160"
-  integrity sha512-BtRV9BcncDyI2tsuS19zzhzoxD8Dh8LiCx7j7tHzrkz8GFXAexeWFdi22mjE1d16dftH2qNaytVxqiRTGlMfpw==
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.3.tgz#ab697b1d3dd46fb4626fbe2f543afe0cc98d8632"
+  integrity sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==
 
 pretty-format@^27.0.0, pretty-format@^27.5.1:
   version "27.5.1"
