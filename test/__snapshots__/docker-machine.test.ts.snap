@@ -439,7 +439,7 @@ token = \\"",
           "packages": Object {
             "commands": Object {
               "10-docker-machine": Object {
-                "command": "curl -L https://gitlab-docker-machine-downloads.s3.amazonaws.com/v0.16.2-gitlab.12/docker-machine-\`uname -s\`-\`uname -m\` > /tmp/docker-machine && install /tmp/docker-machine /usr/bin/docker-machine",
+                "command": "curl -L https://gitlab-docker-machine-downloads.s3.amazonaws.com/v0.16.2-gitlab.19/docker-machine-\`uname -s\`-\`uname -m\` > /tmp/docker-machine && install /tmp/docker-machine /usr/bin/docker-machine",
               },
               "20-gitlab-runner-start": Object {
                 "command": "gitlab-runner start",
@@ -549,7 +549,7 @@ token = \\"",
               Array [
                 "#!/bin/bash
 yum update -y aws-cfn-bootstrap
-# fingerprint: 3eb909bf7496caae
+# fingerprint: 4b2fe5c13f662eab
 (
   set +e
   /opt/aws/bin/cfn-init -v --region ",
@@ -710,9 +710,6 @@ yum update -y aws-cfn-bootstrap
                   "Action": "ec2:RunInstances",
                   "Condition": Object {
                     "ForAllValues:StringEquals": Object {
-                      "aws:TagKeys": Array [
-                        "InstanceProfile",
-                      ],
                       "ec2:InstanceType": Array [
                         "t3.micro",
                       ],
