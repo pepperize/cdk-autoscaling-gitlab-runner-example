@@ -640,9 +640,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.362"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.362.tgz#93ccf3ae8e6dc464d0b8c5fe36e550776b3f4f45"
-  integrity sha512-Bz4PSAICg76OJQVH3ffonw0pBT0OOqX9lxZDq2L/T/kk+PHgzuNiQG+Urd4fG75sKwhOwYAsN7EjzJf4c/nT+A==
+  version "0.0.363"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.363.tgz#f177a6cebca21d9792dd97935dc23427eacda14a"
+  integrity sha512-tc0lR3eOnyrp3CNbTvZD7pKqdAKjpbiG7Gshi7U+fl0NuvlHNf0WtJc/yLpQiPql3ybEBn/tmrUQ02PphGf+tA==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1082,9 +1082,9 @@ available-typed-arrays@^1.0.5:
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
 aws-cdk-lib@^2.8.0:
-  version "2.63.2"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.63.2.tgz#c5308cc9b81ec2179ddc37089772d83e07d7c595"
-  integrity sha512-Kk9aP79O+9UJ3Bw0wjquMD+RpWPQ/Fa4wUcP5mdpROpoipPXsFFZPTXT8j8kp2oFOZa9OHxacTF06+/M0H/bWQ==
+  version "2.64.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.64.0.tgz#18f34262b54d3e4088680951137e32da8fe2a148"
+  integrity sha512-IrgL7thb6TeOyHgyR/qKWTdA9FBb9lv7Z9QPDzCNJlkKI+0ANjYHy3RYV8Gd+1+kc6l8DG9Z1elij40YCr/Ptg==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.52"
     "@aws-cdk/asset-kubectl-v20" "^2.1.1"
@@ -1100,9 +1100,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.63.2"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.63.2.tgz#9fd550eca936304e625d3e24fd4433525fb0d5a1"
-  integrity sha512-YtWfPTOiq+cgSIiM2IwjickvJgD1ESBWzK+0+yeauC3XwdaVcfNeTHF3sEqmc5DRMPKV8kAVBBxc0fmuoxcnBQ==
+  version "2.64.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.64.0.tgz#8dd6561c678053852ab16851292d7a2023f53bd9"
+  integrity sha512-iXkvVeYKt6Glboeicrb3QxC6K6o25+zitM/UTfgVzDlKEvC4hwQp1KqXy/caN7SfA6X2N0LJmXfC99T4cvIH0A==
   optionalDependencies:
     fsevents "2.3.2"
 
