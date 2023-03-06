@@ -645,9 +645,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.394"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.394.tgz#a79e1f6e222b7df917bba68c5658c8317585b018"
-  integrity sha512-zYBw24YUL2+YODtXAojjMtu2zHsCAG1436COwzL2F0qSXxW8b1AF72GodanlfgtsC/8bO+zTNxWBhqAZRF3hCQ==
+  version "0.0.396"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.396.tgz#60b3996ab0d8be14fb348920b9df4435057697fd"
+  integrity sha512-5KNz3yHXokjqqYHLRmv1LDhUBkd2q4mRFVC+FiMO0MPMe9P0Jt90OKVMSFsqXgl7derRv9AJzXrkwmnKby8izw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1375,9 +1375,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.266"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.266.tgz#b7a84a6c2d5b2c53d6fb120b05dcdec98e76de98"
-  integrity sha512-6rNXyszNbalWuyJBvMuyaaCFNLNr77mYNzq7dB0MFh2Qa909XkTA+5mPXFAho+IzP5wY1SVYUDrB/QFSnfMtMQ==
+  version "10.1.269"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.269.tgz#8eaf96918569f78f7dac6805c93f3c21a3f30277"
+  integrity sha512-oW7iI0kmKJkrUpWwvhrG4Yu0w1V/1UYL1hXNFkzD6Rsr3s3jpwC1YK721nKncY6Vp4ZMWtZVfc/gNXTp1k62zg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1981,9 +1981,9 @@ escodegen@^2.0.0:
     source-map "~0.6.1"
 
 eslint-config-prettier@^8.3.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.6.0.tgz#dec1d29ab728f4fa63061774e1672ac4e363d207"
-  integrity sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.7.0.tgz#f1cc58a8afebc50980bd53475451df146c13182d"
+  integrity sha512-HHVXLSlVUhMSmyW4ZzEuvjpwqamgmlfkutD53cYXLikh4pt/modINRcCIApJ84czDxM4GZInwUrromsDdTImTA==
 
 eslint-import-resolver-node@^0.3.6, eslint-import-resolver-node@^0.3.7:
   version "0.3.7"
