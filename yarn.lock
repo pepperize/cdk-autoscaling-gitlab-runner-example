@@ -1387,9 +1387,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.280"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.280.tgz#51ff70d56c2b27a24c4d901068b141188194b37e"
-  integrity sha512-ONyTi3iUCp66xYHVnKx3yp2I7YMfSIKEdssTI3cVkL3SZHUJ/jh7dKb5ycsxEkKyO5MtStEc0r2m2zyq1KXRYA==
+  version "10.1.283"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.283.tgz#5b7c5de15f191186120c961bb76b51ddf8742b97"
+  integrity sha512-Fz0c7B8zCGXKBdzua2903YGs+g0qQ4hCRcDaXmVGBnIusjB53Q531o2comJUCHdXnsg+57mFMZwDxSTISHP+LA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -4063,9 +4063,9 @@ prettier-linter-helpers@^1.0.0:
     fast-diff "^1.1.2"
 
 prettier@^2.5.1:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
-  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.5.tgz#3dd8ae1ebddc4f6aa419c9b64d8c8319a7e0d982"
+  integrity sha512-3gzuxrHbKUePRBB4ZeU08VNkUcqEHaUaouNt0m7LGP4Hti/NuB07C7PPTM/LkWqXoJYJn2McEo5+kxPNrtQkLQ==
 
 pretty-format@^27.0.0, pretty-format@^27.5.1:
   version "27.5.1"
