@@ -657,9 +657,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.419"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.419.tgz#d50e98af903739d3d22a85467f6981861f675ac9"
-  integrity sha512-jNZpgdZs17IftmOccEFbYC+BHQNYWgHFwxoPZLOaLaE2HD8wuavtHhEx/i3wATLKpNnfwRlkV9qvgY0FTqY82w==
+  version "0.0.425"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.425.tgz#d8f4038bba0e7da47bd4a10952337debfab3c35a"
+  integrity sha512-UFZiFR8qD7PeJ9Fo1DuL03PLhHuZ9FevfVf8NQ9SczVsUJs2utq095iF4i3+V9urSVXIFulmUg7eWyZcoNhs9g==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1421,9 +1421,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.284"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.284.tgz#a157e1f60b691583bbca7ad069cf719211cfe570"
-  integrity sha512-PuvECXLnOUotHX7I0Y+UnpiZqh4+MgR1CHVI2zAlniRN09cNEGRuXadd5lXh7STX4CgzOKBWCBoW1i8k/m4vKA==
+  version "10.1.286"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.286.tgz#00cc3c217fb6d180dd633f286ddd5dead9b2e7c8"
+  integrity sha512-CiVG7SaCFD8eKB6XoXuIofvY0lBtZXSrDuHrRw5kdt1cCbW6hTvOXzzk06JYA6G67D/OZC5p/XV3hbXoOF7PJA==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
