@@ -657,9 +657,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.425"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.425.tgz#d8f4038bba0e7da47bd4a10952337debfab3c35a"
-  integrity sha512-UFZiFR8qD7PeJ9Fo1DuL03PLhHuZ9FevfVf8NQ9SczVsUJs2utq095iF4i3+V9urSVXIFulmUg7eWyZcoNhs9g==
+  version "0.0.426"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.426.tgz#9301264315a8cf2c4743c9488466b07fbdcaf9bf"
+  integrity sha512-h03ah7NysM7HRF1wXsRQZcTlSBXq8ZSgT7dPk4SZhYQp2na4WcEW5RdlZuhq+JdMGoelXA2QD4fURraFq20u0Q==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1099,9 +1099,9 @@ available-typed-arrays@^1.0.5:
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
 aws-cdk-lib@^2.8.0:
-  version "2.69.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.69.0.tgz#de0b5cf79eb53c788f0d5d9f802263f10d178f13"
-  integrity sha512-VIwgMMpc8iHCZTmt1PuMdj20f0lTY8SI6Pltx7jvhYxyzvg04Dd0YAryBUuutj/khE3typJwiFzLlL7yoNo5AA==
+  version "2.70.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.70.0.tgz#207422bf8766caf56c76956f9f2263cdbe97ef67"
+  integrity sha512-q/Go/3VERycIMJp3LfVtjRCLnIJHXJ0gfev5qM5yPyuvoDgZaKuaGA54T0IebgXDyZzS6We3j/DhuP/nPR8sPw==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.97"
     "@aws-cdk/asset-kubectl-v20" "^2.1.1"
@@ -1117,9 +1117,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.69.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.69.0.tgz#34d698113f614f32746d291d1ed8eab4b2769623"
-  integrity sha512-wsocwG6gFpPq4WZhLc77khuD35qtDuSphV4kquirlPE7wBmXh7XKoC60sRJvz8IHjv5dvqygaoNL4HH2fLonaQ==
+  version "2.70.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.70.0.tgz#95377f7ddc8f5a0a625f5feb15e610b32b70e3cf"
+  integrity sha512-B12e+h8FNNS2BGgBKzKrU541shC/9CWeC1Z/CwX2NKxPgbeP2eGtgR1hCfT/VaotcfJ8+dSd4I32nNNc+wz+QA==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1387,9 +1387,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.1.286"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.286.tgz#00cc3c217fb6d180dd633f286ddd5dead9b2e7c8"
-  integrity sha512-CiVG7SaCFD8eKB6XoXuIofvY0lBtZXSrDuHrRw5kdt1cCbW6hTvOXzzk06JYA6G67D/OZC5p/XV3hbXoOF7PJA==
+  version "10.1.288"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.288.tgz#ded054f865a4a26b130dbe845a65e04eaaff8f91"
+  integrity sha512-dsCHesQ7O9Z3/k8bkQaFyC3q3Q2v+XguYr8tehIqCRfbRZr5A3cSE6Z9P7pxwvYcc56HiZ8Aw/WMoyMxhJW7mw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
