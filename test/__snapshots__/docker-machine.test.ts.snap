@@ -395,7 +395,7 @@ token = \\"",
               },
               "/etc/gitlab-runner/user_data_runners": Object {
                 "content": "#!/bin/bash
-[ ! -z \\"$(which apt-get)\\" ] && apt-get install -y amazon-ecr-credential-helper
+[ ! -z \\"$(which apt-get)\\" ] && apt-get update && apt-get install -y amazon-ecr-credential-helper
 [ ! -z \\"$(which yum)\\" ] && yum install -y amazon-ecr-credential-helper",
                 "encoding": "plain",
                 "group": "gitlab-runner",
@@ -550,7 +550,7 @@ token = \\"",
               Array [
                 "#!/bin/bash
 yum update -y aws-cfn-bootstrap
-# fingerprint: 76d032dcbe4d402c
+# fingerprint: f0ab5849be4e9008
 (
   set +e
   /opt/aws/bin/cfn-init -v --region ",
