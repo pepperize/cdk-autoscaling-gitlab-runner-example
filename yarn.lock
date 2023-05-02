@@ -632,9 +632,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.465"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.465.tgz#3c9551e97161a174aff73b38bfe6f2c1487fc525"
-  integrity sha512-vNgEXfkCj1B7gPmK7sZbQXzc0nKNSjN5RCy2YvVMdDQPkAUZ6JRh+fQ0nQ2AFmBEq0AHUkRrTc7vmZqpFtPYGw==
+  version "0.2.467"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.467.tgz#e18a1bd8654effe920eb9488e8f352141d113fe3"
+  integrity sha512-8h9qSc+JdlXEkenIt0/G1hSop+n3vbEG34MOtaslWIGK2PQIBnfQG9kaCeOkJ+Zhu/vjAeKK4JB4nuXF+5mVYw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -657,9 +657,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.462"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.462.tgz#918241bf24387c270020d694edfc7e631206d822"
-  integrity sha512-VJmRHXjt4/xG19a1hCb3AKLBKbgxJy192X2JmeCpvMQiLjVtwzsClPNygm0OkpL7r10eBF4dqxMEMVWj+tZ0DQ==
+  version "0.0.464"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.464.tgz#dd1690c6fe0f585c11414d1d644406b3d8c0d6d1"
+  integrity sha512-iUM609wts8yxzrkk8cfOEeMdcaeNFRT5PK8D8QJ9ouiZWeUOOwZV2nR2Jndchd+R5Qs1np6gby/pvta/mE2znw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1403,9 +1403,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.2.12"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.12.tgz#5209852dd13be17f33ea3200c775578e2981e948"
-  integrity sha512-aBX/fxAgJgZaX2SL6rdUap8UIWAY1lv6xK/stB1EJ3TFpSEDApd6ZCG40hvK/243H13m0MilvCrmyfyKTdiPlQ==
+  version "10.2.13"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.13.tgz#18a4ee8015fd748b9df177687ad99aca96bb66fe"
+  integrity sha512-bohdPGeid/loR/1HNtn+bTQMvTgBRbFNRkykNB2nfxivo7nYYUIu/4BocAPe58In9kYOeJh4X6XrIvMAjwVSzg==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
