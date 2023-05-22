@@ -632,9 +632,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.480"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.480.tgz#dcc0a95771cea389fef4ed2e9f2f0e7528df711c"
-  integrity sha512-kNNuQ0LQ+9YBfVtkBiREy2IedykR1FAOVhpTQn0bgo++Qf5A6tiqhSxs/GfQyZVF1B5Xi6C07YPiMXKTitqHAw==
+  version "0.2.481"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.481.tgz#bb3993e5f14019e6f55977d69ca91fc637304bcc"
+  integrity sha512-y7xr3sXepuB4ygVcLVsAiSRj3tZ8I4X4eNDFR4/FEFG7WP6YX5sh5tWrXXosKzaR+3cNORnre9sQnK4IYp3RPA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -657,9 +657,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.476"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.476.tgz#7759deaeb4498be82bed139cbea5b1a5bf4e0461"
-  integrity sha512-N7QJ+D4pmx9DsSoAcZoL33leEnmtwmae4mnTkMq+wuDwDbZPsid738Sxl7pqpCO83OMczDqkFwm7FRX2CgNVZQ==
+  version "0.0.477"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.477.tgz#5259349d0c9f47a00ae98ded4cc50cd6184fa600"
+  integrity sha512-cnZMpddWV1xI0n+DQX9oCWvJwX+lTXCj4sB8NIbHKbYPP0bpdlFLOVSRo3XzrdX3/soIjkfnLHMRwvAwNEGRew==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1133,9 +1133,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.79.1"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.79.1.tgz#c8edd10b0c9eb2ad19ba849076bb36fdbdddcbcc"
-  integrity sha512-N6intzdRFqrHC+O3Apty34RiTev2+bzvRtUbehVd5IyAmTvLsgE/jlhPUIJV2POSAK+bKOV+ZWEp9qMOj1hq8A==
+  version "2.80.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.80.0.tgz#fef040f2b01df6551fba828a9df350c4c792baba"
+  integrity sha512-SKMZ/sGlNmFV37Lk40HHe4QJ2hJZmD0PrkScBmkr33xzEqjyKhN3jIHC4PYqTUeUK/qYemq3Y5OpXKQuWTCoKA==
   optionalDependencies:
     fsevents "2.3.2"
 
