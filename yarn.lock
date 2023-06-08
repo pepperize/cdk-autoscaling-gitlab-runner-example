@@ -657,9 +657,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.488"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.488.tgz#902560bbfa5702851daff1406906e87f451169d0"
-  integrity sha512-XWcSyzZpdvlC84lLT4QslaDLz68QAaFYa3AV5ppuPV6tA/S7R8DYRz9ephzSu0js5irqrBbTjUiNUDYJa9jf4Q==
+  version "0.0.491"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.491.tgz#d4a55cac9e2172e91ed8ec789831e50238dc54a7"
+  integrity sha512-aObUjkJvexDSqhGOXMCiKXMh6iK2Rs8f05R+d6tffqDIPLHC9wp+5xO48TuKep/s3j+/ITq/eRNMpxQ87WedTQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1133,9 +1133,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.82.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.82.0.tgz#7e1bc0715b4f5a59f4d19595701f1206496b571a"
-  integrity sha512-4uAhKN8HMdxxM10Th8aMQJLSINO6evYV9UKTPL0hbVQ6dh6+i5LbSejcvDRw0HfBoP6qV1LNV8P8XGLYIC3tyQ==
+  version "2.83.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.83.0.tgz#0e4f311547c162771b385a7b9e80a48679c493f9"
+  integrity sha512-UB9foPqsQkUeFHP5ZOjxqg0N+g53MPJnpxyKeMhDQDIiS9kG1LqVyHUwHNzq0PSk4kdwH9g50keu6zslb1iA1w==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -1403,9 +1403,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.2.45"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.45.tgz#5edb6bedf03e373caa0e4a446fe438a5cfcadfe8"
-  integrity sha512-bNj77IshgHsDKKOM2rar8Wf2C4ZU4fmqOBoBTiHqPG4OgVfC+digwIKSSJ+ioYz+M9J0NeFw0/sUgxqsK+/X0Q==
+  version "10.2.46"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.46.tgz#fbe15b8e8c81173eff7548de248192ce300312e9"
+  integrity sha512-65xztcy6yV47/Lacfb38JMB5AHQTSr7I9nnSkcUlbzaJFQRYyGa1619RCsmPMe/KayHzg5zn7P+bV1OLrdLDjQ==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
