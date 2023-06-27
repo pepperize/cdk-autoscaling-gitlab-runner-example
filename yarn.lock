@@ -632,9 +632,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.506"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.506.tgz#a8b597296985aeca04d9cfae40c7fed9b6b48150"
-  integrity sha512-mRvO1kwl8ZeYgSMZs7XD0H89js3Cg6gl9EB2AC2C6eTX0bR+lZSlNqucOAXjRK7xOOIiyNYJWyoMiJjzV0my1Q==
+  version "0.2.509"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.509.tgz#ea588bcdb97e213c9ce3199b7265d0b2dc7af1a0"
+  integrity sha512-/jWYm07s8BXwQ866Umf4yg/mo7VkMb1cn+oIO+LqGcJg2Wj1uWdWe5bdTIO3fosUso0BiDHq7mtqFiWyTZgpog==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -657,9 +657,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.501"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.501.tgz#339f968b3e871af8b4ad30a270ee887e7ce5b139"
-  integrity sha512-pSyFNcUcpp1plfdmnJdHJYtj/ss2kKVGOTyAVCPaj6TxNpJY3Lo6xqep/NHlJD9X7CiOboj+Xv9gP9qjSi2Pbg==
+  version "0.0.504"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.504.tgz#4f0826c2b5419aaf694d74d287f6ae1e7401fb34"
+  integrity sha512-u36NivhtyZfqHKoIvdAe7gZ3yxRt5HO/v/ne4xVDUrHjPDvhq7fDheLVF2mEwGrQWO0pgBWUyhE/V1ZfLnT1qA==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -788,9 +788,9 @@
   integrity sha512-UXdBxNGqTMtm7hCwh9HtncFVLrXoqA3oJW30j6XWp5BH/wu3mVeaxo7cq5benFdBw34HB3XDT2TRPI7rXZ+mDg==
 
 "@types/node@^14":
-  version "14.18.51"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.51.tgz#cb90935b89c641201c3d07a595c3e22d1cfaa417"
-  integrity sha512-P9bsdGFPpVtofEKlhWMVS2qqx1A/rt9QBfihWlklfHHpUpjtYse5AzFz6j4DWrARLYh6gRnw9+5+DJcrq3KvBA==
+  version "14.18.52"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.52.tgz#214674cbff9f86fad4bf0c25f31ab9b9fa31110f"
+  integrity sha512-DGhiXKOHSFVVm+PJD+9Y0ObxXLeG6qwc0HoOn+ooQKeNNu+T2mEJCM5UBDUREKAggl9MHYjb5E71PAmx6MbzIg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1437,9 +1437,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^10.0.5:
-  version "10.2.60"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.60.tgz#47fb414cc2753d41784ddb8a215a9d04244091fd"
-  integrity sha512-rO9EHXhUZpA1Gz5wk5ewCVaol6anSilDzS7uv4Fmgx+tKTcxchAl10z8ObjZMjcQYNw+5FBVIzSagSKJanbHdQ==
+  version "10.2.61"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.2.61.tgz#73c0da7e47296e8227798729b135e0f240c89763"
+  integrity sha512-8l099E1XPLN6VgUitXP6wPHLl25vc8RgxePhbCY/iRF9RGErSy6JHnI3AJU8XJ3KMaUZqhq+q9q3o+KoKM1eVw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
