@@ -637,9 +637,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.540"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.540.tgz#0e78ee135f25e230bc919f194316f418e8762970"
-  integrity sha512-NxjXuSLBTwdidj9FDlOGMJGTeFUPnSN0Smg6OW8sEKhQnQwd9KZFuHkfNkA3znkTh1fHunu/pmIBTx7UeZUZZA==
+  version "0.2.541"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.541.tgz#ff30170a8804c43d7febb5fab4afdc834e70e9aa"
+  integrity sha512-z/IDw1mDhRkiT0YxlQzhBuEqZj50z8Z+BNr+4H0K9sFpkxPqa4mzEam4BORNJ35V24H+93CB/Y/HyAg0qYlarg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -793,9 +793,9 @@
   integrity sha512-UXdBxNGqTMtm7hCwh9HtncFVLrXoqA3oJW30j6XWp5BH/wu3mVeaxo7cq5benFdBw34HB3XDT2TRPI7rXZ+mDg==
 
 "@types/node@^14":
-  version "14.18.54"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.54.tgz#fc304bd66419030141fa997dc5a9e0e374029ae8"
-  integrity sha512-uq7O52wvo2Lggsx1x21tKZgqkJpvwCseBBPtX/nKQfpVlEsLOb11zZ1CRsWUKvJF0+lzuA9jwvA7Pr2Wt7i3xw==
+  version "14.18.55"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.55.tgz#c60ad83c7d87c2d933cc4c1cb7d54d98ae50e460"
+  integrity sha512-PiNZnJDie6lgSWfjWYcQ8KWrEHp0bGv1WgnQAUuaao/HpUBKNX+HXubScoMRdLXBuovbte0djGtsxiWScvlQUQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
