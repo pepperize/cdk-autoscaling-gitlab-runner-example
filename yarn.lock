@@ -637,9 +637,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.541"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.541.tgz#ff30170a8804c43d7febb5fab4afdc834e70e9aa"
-  integrity sha512-z/IDw1mDhRkiT0YxlQzhBuEqZj50z8Z+BNr+4H0K9sFpkxPqa4mzEam4BORNJ35V24H+93CB/Y/HyAg0qYlarg==
+  version "0.2.542"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.542.tgz#768083d39e1c7f758f814fdd9f3345fa8825eb5e"
+  integrity sha512-wXPnhlvOJ/q949OxljDCW1puQQN7UpJBCXFroJLVfwlqZfzGrXIy8F6bDKO5bU9iY2S7TWEaBNpslyk7iYyCsQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -662,9 +662,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.532"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.532.tgz#bd343363952f9d7ff253b920dd58ec9a4b256c01"
-  integrity sha512-jJmMw3MK7dqA0bJ6OZE/zGLxB+a5kHm01SjY1PUT+CbNOXYNJtvtuWE+malAYd55FQrMvSZA136EiFmDUcvjdA==
+  version "0.0.533"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.533.tgz#2b14289090b4b982bfe3af08cc1289327788bbd1"
+  integrity sha512-G0xx169Vkjrd44q9WPfKCycmNaQYQ4EEgpvLM5FC/hzDzJOrkSqNgtQwQDDh1OxRj6UkBmjbJ21nvXTdqlh+LQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -793,9 +793,9 @@
   integrity sha512-UXdBxNGqTMtm7hCwh9HtncFVLrXoqA3oJW30j6XWp5BH/wu3mVeaxo7cq5benFdBw34HB3XDT2TRPI7rXZ+mDg==
 
 "@types/node@^14":
-  version "14.18.55"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.55.tgz#c60ad83c7d87c2d933cc4c1cb7d54d98ae50e460"
-  integrity sha512-PiNZnJDie6lgSWfjWYcQ8KWrEHp0bGv1WgnQAUuaao/HpUBKNX+HXubScoMRdLXBuovbte0djGtsxiWScvlQUQ==
+  version "14.18.56"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.56.tgz#09e092d684cd8cfbdb3c5e5802672712242f2600"
+  integrity sha512-+k+57NVS9opgrEn5l9c0gvD1r6C+PtyhVE4BTnMMRwiEA8ZO8uFcs6Yy2sXIy0eC95ZurBtRSvhZiHXBysbl6w==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1169,9 +1169,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.92.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.92.0.tgz#37d0fa8de85c26c8657be5494cf89699c2383efc"
-  integrity sha512-9aAWJvZWSBJQxcsDopXYUAm6/pGz6vOQy2zfkn+YBuBkNelvW+ok15KPY4xn5m76tYnN79W03Gnfp/nxZUlcww==
+  version "2.93.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.93.0.tgz#2749dfae6a261b14a48121bcefb90aee5de331a7"
+  integrity sha512-C0o7rzlXbQ3othvQ9uZamRwr741MSX/9eZ74zNJvpkX5Eitx/XoQYwUHeD+cbb4lKHMi7m2SwJfx3yOEkpu9OQ==
   optionalDependencies:
     fsevents "2.3.2"
 
