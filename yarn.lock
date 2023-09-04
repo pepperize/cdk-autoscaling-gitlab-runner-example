@@ -637,9 +637,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.547"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.547.tgz#a99c1d1833421dcfa9f9f0c89bf1b45536090469"
-  integrity sha512-s8zxWhgZB7AF0FIAhWViNJPgzHNR0EFzMVxNm3F17UCu05gspjkmSfH0tA0rmoKMnPEzcL/EYIz1P7KWTtECTA==
+  version "0.2.548"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.548.tgz#f6557335e1c8a5a27d020dabb719c1eccbaa12ff"
+  integrity sha512-29j/1NQGtpMAs+kt8TwKml517L0v+Nd0Cv487jWiYHnsemw2GVcZuc0TZJJ0ajXVzakPQE4v4wWRw1H9sCC4iA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -662,9 +662,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.537"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.537.tgz#a6d3dddfaa301a5fc5b48d7efc109d5a0e4da4f1"
-  integrity sha512-eE9mtdohMnTRpwLhceEW7xT7tKLs9QbTo1duJyUDxfKv31IhZ9qtYuXBUxhplOge1xVJD1W9JLrEjPLdMZe8Ow==
+  version "0.0.538"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.538.tgz#93042e176c11556d7bdc2dd82cf9f7d73f21a9ba"
+  integrity sha512-mT0oVshdyKhKLBhPMV6K7/9fzQHQTinoCSiTkLse0CSmY6qEl1dA+Ya0YdNuwGh3ap6IJfz+fbkUagBKsM8Yxw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -793,9 +793,9 @@
   integrity sha512-UXdBxNGqTMtm7hCwh9HtncFVLrXoqA3oJW30j6XWp5BH/wu3mVeaxo7cq5benFdBw34HB3XDT2TRPI7rXZ+mDg==
 
 "@types/node@^14":
-  version "14.18.56"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.56.tgz#09e092d684cd8cfbdb3c5e5802672712242f2600"
-  integrity sha512-+k+57NVS9opgrEn5l9c0gvD1r6C+PtyhVE4BTnMMRwiEA8ZO8uFcs6Yy2sXIy0eC95ZurBtRSvhZiHXBysbl6w==
+  version "14.18.58"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.58.tgz#547e64027defb95f34824794574dabf5417bc615"
+  integrity sha512-Y8ETZc8afYf6lQ/mVp096phIVsgD/GmDxtm3YaPcc+71jmi/J6zdwbwaUU4JvS56mq6aSfbpkcKhQ5WugrWFPw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
