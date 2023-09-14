@@ -21,7 +21,7 @@ Object {
       "Properties": Object {
         "Code": Object {
           "S3Bucket": "cdk-hnb659fds-assets-0-us-east-1",
-          "S3Key": "f7ea374f7cc7ecbfa22fd671f8a9676e0f3f8978ba5fdbc52d48e42e03f81c55.zip",
+          "S3Key": "d238c691682e39fd00d53d0a037327931dfb5f3da80b0f8f0e31d33e604d9fff.zip",
         },
         "Handler": "index.handler",
         "Role": Object {
