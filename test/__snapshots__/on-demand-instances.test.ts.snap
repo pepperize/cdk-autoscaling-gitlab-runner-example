@@ -21,9 +21,10 @@ Object {
       "Properties": Object {
         "Code": Object {
           "S3Bucket": "cdk-hnb659fds-assets-0-us-east-1",
-          "S3Key": "d238c691682e39fd00d53d0a037327931dfb5f3da80b0f8f0e31d33e604d9fff.zip",
+          "S3Key": "a524840909b73225567052baa4f50f81f3f2444186a5011d26e441ac674adb81.zip",
         },
         "Handler": "index.handler",
+        "MemorySize": 256,
         "Role": Object {
           "Fn::GetAtt": Array [
             "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
