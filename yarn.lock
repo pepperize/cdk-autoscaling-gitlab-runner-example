@@ -637,9 +637,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.573"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.573.tgz#b4346d726e98eee85f45f46ef48809def7f6d015"
-  integrity sha512-5GJqgIqmZXL2OCHceT1U5AF0KEPCzU7zZdvOp4jSnlDeMuo8InKnWJU5DJlTH3yr6C8SRzRHx2Absu5B87KL4Q==
+  version "0.2.574"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.574.tgz#33b4b36667db3c34f28eb4e69a7fc20b12320757"
+  integrity sha512-/5d7FO3hk0laeVGU+w5FHSHeyrPOtoaSwiU+tvq3ddcrAu58V/CzgAggA0ECuDD+CPlsqT9r3Ja5BzCPxhSBlg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
@@ -662,9 +662,9 @@
   integrity sha512-/jezns+2lyhLa1y5Hs+/+wiY0U6z8QG4cSCHvSIqRnwxT4eFRMfbr5p0cmvpkQLTmzK5rBuz966akGqOwwGE0A==
 
 "@pepperize/projen-awscdk-app-ts@latest":
-  version "0.0.562"
-  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.562.tgz#5b0225e2bf8c51de642f7face9e3d8a45c5089f2"
-  integrity sha512-u2/Eh61nu0Sa/y5RcuWHPmPW8G4wkCRlK0K3AwCr5VEzp4hrEY9Fb7Z4YWQCY5UDGVOQtMYP+bW73+rSPr6t6g==
+  version "0.0.563"
+  resolved "https://registry.yarnpkg.com/@pepperize/projen-awscdk-app-ts/-/projen-awscdk-app-ts-0.0.563.tgz#acc2ac6775a2feec5313cc6d032fe95cee455a5d"
+  integrity sha512-oikCDIJ7Bi3XF+Ht8XiMGZX2EtqevThil6KXYuTXfs2epitZr5QSUgNW145VaTnBfAIwWKqdPnQfQ1NZEum0fw==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1175,9 +1175,9 @@ aws-cdk-lib@^2.8.0:
     yaml "1.10.2"
 
 aws-cdk@^2.8.0:
-  version "2.111.0"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.111.0.tgz#3e90d53577ebbad88983b91f36ae6d33147e124b"
-  integrity sha512-2f9DCfgzSF19mb2fPFUuYaHFaUXNeN5T1Nab/4gye6rVa+pmAvBGeTXKQR4Xmckz7rGLZCB0Ym5V3P1SIWXncw==
+  version "2.113.0"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.113.0.tgz#13a74953cc5ea42e1c7aa317a5b70428b71816ab"
+  integrity sha512-XEM8DSZpcMO1yXqozub8LiXK+3ihEqoWdeFDaIoMq0YmLspo9iAE3FPcKcIfv+ihRIEyvJLekGlxJPkx3+NOGA==
   optionalDependencies:
     fsevents "2.3.2"
 
