@@ -637,9 +637,9 @@
   integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
 
 "@pepperize/cdk-autoscaling-gitlab-runner@^0.2.143":
-  version "0.2.590"
-  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.590.tgz#eb802826790c03300635aa1fb0ac48c1064b7423"
-  integrity sha512-2wx2DMxOr1NGp+udu9rUDLJ+kEyRAeBqUKpVjUoo6m/MSliVLtDM7GseGGX0d5cL1cUBO5WMD9dxRZV1mOqAkQ==
+  version "0.2.591"
+  resolved "https://registry.yarnpkg.com/@pepperize/cdk-autoscaling-gitlab-runner/-/cdk-autoscaling-gitlab-runner-0.2.591.tgz#7d69b4017764edcf42c181ccddd2580436bf4dbc"
+  integrity sha512-U0P+p8rStoiFn+j2z6Al1I+A7++gEU2Z+i3IOskc5yAL/pmjT03V9xuNnS8wD9AwmtE7iGrnev6/5SoEEYsLvg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     param-case "^3.0.4"
