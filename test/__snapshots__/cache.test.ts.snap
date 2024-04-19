@@ -21,7 +21,7 @@ Object {
       "Properties": Object {
         "Code": Object {
           "S3Bucket": "cdk-hnb659fds-assets-0-us-east-1",
-          "S3Key": "cb92a348b5b60bcbbe3888108f15e75877121eb402b4a74526927300fcc54975.zip",
+          "S3Key": "97f30e67419a1676a2215492723e5add1aa491caf0cbe2dd878fc4fab0468cd4.zip",
         },
         "Handler": "index.handler",
         "Role": Object {
@@ -654,7 +654,7 @@ yum install -y amazon-ecr-credential-helper
                   "GroupId",
                 ],
               },
-              "\\"}}",
+              "\\"},\\"logApiResponseData\\":true}",
             ],
           ],
         },
@@ -777,7 +777,7 @@ yum install -y amazon-ecr-credential-helper
                   "GroupId",
                 ],
               },
-              "\\"}}",
+              "\\"},\\"logApiResponseData\\":true}",
             ],
           ],
         },
