@@ -1,61 +1,61 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`WithCustomCacheBucketStack Should match snapshot 1`] = `
-Object {
-  "Parameters": Object {
-    "BootstrapVersion": Object {
+{
+  "Parameters": {
+    "BootstrapVersion": {
       "Default": "/cdk-bootstrap/hnb659fds/version",
       "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]",
       "Type": "AWS::SSM::Parameter::Value<String>",
     },
-    "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664ebsC96584B6F00A464EAD1953AFF4B05118Parameter": Object {
+    "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664ebsC96584B6F00A464EAD1953AFF4B05118Parameter": {
       "Default": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-ebs",
       "Type": "AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>",
     },
   },
-  "Resources": Object {
-    "AWS679f53fac002430cb0da5b7982bd22872D164C4C": Object {
-      "DependsOn": Array [
+  "Resources": {
+    "AWS679f53fac002430cb0da5b7982bd22872D164C4C": {
+      "DependsOn": [
         "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
       ],
-      "Properties": Object {
-        "Code": Object {
+      "Properties": {
+        "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-0-us-east-1",
-          "S3Key": "97f30e67419a1676a2215492723e5add1aa491caf0cbe2dd878fc4fab0468cd4.zip",
+          "S3Key": "107fad8963264825cc449bcfac9d72effef186dd868b2c29670e8eb13ddcaee0.zip",
         },
         "Handler": "index.handler",
-        "Role": Object {
-          "Fn::GetAtt": Array [
+        "Role": {
+          "Fn::GetAtt": [
             "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
             "Arn",
           ],
         },
-        "Runtime": "nodejs20.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 120,
       },
       "Type": "AWS::Lambda::Function",
     },
-    "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2": Object {
-      "Properties": Object {
-        "AssumeRolePolicyDocument": Object {
-          "Statement": Array [
-            Object {
+    "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
-              "Principal": Object {
+              "Principal": {
                 "Service": "lambda.amazonaws.com",
               },
             },
           ],
           "Version": "2012-10-17",
         },
-        "ManagedPolicyArns": Array [
-          Object {
-            "Fn::Join": Array [
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
               "",
-              Array [
+              [
                 "arn:",
-                Object {
+                {
                   "Ref": "AWS::Partition",
                 },
                 ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
@@ -66,137 +66,137 @@ Object {
       },
       "Type": "AWS::IAM::Role",
     },
-    "Cache18F6EE16": Object {
+    "Cache18F6EE16": {
       "DeletionPolicy": "Retain",
-      "Properties": Object {
+      "Properties": {
         "BucketName": "your-custom-bucket",
       },
       "Type": "AWS::S3::Bucket",
       "UpdateReplacePolicy": "Retain",
     },
-    "RunnerManagerAutoscalingGroupASG51B04F0E": Object {
-      "CreationPolicy": Object {
-        "ResourceSignal": Object {
+    "RunnerManagerAutoscalingGroupASG51B04F0E": {
+      "CreationPolicy": {
+        "ResourceSignal": {
           "Count": 1,
           "Timeout": "PT15M",
         },
       },
-      "Metadata": Object {
-        "AWS::CloudFormation::Init": Object {
-          "config": Object {
-            "commands": Object {
-              "999-retrieve-ec2-key-pair": Object {
+      "Metadata": {
+        "AWS::CloudFormation::Init": {
+          "config": {
+            "commands": {
+              "999-retrieve-ec2-key-pair": {
                 "command": "",
               },
             },
-            "files": Object {
-              "/etc/gitlab-runner/config.toml": Object {
-                "content": Object {
-                  "Fn::Join": Array [
+            "files": {
+              "/etc/gitlab-runner/config.toml": {
+                "content": {
+                  "Fn::Join": [
                     "",
-                    Array [
+                    [
                       "concurrent = 10
 check_interval = 0
-log_format = \\"runner\\"
-log_level = \\"info\\"
+log_format = "runner"
+log_level = "info"
 
 [[runners]]
-url = \\"https://gitlab.com\\"
+url = "https://gitlab.com"
 limit = 10
 output_limit = 52_428_800
-executor = \\"docker+machine\\"
+executor = "docker+machine"
 environment = [
-  \\"DOCKER_DRIVER=overlay2\\",
-  \\"DOCKER_TLS_CERTDIR=/certs\\",
-  \\"DOCKER_AUTH_CONFIG={\\\\\\"credsStore\\\\\\": \\\\\\"ecr-login\\\\\\"}\\"
+  "DOCKER_DRIVER=overlay2",
+  "DOCKER_TLS_CERTDIR=/certs",
+  "DOCKER_AUTH_CONFIG={\\"credsStore\\": \\"ecr-login\\"}"
 ]
-name = \\"gitlab-runner-with-custom-cache-settings\\"
-token = \\"",
-                      Object {
-                        "Fn::GetAtt": Array [
+name = "gitlab-runner-with-custom-cache-settings"
+token = "",
+                      {
+                        "Fn::GetAtt": [
                           "TokenCB33349F",
                           "Value",
                         ],
                       },
-                      "\\"
+                      ""
 
   [runners.machine]
   IdleCount = 0
   IdleTime = 300
   MaxBuilds = 20
-  MachineDriver = \\"amazonec2\\"
-  MachineName = \\"gitlab-runner-%s\\"
+  MachineDriver = "amazonec2"
+  MachineName = "gitlab-runner-%s"
   MachineOptions = [
-  \\"amazonec2-request-spot-instance=true\\",
-  \\"amazonec2-spot-price=0.03\\",
-  \\"amazonec2-metadata-token=required\\",
-  \\"amazonec2-metadata-token-response-hop-limit=2\\",
-  \\"amazonec2-ssh-keypath=\\",
-  \\"amazonec2-instance-type=t3.micro\\",
-  \\"amazonec2-ami=ami-1234\\",
-  \\"amazonec2-region=us-east-1\\",
-  \\"amazonec2-vpc-id=",
-                      Object {
+  "amazonec2-request-spot-instance=true",
+  "amazonec2-spot-price=0.03",
+  "amazonec2-metadata-token=required",
+  "amazonec2-metadata-token-response-hop-limit=2",
+  "amazonec2-ssh-keypath=",
+  "amazonec2-instance-type=t3.micro",
+  "amazonec2-ami=ami-1234",
+  "amazonec2-region=us-east-1",
+  "amazonec2-vpc-id=",
+                      {
                         "Ref": "RunnerVpcCAA2D684",
                       },
-                      "\\",
-  \\"amazonec2-zone=a\\",
-  \\"amazonec2-subnet-id=",
-                      Object {
+                      "",
+  "amazonec2-zone=a",
+  "amazonec2-subnet-id=",
+                      {
                         "Ref": "RunnerVpcPrivateSubnet1Subnet4721DE70",
                       },
-                      "\\",
-  \\"amazonec2-security-group=",
-                      Object {
-                        "Fn::GetAtt": Array [
+                      "",
+  "amazonec2-security-group=",
+                      {
+                        "Fn::GetAtt": [
                           "RunnerRunnersSecurityGroupDescribeSGCustomResource6FABE32F",
                           "SecurityGroups.0.GroupName",
                         ],
                       },
-                      "\\",
-  \\"amazonec2-private-address-only=true\\",
-  \\"amazonec2-use-private-address=true\\",
-  \\"amazonec2-iam-instance-profile=",
-                      Object {
+                      "",
+  "amazonec2-private-address-only=true",
+  "amazonec2-use-private-address=true",
+  "amazonec2-iam-instance-profile=",
+                      {
                         "Ref": "RunnerRunnersInstanceProfileForGitlabRunnerWithCustomCacheSettingsC2F1D746",
                       },
-                      "\\",
-  \\"amazonec2-userdata=/etc/gitlab-runner/user_data_runners\\",
-  \\"engine-install-url=https://releases.rancher.com/install-docker/20.10.21.sh\\"
+                      "",
+  "amazonec2-userdata=/etc/gitlab-runner/user_data_runners",
+  "engine-install-url=https://releases.rancher.com/install-docker/20.10.21.sh"
 ]
 
     [[runners.machine.autoscaling]]
-    Periods = [ \\"* * 7-22 * * mon-fri *\\" ]
+    Periods = [ "* * 7-22 * * mon-fri *" ]
     IdleCount = 1
     IdleTime = 1_800
-    Timezone = \\"Etc/UTC\\"
+    Timezone = "Etc/UTC"
 
   [runners.cache]
-  Type = \\"s3\\"
+  Type = "s3"
   Shared = true
 
     [runners.cache.S3]
-    serverAddress = \\"s3.",
-                      Object {
+    serverAddress = "s3.",
+                      {
                         "Ref": "AWS::URLSuffix",
                       },
-                      "\\"
-    bucketName = \\"",
-                      Object {
+                      ""
+    bucketName = "",
+                      {
                         "Ref": "Cache18F6EE16",
                       },
-                      "\\"
-    bucketLocation = \\"us-east-1\\"
-    authenticationType = \\"iam\\"
+                      ""
+    bucketLocation = "us-east-1"
+    authenticationType = "iam"
 
   [runners.docker]
   tls_verify = false
-  image = \\"docker:19.03.5\\"
+  image = "docker:19.03.5"
   privileged = true
-  cap_add = [ \\"CAP_SYS_ADMIN\\" ]
+  cap_add = [ "CAP_SYS_ADMIN" ]
   wait_for_services_timeout = 300
   disable_cache = false
-  volumes = [ \\"/certs/client\\", \\"/cache\\" ]
+  volumes = [ "/certs/client", "/cache" ]
   shm_size = 0
 ",
                     ],
@@ -207,109 +207,109 @@ token = \\"",
                 "mode": "000600",
                 "owner": "gitlab-runner",
               },
-              "/etc/gitlab-runner/user_data_runners": Object {
+              "/etc/gitlab-runner/user_data_runners": {
                 "content": "#!/bin/bash
-[ ! -z \\"$(which apt-get)\\" ] && apt-get update && apt-get install -y amazon-ecr-credential-helper
-[ ! -z \\"$(which yum)\\" ] && yum install -y amazon-ecr-credential-helper",
+[ ! -z "$(which apt-get)" ] && apt-get update && apt-get install -y amazon-ecr-credential-helper
+[ ! -z "$(which yum)" ] && yum install -y amazon-ecr-credential-helper",
                 "encoding": "plain",
                 "group": "gitlab-runner",
                 "mode": "000600",
                 "owner": "gitlab-runner",
               },
-              "/etc/rsyslog.d/25-gitlab-runner.conf": Object {
-                "content": ":programname, isequal, \\"gitlab-runner\\" /var/log/gitlab-runner.log",
+              "/etc/rsyslog.d/25-gitlab-runner.conf": {
+                "content": ":programname, isequal, "gitlab-runner" /var/log/gitlab-runner.log",
                 "encoding": "plain",
                 "group": "root",
                 "mode": "000644",
                 "owner": "root",
               },
             },
-            "services": Object {
-              "sysvinit": Object {
-                "gitlab-runner": Object {
+            "services": {
+              "sysvinit": {
+                "gitlab-runner": {
                   "enabled": true,
                   "ensureRunning": true,
-                  "files": Array [
+                  "files": [
                     "/etc/gitlab-runner/config.toml",
                   ],
                 },
-                "rsyslog": Object {
+                "rsyslog": {
                   "enabled": true,
                   "ensureRunning": true,
-                  "files": Array [
+                  "files": [
                     "/etc/rsyslog.d/25-gitlab-runner.conf",
                   ],
                 },
               },
             },
           },
-          "configSets": Object {
-            "default": Array [
+          "configSets": {
+            "default": [
               "repositories",
               "packages",
               "config",
               "restart",
             ],
           },
-          "packages": Object {
-            "commands": Object {
-              "10-docker-machine": Object {
+          "packages": {
+            "commands": {
+              "10-docker-machine": {
                 "command": "curl -L https://gitlab-docker-machine-downloads.s3.amazonaws.com/v0.16.2-gitlab.15/docker-machine-\`uname -s\`-\`uname -m\` > /tmp/docker-machine && install /tmp/docker-machine /usr/bin/docker-machine",
               },
-              "20-gitlab-runner-start": Object {
+              "20-gitlab-runner-start": {
                 "command": "gitlab-runner start",
               },
             },
-            "packages": Object {
-              "yum": Object {
-                "docker": Array [],
-                "gitlab-runner": Array [],
-                "jq": Array [],
-                "tzdata": Array [],
+            "packages": {
+              "yum": {
+                "docker": [],
+                "gitlab-runner": [],
+                "jq": [],
+                "tzdata": [],
               },
             },
           },
-          "repositories": Object {
-            "commands": Object {
-              "10-gitlab-runner": Object {
+          "repositories": {
+            "commands": {
+              "10-gitlab-runner": {
                 "command": "curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh | bash",
               },
             },
           },
-          "restart": Object {
-            "commands": Object {
-              "10-gitlab-runner-restart": Object {
+          "restart": {
+            "commands": {
+              "10-gitlab-runner-restart": {
                 "command": "gitlab-runner restart",
               },
             },
           },
         },
       },
-      "Properties": Object {
+      "Properties": {
         "DesiredCapacity": "1",
-        "LaunchConfigurationName": Object {
+        "LaunchConfigurationName": {
           "Ref": "RunnerManagerAutoscalingGroupLaunchConfig3E508F70",
         },
         "MaxSize": "1",
         "MinSize": "1",
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "Name",
             "PropagateAtLaunch": true,
             "Value": "WithCustomCacheBucketStack/Runner/ManagerAutoscalingGroup",
           },
         ],
-        "VPCZoneIdentifier": Array [
-          Object {
+        "VPCZoneIdentifier": [
+          {
             "Ref": "RunnerVpcPrivateSubnet1Subnet4721DE70",
           },
         ],
       },
       "Type": "AWS::AutoScaling::AutoScalingGroup",
-      "UpdatePolicy": Object {
-        "AutoScalingRollingUpdate": Object {
+      "UpdatePolicy": {
+        "AutoScalingRollingUpdate": {
           "PauseTime": "PT15M",
-          "SuspendProcesses": Array [
+          "SuspendProcesses": [
             "HealthCheck",
             "ReplaceUnhealthy",
             "AZRebalance",
@@ -319,50 +319,50 @@ token = \\"",
           ],
           "WaitOnResourceSignals": true,
         },
-        "AutoScalingScheduledAction": Object {
+        "AutoScalingScheduledAction": {
           "IgnoreUnmodifiedGroupSizeProperties": true,
         },
       },
     },
-    "RunnerManagerAutoscalingGroupInstanceProfile0837C5CB": Object {
-      "Properties": Object {
-        "Roles": Array [
-          Object {
+    "RunnerManagerAutoscalingGroupInstanceProfile0837C5CB": {
+      "Properties": {
+        "Roles": [
+          {
             "Ref": "RunnerManagerRole529C6D4B",
           },
         ],
       },
       "Type": "AWS::IAM::InstanceProfile",
     },
-    "RunnerManagerAutoscalingGroupLaunchConfig3E508F70": Object {
-      "DependsOn": Array [
+    "RunnerManagerAutoscalingGroupLaunchConfig3E508F70": {
+      "DependsOn": [
         "RunnerManagerRoleDefaultPolicy52D12843",
         "RunnerManagerRole529C6D4B",
       ],
-      "Properties": Object {
-        "IamInstanceProfile": Object {
+      "Properties": {
+        "IamInstanceProfile": {
           "Ref": "RunnerManagerAutoscalingGroupInstanceProfile0837C5CB",
         },
-        "ImageId": Object {
+        "ImageId": {
           "Ref": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664ebsC96584B6F00A464EAD1953AFF4B05118Parameter",
         },
         "InstanceType": "t3.nano",
-        "MetadataOptions": Object {
+        "MetadataOptions": {
           "HttpTokens": "required",
         },
-        "SecurityGroups": Array [
-          Object {
-            "Fn::GetAtt": Array [
+        "SecurityGroups": [
+          {
+            "Fn::GetAtt": [
               "RunnerManagerSecurityGroup5680231E",
               "GroupId",
             ],
           },
         ],
-        "UserData": Object {
-          "Fn::Base64": Object {
-            "Fn::Join": Array [
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Join": [
               "",
-              Array [
+              [
                 "#!/bin/bash
 yum update -y aws-cfn-bootstrap
 yum install -y amazon-ecr-credential-helper
@@ -370,20 +370,20 @@ yum install -y amazon-ecr-credential-helper
 (
   set +e
   /opt/aws/bin/cfn-init -v --region ",
-                Object {
+                {
                   "Ref": "AWS::Region",
                 },
                 " --stack ",
-                Object {
+                {
                   "Ref": "AWS::StackName",
                 },
                 " --resource RunnerManagerAutoscalingGroupASG51B04F0E -c default
   /opt/aws/bin/cfn-signal -e $? --region ",
-                Object {
+                {
                   "Ref": "AWS::Region",
                 },
                 " --stack ",
-                Object {
+                {
                   "Ref": "AWS::StackName",
                 },
                 " --resource RunnerManagerAutoscalingGroupASG51B04F0E
@@ -396,27 +396,27 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::AutoScaling::LaunchConfiguration",
     },
-    "RunnerManagerRole529C6D4B": Object {
-      "Properties": Object {
-        "AssumeRolePolicyDocument": Object {
-          "Statement": Array [
-            Object {
+    "RunnerManagerRole529C6D4B": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
-              "Principal": Object {
+              "Principal": {
                 "Service": "ec2.amazonaws.com",
               },
             },
           ],
           "Version": "2012-10-17",
         },
-        "ManagedPolicyArns": Array [
-          Object {
-            "Fn::Join": Array [
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
               "",
-              Array [
+              [
                 "arn:",
-                Object {
+                {
                   "Ref": "AWS::Partition",
                 },
                 ":iam::aws:policy/AmazonSSMManagedInstanceCore",
@@ -424,24 +424,24 @@ yum install -y amazon-ecr-credential-helper
             ],
           },
         ],
-        "Policies": Array [
-          Object {
-            "PolicyDocument": Object {
-              "Statement": Array [
-                Object {
-                  "Action": Array [
+        "Policies": [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": [
                     "s3:ListObjects*",
                     "s3:GetObject*",
                     "s3:DeleteObject*",
                     "s3:PutObject*",
                   ],
                   "Effect": "Allow",
-                  "Resource": Object {
-                    "Fn::Join": Array [
+                  "Resource": {
+                    "Fn::Join": [
                       "",
-                      Array [
-                        Object {
-                          "Fn::GetAtt": Array [
+                      [
+                        {
+                          "Fn::GetAtt": [
                             "Cache18F6EE16",
                             "Arn",
                           ],
@@ -451,11 +451,11 @@ yum install -y amazon-ecr-credential-helper
                     ],
                   },
                 },
-                Object {
+                {
                   "Action": "s3:ListBucket",
                   "Effect": "Allow",
-                  "Resource": Object {
-                    "Fn::GetAtt": Array [
+                  "Resource": {
+                    "Fn::GetAtt": [
                       "Cache18F6EE16",
                       "Arn",
                     ],
@@ -466,11 +466,11 @@ yum install -y amazon-ecr-credential-helper
             },
             "PolicyName": "Cache",
           },
-          Object {
-            "PolicyDocument": Object {
-              "Statement": Array [
-                Object {
-                  "Action": Array [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": [
                     "ec2:CreateKeyPair",
                     "ec2:DeleteKeyPair",
                     "ec2:ImportKeyPair",
@@ -479,55 +479,55 @@ yum install -y amazon-ecr-credential-helper
                   "Effect": "Allow",
                   "Resource": "*",
                 },
-                Object {
-                  "Action": Array [
+                {
+                  "Action": [
                     "ec2:CreateTags",
                     "ssm:UpdateInstanceInformation",
                   ],
-                  "Condition": Object {
-                    "ForAllValues:StringEquals": Object {
-                      "aws:TagKeys": Array [
+                  "Condition": {
+                    "ForAllValues:StringEquals": {
+                      "aws:TagKeys": [
                         "Name",
                       ],
                     },
-                    "StringLike": Object {
+                    "StringLike": {
                       "aws:RequestTag/Name": "*gitlab-runner-*",
                     },
                   },
                   "Effect": "Allow",
                   "Resource": "*",
                 },
-                Object {
-                  "Action": Array [
+                {
+                  "Action": [
                     "ec2:RequestSpotInstances",
                     "ec2:CancelSpotInstanceRequests",
                   ],
-                  "Condition": Object {
-                    "ArnEqualsIfExists": Object {
-                      "ec2:Vpc": Object {
-                        "Fn::Join": Array [
+                  "Condition": {
+                    "ArnEqualsIfExists": {
+                      "ec2:Vpc": {
+                        "Fn::Join": [
                           "",
-                          Array [
+                          [
                             "arn:aws:ec2:us-east-1:0:vpc/",
-                            Object {
+                            {
                               "Ref": "RunnerVpcCAA2D684",
                             },
                           ],
                         ],
                       },
                     },
-                    "StringEqualsIfExists": Object {
+                    "StringEqualsIfExists": {
                       "ec2:Region": "us-east-1",
                     },
                   },
                   "Effect": "Allow",
                   "Resource": "*",
                 },
-                Object {
+                {
                   "Action": "ec2:RunInstances",
-                  "Condition": Object {
-                    "ForAllValues:StringEquals": Object {
-                      "ec2:InstanceType": Array [
+                  "Condition": {
+                    "ForAllValues:StringEquals": {
+                      "ec2:InstanceType": [
                         "t3.micro",
                       ],
                     },
@@ -535,26 +535,26 @@ yum install -y amazon-ecr-credential-helper
                   "Effect": "Allow",
                   "Resource": "*",
                 },
-                Object {
-                  "Action": Array [
+                {
+                  "Action": [
                     "ec2:TerminateInstances",
                     "ec2:StopInstances",
                     "ec2:StartInstances",
                     "ec2:RebootInstances",
                   ],
-                  "Condition": Object {
-                    "StringLike": Object {
+                  "Condition": {
+                    "StringLike": {
                       "ec2:ResourceTag/Name": "*gitlab-runner-*",
                     },
                   },
                   "Effect": "Allow",
                   "Resource": "*",
                 },
-                Object {
+                {
                   "Action": "iam:PassRole",
-                  "Condition": Object {
-                    "ForAllValues:StringEquals": Object {
-                      "aws:TagKeys": Array [
+                  "Condition": {
+                    "ForAllValues:StringEquals": {
+                      "aws:TagKeys": [
                         "RunnersRole",
                       ],
                     },
@@ -567,11 +567,11 @@ yum install -y amazon-ecr-credential-helper
             },
             "PolicyName": "Runners",
           },
-          Object {
-            "PolicyDocument": Object {
-              "Statement": Array [
-                Object {
-                  "Action": Array [
+          {
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": [
                     "ecr:BatchGetImage",
                     "ecr:GetAuthorizationToken",
                     "ecr:GetDownloadUrlForLayer",
@@ -588,17 +588,17 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::IAM::Role",
     },
-    "RunnerManagerRoleDefaultPolicy52D12843": Object {
-      "Properties": Object {
-        "PolicyDocument": Object {
-          "Statement": Array [
-            Object {
-              "Action": Array [
+    "RunnerManagerRoleDefaultPolicy52D12843": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
                 "cloudformation:DescribeStackResource",
                 "cloudformation:SignalResource",
               ],
               "Effect": "Allow",
-              "Resource": Object {
+              "Resource": {
                 "Ref": "AWS::StackId",
               },
             },
@@ -606,74 +606,96 @@ yum install -y amazon-ecr-credential-helper
           "Version": "2012-10-17",
         },
         "PolicyName": "RunnerManagerRoleDefaultPolicy52D12843",
-        "Roles": Array [
-          Object {
+        "Roles": [
+          {
             "Ref": "RunnerManagerRole529C6D4B",
           },
         ],
       },
       "Type": "AWS::IAM::Policy",
     },
-    "RunnerManagerSecurityGroup5680231E": Object {
-      "Properties": Object {
+    "RunnerManagerSecurityGroup5680231E": {
+      "Properties": {
         "GroupDescription": "Security group for GitLab Runners Manager.",
-        "SecurityGroupEgress": Array [
-          Object {
+        "SecurityGroupEgress": [
+          {
             "CidrIp": "0.0.0.0/0",
             "Description": "Allow all outbound traffic by default",
             "IpProtocol": "-1",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "RunnerManagerSecurityGroupDescribeSGCustomResource1E6B5B73": Object {
+    "RunnerManagerSecurityGroupDescribeSGCustomResource1E6B5B73": {
       "DeletionPolicy": "Delete",
-      "DependsOn": Array [
+      "DependsOn": [
         "RunnerManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy5AC6C3F0",
       ],
-      "Properties": Object {
-        "Create": Object {
-          "Fn::Join": Array [
+      "Properties": {
+        "Create": {
+          "Fn::Join": [
             "",
-            Array [
-              "{\\"service\\":\\"EC2\\",\\"action\\":\\"describeSecurityGroups\\",\\"parameters\\":{\\"GroupIds\\":[\\"",
-              Object {
-                "Fn::GetAtt": Array [
+            [
+              "{"service":"EC2","action":"describeSecurityGroups","parameters":{"GroupIds":["",
+              {
+                "Fn::GetAtt": [
                   "RunnerManagerSecurityGroup5680231E",
                   "GroupId",
                 ],
               },
-              "\\"]},\\"physicalResourceId\\":{\\"id\\":\\"",
-              Object {
-                "Fn::GetAtt": Array [
+              ""]},"physicalResourceId":{"id":"",
+              {
+                "Fn::GetAtt": [
                   "RunnerManagerSecurityGroup5680231E",
                   "GroupId",
                 ],
               },
-              "\\"}}",
+              ""}}",
             ],
           ],
         },
         "InstallLatestAwsSdk": true,
-        "ServiceToken": Object {
-          "Fn::GetAtt": Array [
+        "ServiceToken": {
+          "Fn::GetAtt": [
             "AWS679f53fac002430cb0da5b7982bd22872D164C4C",
             "Arn",
+          ],
+        },
+        "Update": {
+          "Fn::Join": [
+            "",
+            [
+              "{"service":"EC2","action":"describeSecurityGroups","parameters":{"GroupIds":["",
+              {
+                "Fn::GetAtt": [
+                  "RunnerManagerSecurityGroup5680231E",
+                  "GroupId",
+                ],
+              },
+              ""]},"physicalResourceId":{"id":"",
+              {
+                "Fn::GetAtt": [
+                  "RunnerManagerSecurityGroup5680231E",
+                  "GroupId",
+                ],
+              },
+              ""}}",
+            ],
           ],
         },
       },
       "Type": "Custom::AWS",
       "UpdateReplacePolicy": "Delete",
     },
-    "RunnerManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy5AC6C3F0": Object {
-      "Properties": Object {
-        "PolicyDocument": Object {
-          "Statement": Array [
-            Object {
+    "RunnerManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy5AC6C3F0": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
               "Action": "ec2:DescribeSecurityGroups",
               "Effect": "Allow",
               "Resource": "*",
@@ -682,45 +704,45 @@ yum install -y amazon-ecr-credential-helper
           "Version": "2012-10-17",
         },
         "PolicyName": "RunnerManagerSecurityGroupDescribeSGCustomResourceCustomResourcePolicy5AC6C3F0",
-        "Roles": Array [
-          Object {
+        "Roles": [
+          {
             "Ref": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
           },
         ],
       },
       "Type": "AWS::IAM::Policy",
     },
-    "RunnerRunnersInstanceProfileForGitlabRunnerWithCustomCacheSettingsC2F1D746": Object {
-      "Properties": Object {
-        "Roles": Array [
-          Object {
+    "RunnerRunnersInstanceProfileForGitlabRunnerWithCustomCacheSettingsC2F1D746": {
+      "Properties": {
+        "Roles": [
+          {
             "Ref": "RunnerRunnersRoleForGitlabRunnerWithCustomCacheSettings65A585A3",
           },
         ],
       },
       "Type": "AWS::IAM::InstanceProfile",
     },
-    "RunnerRunnersRoleForGitlabRunnerWithCustomCacheSettings65A585A3": Object {
-      "Properties": Object {
-        "AssumeRolePolicyDocument": Object {
-          "Statement": Array [
-            Object {
+    "RunnerRunnersRoleForGitlabRunnerWithCustomCacheSettings65A585A3": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
-              "Principal": Object {
+              "Principal": {
                 "Service": "ec2.amazonaws.com",
               },
             },
           ],
           "Version": "2012-10-17",
         },
-        "ManagedPolicyArns": Array [
-          Object {
-            "Fn::Join": Array [
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
               "",
-              Array [
+              [
                 "arn:",
-                Object {
+                {
                   "Ref": "AWS::Partition",
                 },
                 ":iam::aws:policy/AmazonSSMManagedInstanceCore",
@@ -728,8 +750,8 @@ yum install -y amazon-ecr-credential-helper
             ],
           },
         ],
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "RunnersRole",
             "Value": "RunnersRole",
           },
@@ -737,66 +759,88 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::IAM::Role",
     },
-    "RunnerRunnersSecurityGroupB2AFE08F": Object {
-      "Properties": Object {
+    "RunnerRunnersSecurityGroupB2AFE08F": {
+      "Properties": {
         "GroupDescription": "Security group for GitLab Runners.",
-        "SecurityGroupEgress": Array [
-          Object {
+        "SecurityGroupEgress": [
+          {
             "CidrIp": "0.0.0.0/0",
             "Description": "Allow all outbound traffic by default",
             "IpProtocol": "-1",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "RunnerRunnersSecurityGroupDescribeSGCustomResource6FABE32F": Object {
+    "RunnerRunnersSecurityGroupDescribeSGCustomResource6FABE32F": {
       "DeletionPolicy": "Delete",
-      "DependsOn": Array [
+      "DependsOn": [
         "RunnerRunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyAFDB1567",
       ],
-      "Properties": Object {
-        "Create": Object {
-          "Fn::Join": Array [
+      "Properties": {
+        "Create": {
+          "Fn::Join": [
             "",
-            Array [
-              "{\\"service\\":\\"EC2\\",\\"action\\":\\"describeSecurityGroups\\",\\"parameters\\":{\\"GroupIds\\":[\\"",
-              Object {
-                "Fn::GetAtt": Array [
+            [
+              "{"service":"EC2","action":"describeSecurityGroups","parameters":{"GroupIds":["",
+              {
+                "Fn::GetAtt": [
                   "RunnerRunnersSecurityGroupB2AFE08F",
                   "GroupId",
                 ],
               },
-              "\\"]},\\"physicalResourceId\\":{\\"id\\":\\"",
-              Object {
-                "Fn::GetAtt": Array [
+              ""]},"physicalResourceId":{"id":"",
+              {
+                "Fn::GetAtt": [
                   "RunnerRunnersSecurityGroupB2AFE08F",
                   "GroupId",
                 ],
               },
-              "\\"}}",
+              ""}}",
             ],
           ],
         },
         "InstallLatestAwsSdk": true,
-        "ServiceToken": Object {
-          "Fn::GetAtt": Array [
+        "ServiceToken": {
+          "Fn::GetAtt": [
             "AWS679f53fac002430cb0da5b7982bd22872D164C4C",
             "Arn",
+          ],
+        },
+        "Update": {
+          "Fn::Join": [
+            "",
+            [
+              "{"service":"EC2","action":"describeSecurityGroups","parameters":{"GroupIds":["",
+              {
+                "Fn::GetAtt": [
+                  "RunnerRunnersSecurityGroupB2AFE08F",
+                  "GroupId",
+                ],
+              },
+              ""]},"physicalResourceId":{"id":"",
+              {
+                "Fn::GetAtt": [
+                  "RunnerRunnersSecurityGroupB2AFE08F",
+                  "GroupId",
+                ],
+              },
+              ""}}",
+            ],
           ],
         },
       },
       "Type": "Custom::AWS",
       "UpdateReplacePolicy": "Delete",
     },
-    "RunnerRunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyAFDB1567": Object {
-      "Properties": Object {
-        "PolicyDocument": Object {
-          "Statement": Array [
-            Object {
+    "RunnerRunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyAFDB1567": {
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
               "Action": "ec2:DescribeSecurityGroups",
               "Effect": "Allow",
               "Resource": "*",
@@ -805,27 +849,27 @@ yum install -y amazon-ecr-credential-helper
           "Version": "2012-10-17",
         },
         "PolicyName": "RunnerRunnersSecurityGroupDescribeSGCustomResourceCustomResourcePolicyAFDB1567",
-        "Roles": Array [
-          Object {
+        "Roles": [
+          {
             "Ref": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2",
           },
         ],
       },
       "Type": "AWS::IAM::Policy",
     },
-    "RunnerRunnersSecurityGroupfromWithCustomCacheBucketStackRunnerManagerSecurityGroupB33214CD22E182B5D2": Object {
-      "Properties": Object {
+    "RunnerRunnersSecurityGroupfromWithCustomCacheBucketStackRunnerManagerSecurityGroupB33214CD22E182B5D2": {
+      "Properties": {
         "Description": "SSH traffic from Manager",
         "FromPort": 22,
-        "GroupId": Object {
-          "Fn::GetAtt": Array [
+        "GroupId": {
+          "Fn::GetAtt": [
             "RunnerRunnersSecurityGroupB2AFE08F",
             "GroupId",
           ],
         },
         "IpProtocol": "tcp",
-        "SourceSecurityGroupId": Object {
-          "Fn::GetAtt": Array [
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
             "RunnerManagerSecurityGroup5680231E",
             "GroupId",
           ],
@@ -834,19 +878,19 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::EC2::SecurityGroupIngress",
     },
-    "RunnerRunnersSecurityGroupfromWithCustomCacheBucketStackRunnerManagerSecurityGroupB33214CD237618509661": Object {
-      "Properties": Object {
+    "RunnerRunnersSecurityGroupfromWithCustomCacheBucketStackRunnerManagerSecurityGroupB33214CD237618509661": {
+      "Properties": {
         "Description": "SSH traffic from Docker",
         "FromPort": 2376,
-        "GroupId": Object {
-          "Fn::GetAtt": Array [
+        "GroupId": {
+          "Fn::GetAtt": [
             "RunnerRunnersSecurityGroupB2AFE08F",
             "GroupId",
           ],
         },
         "IpProtocol": "tcp",
-        "SourceSecurityGroupId": Object {
-          "Fn::GetAtt": Array [
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
             "RunnerManagerSecurityGroup5680231E",
             "GroupId",
           ],
@@ -855,14 +899,14 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::EC2::SecurityGroupIngress",
     },
-    "RunnerVpcCAA2D684": Object {
-      "Properties": Object {
+    "RunnerVpcCAA2D684": {
+      "Properties": {
         "CidrBlock": "10.0.0.0/16",
         "EnableDnsHostnames": true,
         "EnableDnsSupport": true,
         "InstanceTenancy": "default",
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc",
           },
@@ -870,10 +914,10 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::EC2::VPC",
     },
-    "RunnerVpcIGW65822A5B": Object {
-      "Properties": Object {
-        "Tags": Array [
-          Object {
+    "RunnerVpcIGW65822A5B": {
+      "Properties": {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc",
           },
@@ -881,22 +925,22 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::EC2::InternetGateway",
     },
-    "RunnerVpcNatRole955A3A9F": Object {
-      "Properties": Object {
-        "AssumeRolePolicyDocument": Object {
-          "Statement": Array [
-            Object {
+    "RunnerVpcNatRole955A3A9F": {
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
               "Action": "sts:AssumeRole",
               "Effect": "Allow",
-              "Principal": Object {
+              "Principal": {
                 "Service": "ec2.amazonaws.com",
               },
             },
           ],
           "Version": "2012-10-17",
         },
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc",
           },
@@ -904,220 +948,220 @@ yum install -y amazon-ecr-credential-helper
       },
       "Type": "AWS::IAM::Role",
     },
-    "RunnerVpcNatSecurityGroupDD667F4C": Object {
-      "Properties": Object {
+    "RunnerVpcNatSecurityGroupDD667F4C": {
+      "Properties": {
         "GroupDescription": "Security Group for NAT instances",
-        "SecurityGroupEgress": Array [
-          Object {
+        "SecurityGroupEgress": [
+          {
             "CidrIp": "0.0.0.0/0",
             "Description": "Allow all outbound traffic by default",
             "IpProtocol": "-1",
           },
         ],
-        "SecurityGroupIngress": Array [
-          Object {
+        "SecurityGroupIngress": [
+          {
             "CidrIp": "0.0.0.0/0",
             "Description": "from 0.0.0.0/0:ALL TRAFFIC",
             "IpProtocol": "-1",
           },
         ],
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::SecurityGroup",
     },
-    "RunnerVpcPrivateSubnet1DefaultRoute2B51B745": Object {
-      "Properties": Object {
+    "RunnerVpcPrivateSubnet1DefaultRoute2B51B745": {
+      "Properties": {
         "DestinationCidrBlock": "0.0.0.0/0",
-        "InstanceId": Object {
+        "InstanceId": {
           "Ref": "RunnerVpcPublicSubnet1NatInstance4A17E94C",
         },
-        "RouteTableId": Object {
+        "RouteTableId": {
           "Ref": "RunnerVpcPrivateSubnet1RouteTableD555A93C",
         },
       },
       "Type": "AWS::EC2::Route",
     },
-    "RunnerVpcPrivateSubnet1RouteTableAssociation5CB655F9": Object {
-      "Properties": Object {
-        "RouteTableId": Object {
+    "RunnerVpcPrivateSubnet1RouteTableAssociation5CB655F9": {
+      "Properties": {
+        "RouteTableId": {
           "Ref": "RunnerVpcPrivateSubnet1RouteTableD555A93C",
         },
-        "SubnetId": Object {
+        "SubnetId": {
           "Ref": "RunnerVpcPrivateSubnet1Subnet4721DE70",
         },
       },
       "Type": "AWS::EC2::SubnetRouteTableAssociation",
     },
-    "RunnerVpcPrivateSubnet1RouteTableD555A93C": Object {
-      "Properties": Object {
-        "Tags": Array [
-          Object {
+    "RunnerVpcPrivateSubnet1RouteTableD555A93C": {
+      "Properties": {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc/PrivateSubnet1",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::RouteTable",
     },
-    "RunnerVpcPrivateSubnet1Subnet4721DE70": Object {
-      "Properties": Object {
+    "RunnerVpcPrivateSubnet1Subnet4721DE70": {
+      "Properties": {
         "AvailabilityZone": "dummy1a",
         "CidrBlock": "10.0.128.0/17",
         "MapPublicIpOnLaunch": false,
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "aws-cdk:subnet-name",
             "Value": "Private",
           },
-          Object {
+          {
             "Key": "aws-cdk:subnet-type",
             "Value": "Private",
           },
-          Object {
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc/PrivateSubnet1",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::Subnet",
     },
-    "RunnerVpcPublicSubnet1DefaultRoute89B813C9": Object {
-      "DependsOn": Array [
+    "RunnerVpcPublicSubnet1DefaultRoute89B813C9": {
+      "DependsOn": [
         "RunnerVpcVPCGW1446E48D",
       ],
-      "Properties": Object {
+      "Properties": {
         "DestinationCidrBlock": "0.0.0.0/0",
-        "GatewayId": Object {
+        "GatewayId": {
           "Ref": "RunnerVpcIGW65822A5B",
         },
-        "RouteTableId": Object {
+        "RouteTableId": {
           "Ref": "RunnerVpcPublicSubnet1RouteTable7320376C",
         },
       },
       "Type": "AWS::EC2::Route",
     },
-    "RunnerVpcPublicSubnet1NatInstance4A17E94C": Object {
-      "DependsOn": Array [
+    "RunnerVpcPublicSubnet1NatInstance4A17E94C": {
+      "DependsOn": [
         "RunnerVpcNatRole955A3A9F",
       ],
-      "Properties": Object {
+      "Properties": {
         "AvailabilityZone": "dummy1a",
-        "IamInstanceProfile": Object {
+        "IamInstanceProfile": {
           "Ref": "RunnerVpcPublicSubnet1NatInstanceInstanceProfile4572A500",
         },
         "ImageId": "ami-1234",
         "InstanceType": "t3.nano",
-        "SecurityGroupIds": Array [
-          Object {
-            "Fn::GetAtt": Array [
+        "SecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
               "RunnerVpcNatSecurityGroupDD667F4C",
               "GroupId",
             ],
           },
         ],
         "SourceDestCheck": false,
-        "SubnetId": Object {
+        "SubnetId": {
           "Ref": "RunnerVpcPublicSubnet1Subnet1B11364C",
         },
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc/PublicSubnet1/NatInstance",
           },
         ],
-        "UserData": Object {
+        "UserData": {
           "Fn::Base64": "#!/bin/bash",
         },
       },
       "Type": "AWS::EC2::Instance",
     },
-    "RunnerVpcPublicSubnet1NatInstanceInstanceProfile4572A500": Object {
-      "Properties": Object {
-        "Roles": Array [
-          Object {
+    "RunnerVpcPublicSubnet1NatInstanceInstanceProfile4572A500": {
+      "Properties": {
+        "Roles": [
+          {
             "Ref": "RunnerVpcNatRole955A3A9F",
           },
         ],
       },
       "Type": "AWS::IAM::InstanceProfile",
     },
-    "RunnerVpcPublicSubnet1RouteTable7320376C": Object {
-      "Properties": Object {
-        "Tags": Array [
-          Object {
+    "RunnerVpcPublicSubnet1RouteTable7320376C": {
+      "Properties": {
+        "Tags": [
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc/PublicSubnet1",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::RouteTable",
     },
-    "RunnerVpcPublicSubnet1RouteTableAssociationBE240830": Object {
-      "Properties": Object {
-        "RouteTableId": Object {
+    "RunnerVpcPublicSubnet1RouteTableAssociationBE240830": {
+      "Properties": {
+        "RouteTableId": {
           "Ref": "RunnerVpcPublicSubnet1RouteTable7320376C",
         },
-        "SubnetId": Object {
+        "SubnetId": {
           "Ref": "RunnerVpcPublicSubnet1Subnet1B11364C",
         },
       },
       "Type": "AWS::EC2::SubnetRouteTableAssociation",
     },
-    "RunnerVpcPublicSubnet1Subnet1B11364C": Object {
-      "Properties": Object {
+    "RunnerVpcPublicSubnet1Subnet1B11364C": {
+      "Properties": {
         "AvailabilityZone": "dummy1a",
         "CidrBlock": "10.0.0.0/17",
         "MapPublicIpOnLaunch": true,
-        "Tags": Array [
-          Object {
+        "Tags": [
+          {
             "Key": "aws-cdk:subnet-name",
             "Value": "Public",
           },
-          Object {
+          {
             "Key": "aws-cdk:subnet-type",
             "Value": "Public",
           },
-          Object {
+          {
             "Key": "Name",
             "Value": "WithCustomCacheBucketStack/Runner/Vpc/PublicSubnet1",
           },
         ],
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::Subnet",
     },
-    "RunnerVpcVPCGW1446E48D": Object {
-      "Properties": Object {
-        "InternetGatewayId": Object {
+    "RunnerVpcVPCGW1446E48D": {
+      "Properties": {
+        "InternetGatewayId": {
           "Ref": "RunnerVpcIGW65822A5B",
         },
-        "VpcId": Object {
+        "VpcId": {
           "Ref": "RunnerVpcCAA2D684",
         },
       },
       "Type": "AWS::EC2::VPCGatewayAttachment",
     },
-    "TokenCB33349F": Object {
-      "Properties": Object {
+    "TokenCB33349F": {
+      "Properties": {
         "Name": "/gitlab-runner/token",
         "Tier": "Standard",
         "Type": "SecureString",
@@ -1126,22 +1170,22 @@ yum install -y amazon-ecr-credential-helper
       "Type": "AWS::SSM::Parameter",
     },
   },
-  "Rules": Object {
-    "CheckBootstrapVersion": Object {
-      "Assertions": Array [
-        Object {
-          "Assert": Object {
-            "Fn::Not": Array [
-              Object {
-                "Fn::Contains": Array [
-                  Array [
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
                     "1",
                     "2",
                     "3",
                     "4",
                     "5",
                   ],
-                  Object {
+                  {
                     "Ref": "BootstrapVersion",
                   },
                 ],
