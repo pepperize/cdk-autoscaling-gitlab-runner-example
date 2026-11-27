@@ -36,7 +36,7 @@ const project = new AwsCdkTypeScriptApp({
     "@pepperize/cdk-security-group@^0.0.662",
     "@pepperize/cdk-vpc@^0.0.1165",
   ],
-  devDeps: ["@pepperize/projen-awscdk-app-ts@~0.1.1", "@types/node@^22"],
+  devDeps: ["@pepperize/projen-awscdk-app-ts@~0.1.2", "@types/node@^22"],
 });
 
 project.synth();
